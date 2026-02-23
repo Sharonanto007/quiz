@@ -35,6 +35,7 @@ def parse_csv_quiz(csv_path):
                 correct_answer_text = correct_answer_full[1:].strip()
             
             # Verify that the correct answer text matches the corresponding option
+            correct_answer_full_text = ""
             if correct_letter in options:
                 option_text = options[correct_letter]
                 
@@ -42,6 +43,9 @@ def parse_csv_quiz(csv_path):
                 if correct_answer_text.lower() != option_text.lower():
                     error_msg = f"Question {question_id}: Correct answer text mismatch!\n  Expected (from option {correct_letter}): {option_text}\n  Got (from Correct Answer column): {correct_answer_text}"
                     errors.append(error_msg)
+                
+                # Store the full option text as the correct answer
+                correct_answer_full_text = option_text
             else:
                 errors.append(f"Question {question_id}: Invalid correct answer letter '{correct_letter}'")
             
@@ -49,7 +53,7 @@ def parse_csv_quiz(csv_path):
                 'id': question_id,
                 'question': question_text,
                 'options': options,
-                'correct_answer': correct_letter
+                'correct_answer': correct_answer_full_text  # Store full text instead of letter
             }
             
             questions.append(question_obj)

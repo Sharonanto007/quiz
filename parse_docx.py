@@ -15,33 +15,46 @@ def parse_quiz_docx(docx_path):
         if not text:
             continue
             
-        # Check if this is a question number line
-        if text[0].isdigit() and '.' in text[:5]:
-            # Save previous question if exists
-            if current_question and 'question' in current_question:
-                questions.append(current_question)
-            
-            # Start new question
-            question_number += 1
-            parts = text.split('.', 1)
-            if len(parts) > 1:
-                current_question = {
-                    'id': question_number,
-                    'question': parts[1].strip(),
-                    'options': {}
-                }
+        # Check if this is a question number line (starts with digit and has a dot within first 5 chars)
+        if len(text) > 0 and text[0].isdigit() and '.' in text[:5]:
+            # Try to extract question number
+            try:
+                num_end = text.index('.')
+                num_str = text[:num_end].strip()
+                if num_str.isdigit():
+                    # Save previous question if exists
+                    if current_question and 'question' in current_question:
+                        questions.append(current_question)
+                    
+                    # Start new question
+                    question_number += 1
+                    question_text = text[num_end + 1:].strip()
+                    
+                    current_question = {
+                        'id': question_number,
+                        'question': question_text,
+                        'options': {}
+                    }
+                    continue
+            except:
+                pass
+        
         # Check if this is an option (A., B., C., D.)
-        elif current_question and len(text) >= 2 and text[0] in ['A', 'B', 'C', 'D'] and text[1] in ['.', ')']:
+        if current_question and len(text) >= 2 and text[0] in ['A', 'B', 'C', 'D'] and text[1] in ['.', ')']:
             option_letter = text[0]
             # Remove the letter and separator
-            option_text = text[2:].strip() if len(text) > 2 else text[2:].strip()
-            current_question['options'][option_letter] = option_text
+            option_text = text[2:].strip()
             
             # Check if this option has a check mark (✔, ✓, or √)
+            has_check = False
             if '✔' in option_text or '✓' in option_text or '√' in option_text:
+                has_check = True
                 # Remove the check mark from the text
                 option_text = option_text.replace('✔', '').replace('✓', '').replace('√', '').strip()
-                current_question['options'][option_letter] = option_text
+            
+            current_question['options'][option_letter] = option_text
+            
+            if has_check:
                 current_question['correct_answer'] = option_letter
     
     # Add the last question

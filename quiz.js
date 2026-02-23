@@ -1,4 +1,6 @@
-// Quiz Application
+// Quiz Application with API Integration
+const API_URL = window.location.origin;
+
 let quizData = [];
 let currentQuestionIndex = 0;
 let userAnswers = [];
@@ -48,16 +50,56 @@ document.addEventListener('DOMContentLoaded', async () => {
     setupEventListeners();
 });
 
-// Load quiz data from JSON
+// Load quiz data from API
 async function loadQuizData() {
     try {
-        const response = await fetch('quiz_data.json');
-        quizData = await response.json();
-        document.getElementById('totalQuestions').textContent = quizData.length;
-        console.log(`Loaded ${quizData.length} questions`);
+        showLoading('Loading quiz data...');
+        const response = await fetch(`${API_URL}/api/questions`);
+        const data = await response.json();
+        
+        if (data.success) {
+            quizData = data.data;
+            document.getElementById('totalQuestions').textContent = quizData.length;
+            console.log(`✅ Loaded ${quizData.length} questions from API`);
+        } else {
+            throw new Error('Failed to load quiz data');
+        }
+        hideLoading();
     } catch (error) {
         console.error('Error loading quiz data:', error);
+        hideLoading();
         alert('Error loading quiz data. Please refresh the page.');
+    }
+}
+
+// Show loading indicator
+function showLoading(message = 'Loading...') {
+    const loadingDiv = document.createElement('div');
+    loadingDiv.id = 'loadingIndicator';
+    loadingDiv.style.cssText = `
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: rgba(15, 23, 42, 0.95);
+        padding: 30px 50px;
+        border-radius: 16px;
+        border: 2px solid #3b82f6;
+        z-index: 10000;
+        text-align: center;
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    `;
+    loadingDiv.innerHTML = `
+        <div style="color: #3b82f6; font-size: 40px; margin-bottom: 15px;">⏳</div>
+        <div style="color: #f1f5f9; font-size: 18px; font-weight: 600;">${message}</div>
+    `;
+    document.body.appendChild(loadingDiv);
+}
+
+function hideLoading() {
+    const loadingDiv = document.getElementById('loadingIndicator');
+    if (loadingDiv) {
+        loadingDiv.remove();
     }
 }
 
@@ -84,63 +126,82 @@ function setupEventListeners() {
 }
 
 // Start quiz
-function startQuiz() {
+async function startQuiz() {
     const selectedMode = document.querySelector('input[name="quizMode"]:checked').value;
     
-    if (selectedMode === 'all') {
-        quizQuestions = [...quizData];
-    } else {
-        const start = parseInt(startQuestionInput.value) - 1;
-        const end = parseInt(endQuestionInput.value);
+    try {
+        showLoading('Preparing your quiz...');
         
-        if (start < 0 || end > quizData.length || start >= end) {
-            alert('Please enter valid question range');
-            return;
-        }
-        
-        quizQuestions = quizData.slice(start, end);
-    }
-
-    // Randomize questions
-    quizQuestions = shuffleArray(quizQuestions);
-    
-    // Randomize options for each question and store shuffled mapping
-    quizQuestions = quizQuestions.map(question => {
-        const optionsArray = Object.entries(question.options);
-        const shuffledOptions = shuffleArray(optionsArray);
-        
-        // Create new options object with A, B, C, D keys
-        const newOptions = {};
-        const letters = ['A', 'B', 'C', 'D'];
-        let newCorrectAnswer = '';
-        
-        shuffledOptions.forEach(([originalKey, value], index) => {
-            newOptions[letters[index]] = value;
-            if (originalKey === question.correct_answer) {
-                newCorrectAnswer = letters[index];
+        if (selectedMode === 'all') {
+            quizQuestions = [...quizData];
+        } else {
+            const start = parseInt(startQuestionInput.value);
+            const end = parseInt(endQuestionInput.value);
+            
+            if (start < 1 || end > quizData.length || start >= end) {
+                hideLoading();
+                alert('Please enter valid question range');
+                return;
             }
-        });
+            
+            // Fetch range from API
+            const response = await fetch(`${API_URL}/api/questions/range/${start}/${end}`);
+            const data = await response.json();
+            
+            if (data.success) {
+                quizQuestions = data.data;
+            } else {
+                throw new Error('Failed to load question range');
+            }
+        }
+
+        // Shuffle questions
+        quizQuestions = shuffleArray(quizQuestions);
         
-        return {
-            ...question,
-            options: newOptions,
-            correct_answer: newCorrectAnswer
-        };
-    });
+        // Shuffle options for each question while preserving correct answer text
+        quizQuestions = quizQuestions.map((question) => {
+            // Store original options as array [key, value]
+            const optionsArray = Object.entries(question.options);
+            
+            // Shuffle the options
+            const shuffledOptions = shuffleArray(optionsArray);
+            
+            // Create new options object with A, B, C, D keys
+            const newOptions = {};
+            const letters = ['A', 'B', 'C', 'D'];
+            
+            shuffledOptions.forEach(([originalKey, value], index) => {
+                const newKey = letters[index];
+                newOptions[newKey] = value;
+            });
+            
+            // correct_answer is already the full text
+            return {
+                ...question,
+                options: newOptions
+            };
+        });
 
-    currentQuestionIndex = 0;
-    userAnswers = new Array(quizQuestions.length).fill(null);
-    score = 0;
+        currentQuestionIndex = 0;
+        userAnswers = new Array(quizQuestions.length).fill(null);
+        score = 0;
 
-    totalQuestionsCounter.textContent = quizQuestions.length;
-    
-    switchScreen(quizScreen);
-    displayQuestion();
+        totalQuestionsCounter.textContent = quizQuestions.length;
+        
+        hideLoading();
+        switchScreen(quizScreen);
+        displayQuestion();
+    } catch (error) {
+        hideLoading();
+        console.error('Error starting quiz:', error);
+        alert('Error starting quiz. Please try again.');
+    }
 }
 
 // Display current question
 function displayQuestion() {
     const question = quizQuestions[currentQuestionIndex];
+    const isAnswered = userAnswers[currentQuestionIndex] !== null;
     
     questionText.textContent = question.question;
     currentQuestionEl.textContent = currentQuestionIndex + 1;
@@ -157,16 +218,20 @@ function displayQuestion() {
         optionDiv.className = 'option';
         optionDiv.dataset.option = key;
         
-        if (userAnswers[currentQuestionIndex] === key) {
-            optionDiv.classList.add('selected');
-        }
-        
         optionDiv.innerHTML = `
             <div class="option-letter">${key}</div>
             <div class="option-text">${value}</div>
         `;
         
-        optionDiv.addEventListener('click', () => selectOption(key));
+        // If already answered, show the result
+        if (!isAnswered) {
+            optionDiv.addEventListener('click', () => selectOption(key));
+        } else {
+            optionDiv.style.pointerEvents = 'none';
+            // Show previous answer with correct/incorrect styling
+            checkAndDisplayPreviousAnswer(key, optionDiv);
+        }
+        
         optionsContainer.appendChild(optionDiv);
     });
     
@@ -174,19 +239,114 @@ function displayQuestion() {
     updateNavigationButtons();
 }
 
-// Select option
-function selectOption(selectedKey) {
-    userAnswers[currentQuestionIndex] = selectedKey;
+// Check and display previous answer when navigating back
+function checkAndDisplayPreviousAnswer(optionKey, optionDiv) {
+    const userAnswer = userAnswers[currentQuestionIndex];
+    const question = quizQuestions[currentQuestionIndex];
     
-    // Update UI
-    document.querySelectorAll('.option').forEach(opt => {
-        opt.classList.remove('selected');
-        if (opt.dataset.option === selectedKey) {
-            opt.classList.add('selected');
+    const userAnswerText = question.options[userAnswer];
+    const correctAnswerText = question.correct_answer; // Full text
+    const isCorrect = userAnswerText === correctAnswerText;
+    
+    // Find which option has the correct answer text
+    let correctAnswerLetter = null;
+    Object.entries(question.options).forEach(([key, value]) => {
+        if (value === correctAnswerText) {
+            correctAnswerLetter = key;
         }
     });
     
+    if (optionKey === userAnswer) {
+        optionDiv.classList.add(isCorrect ? 'correct' : 'incorrect');
+    }
+    
+    if (optionKey === correctAnswerLetter) {
+        optionDiv.classList.add('correct');
+    }
+}
+
+// Select option and check answer immediately
+async function selectOption(selectedKey) {
+    // Prevent multiple selections
+    if (userAnswers[currentQuestionIndex] !== null) {
+        return; // Already answered
+    }
+    
+    userAnswers[currentQuestionIndex] = selectedKey;
+    
+    const question = quizQuestions[currentQuestionIndex];
+    
+    // Check answer by comparing selected text with correct answer text
+    const selectedText = question.options[selectedKey];
+    const correctAnswerText = question.correct_answer; // Full text
+    const isCorrect = selectedText === correctAnswerText;
+    
+    // Find which option letter has the correct answer text
+    let correctAnswerLetter = null;
+    Object.entries(question.options).forEach(([key, value]) => {
+        if (value === correctAnswerText) {
+            correctAnswerLetter = key;
+        }
+    });
+    
+    // Update score if correct
+    if (isCorrect) {
+        score++;
+        currentScoreEl.textContent = score;
+    }
+    
+    // Update UI with feedback
+    document.querySelectorAll('.option').forEach(opt => {
+        opt.style.pointerEvents = 'none'; // Disable further clicks
+        
+        if (opt.dataset.option === selectedKey) {
+            if (isCorrect) {
+                opt.classList.add('correct');
+            } else {
+                opt.classList.add('incorrect');
+            }
+        }
+        
+        // Always show the correct answer
+        if (opt.dataset.option === correctAnswerLetter) {
+            opt.classList.add('correct');
+        }
+    });
+    
+    // Show feedback message
+    showFeedbackMessage(isCorrect, correctAnswerLetter);
+    
     updateNavigationButtons();
+}
+
+// Show feedback message
+function showFeedbackMessage(isCorrect, correctAnswer) {
+    const feedbackDiv = document.createElement('div');
+    feedbackDiv.className = 'feedback-message';
+    feedbackDiv.style.cssText = `
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: ${isCorrect ? 'rgba(16, 185, 129, 0.95)' : 'rgba(239, 68, 68, 0.95)'};
+        color: white;
+        padding: 20px 40px;
+        border-radius: 12px;
+        font-size: 20px;
+        font-weight: 700;
+        z-index: 1000;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        animation: fadeInOut 2s ease-in-out;
+    `;
+    feedbackDiv.innerHTML = isCorrect 
+        ? '✅ Correct!' 
+        : `❌ Incorrect! Correct answer: ${correctAnswer}`;
+    
+    document.body.appendChild(feedbackDiv);
+    
+    setTimeout(() => {
+        feedbackDiv.remove();
+    }, 2000);
 }
 
 // Update navigation buttons
@@ -220,7 +380,7 @@ function nextQuestion() {
     }
 }
 
-// Submit quiz
+// Submit quiz - calculate results locally
 function submitQuiz() {
     const unanswered = userAnswers.filter(a => a === null).length;
     
@@ -231,20 +391,55 @@ function submitQuiz() {
         if (!confirmSubmit) return;
     }
     
-    calculateScore();
-    showResults();
-}
-
-// Calculate score
-function calculateScore() {
-    score = 0;
+    showLoading('Calculating your results...');
+    
+    // Calculate results by comparing text
+    let finalScore = 0;
+    const results = [];
+    
     userAnswers.forEach((answer, index) => {
-        if (answer === quizQuestions[index].correct_answer) {
-            score++;
+        const question = quizQuestions[index];
+        const correctAnswerText = question.correct_answer; // Full text
+        
+        // Find which option letter has the correct answer
+        let correctAnswerLetter = null;
+        Object.entries(question.options).forEach(([key, value]) => {
+            if (value === correctAnswerText) {
+                correctAnswerLetter = key;
+            }
+        });
+        
+        if (!answer) {
+            results.push({
+                id: question.id,
+                userAnswer: null,
+                correctAnswer: correctAnswerLetter,
+                isCorrect: false
+            });
+            return;
         }
+        
+        const userAnswerText = question.options[answer];
+        const isCorrect = userAnswerText === correctAnswerText;
+        
+        if (isCorrect) finalScore++;
+        
+        results.push({
+            id: question.id,
+            userAnswer: answer,
+            correctAnswer: correctAnswerLetter,
+            isCorrect: isCorrect
+        });
     });
     
+    score = finalScore;
     currentScoreEl.textContent = score;
+    
+    // Store results for review
+    window.quizResults = results;
+    
+    hideLoading();
+    showResults();
 }
 
 // Show results
@@ -266,10 +461,11 @@ function showReview() {
     const reviewContainer = document.getElementById('reviewContainer');
     reviewContainer.innerHTML = '';
     
-    quizQuestions.forEach((question, index) => {
-        const userAnswer = userAnswers[index];
-        const correctAnswer = question.correct_answer;
-        const isCorrect = userAnswer === correctAnswer;
+    const results = window.quizResults || [];
+    
+    results.forEach((result, index) => {
+        const question = quizQuestions[index];
+        const isCorrect = result.isCorrect;
         
         const reviewDiv = document.createElement('div');
         reviewDiv.className = `review-question ${isCorrect ? 'correct' : 'incorrect'}`;
@@ -278,10 +474,10 @@ function showReview() {
         Object.entries(question.options).forEach(([key, value]) => {
             let optionClass = 'review-option';
             
-            if (key === correctAnswer) {
+            if (key === result.correctAnswer) {
                 optionClass += ' correct-answer';
             }
-            if (key === userAnswer && key !== correctAnswer) {
+            if (key === result.userAnswer && key !== result.correctAnswer) {
                 optionClass += ' user-answer';
             }
             
@@ -290,8 +486,8 @@ function showReview() {
                     <div class="review-option-letter">${key}</div>
                     <div class="option-text">
                         ${value}
-                        ${key === correctAnswer ? ' ✓ Correct Answer' : ''}
-                        ${key === userAnswer && key !== correctAnswer ? ' ✗ Your Answer' : ''}
+                        ${key === result.correctAnswer ? ' ✓ Correct Answer' : ''}
+                        ${key === result.userAnswer && key !== result.correctAnswer ? ' ✗ Your Answer' : ''}
                     </div>
                 </div>
             `;
@@ -325,6 +521,7 @@ function restartQuiz() {
     userAnswers = [];
     score = 0;
     quizQuestions = [];
+    window.quizResults = null;
     switchScreen(welcomeScreen);
 }
 
@@ -363,32 +560,20 @@ function saveProgress() {
         currentQuestionIndex,
         userAnswers,
         score,
-        quizQuestions
+        quizQuestions: quizQuestions.map(q => q.id) // Save only IDs
     }));
 }
 
-function loadProgress() {
-    const saved = localStorage.getItem('quizProgress');
-    if (saved) {
-        const progress = JSON.parse(saved);
-        const resume = confirm('Do you want to resume your previous quiz?');
-        if (resume) {
-            currentQuestionIndex = progress.currentQuestionIndex;
-            userAnswers = progress.userAnswers;
-            score = progress.score;
-            quizQuestions = progress.quizQuestions;
-            switchScreen(quizScreen);
-            displayQuestion();
+// Smooth scrolling for review
+if (reviewScreen) {
+    reviewScreen.addEventListener('scroll', () => {
+        const header = document.querySelector('.review-header');
+        if (header && reviewScreen.scrollTop > 50) {
+            header.style.boxShadow = '0 2px 10px rgba(0,0,0,0.3)';
+        } else if (header) {
+            header.style.boxShadow = 'none';
         }
-    }
+    });
 }
 
-// Smooth scrolling for review
-reviewScreen.addEventListener('scroll', () => {
-    const header = document.querySelector('.review-header');
-    if (reviewScreen.scrollTop > 50) {
-        header.style.boxShadow = '0 2px 10px rgba(0,0,0,0.3)';
-    } else {
-        header.style.boxShadow = 'none';
-    }
-});
+console.log('🎓 Quiz Application Initialized');

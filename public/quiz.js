@@ -6,7 +6,6 @@ let currentQuestionIndex = 0;
 let userAnswers = [];
 let score = 0;
 let quizQuestions = [];
-let answerMappings = []; // Store mapping of shuffled options to correct answers
 
 // Utility function to shuffle array
 function shuffleArray(array) {
@@ -159,14 +158,10 @@ async function startQuiz() {
         // Shuffle questions
         quizQuestions = shuffleArray(quizQuestions);
         
-        // Create answer mappings and shuffle options for each question
-        answerMappings = [];
-        quizQuestions = quizQuestions.map((question, qIndex) => {
+        // Shuffle options for each question while preserving correct answer text
+        quizQuestions = quizQuestions.map((question) => {
             // Store original options as array [key, value]
             const optionsArray = Object.entries(question.options);
-            
-            // Get the correct answer text (the actual content, not just the letter)
-            const correctAnswerText = question.options[question.correct_answer];
             
             // Shuffle the options
             const shuffledOptions = shuffleArray(optionsArray);
@@ -174,39 +169,16 @@ async function startQuiz() {
             // Create new options object with A, B, C, D keys
             const newOptions = {};
             const letters = ['A', 'B', 'C', 'D'];
-            let newCorrectAnswerLetter = '';
-            
-            // Build mapping: originalLetter -> newLetter
-            const optionMapping = {
-                questionId: question.id,
-                originalCorrectAnswer: question.correct_answer,
-                correctAnswerText: correctAnswerText,
-                mapping: {}
-            };
             
             shuffledOptions.forEach(([originalKey, value], index) => {
                 const newKey = letters[index];
                 newOptions[newKey] = value;
-                
-                // Store mapping from original to new position
-                optionMapping.mapping[originalKey] = newKey;
-                
-                // If this is the correct answer text, mark the new letter
-                if (value === correctAnswerText) {
-                    newCorrectAnswerLetter = newKey;
-                }
             });
             
-            // Store the complete mapping for this question
-            optionMapping.newCorrectAnswer = newCorrectAnswerLetter;
-            answerMappings.push(optionMapping);
-            
+            // correct_answer is already the full text
             return {
                 ...question,
-                options: newOptions,
-                correct_answer: newCorrectAnswerLetter,
-                originalCorrectAnswer: question.correct_answer,
-                correctAnswerText: correctAnswerText
+                options: newOptions
             };
         });
 
@@ -271,14 +243,18 @@ function displayQuestion() {
 function checkAndDisplayPreviousAnswer(optionKey, optionDiv) {
     const userAnswer = userAnswers[currentQuestionIndex];
     const question = quizQuestions[currentQuestionIndex];
-    const mapping = answerMappings[currentQuestionIndex];
-    
-    if (!mapping) return;
     
     const userAnswerText = question.options[userAnswer];
-    const correctAnswerText = mapping.correctAnswerText;
+    const correctAnswerText = question.correct_answer; // Full text
     const isCorrect = userAnswerText === correctAnswerText;
-    const correctAnswerLetter = mapping.newCorrectAnswer;
+    
+    // Find which option has the correct answer text
+    let correctAnswerLetter = null;
+    Object.entries(question.options).forEach(([key, value]) => {
+        if (value === correctAnswerText) {
+            correctAnswerLetter = key;
+        }
+    });
     
     if (optionKey === userAnswer) {
         optionDiv.classList.add(isCorrect ? 'correct' : 'incorrect');
@@ -299,13 +275,19 @@ async function selectOption(selectedKey) {
     userAnswers[currentQuestionIndex] = selectedKey;
     
     const question = quizQuestions[currentQuestionIndex];
-    const mapping = answerMappings[currentQuestionIndex];
     
-    // Check answer using local mapping (works with shuffled options)
+    // Check answer by comparing selected text with correct answer text
     const selectedText = question.options[selectedKey];
-    const correctAnswerText = mapping.correctAnswerText;
+    const correctAnswerText = question.correct_answer; // Full text
     const isCorrect = selectedText === correctAnswerText;
-    const correctAnswerLetter = mapping.newCorrectAnswer;
+    
+    // Find which option letter has the correct answer text
+    let correctAnswerLetter = null;
+    Object.entries(question.options).forEach(([key, value]) => {
+        if (value === correctAnswerText) {
+            correctAnswerLetter = key;
+        }
+    });
     
     // Update score if correct
     if (isCorrect) {
@@ -411,26 +393,33 @@ function submitQuiz() {
     
     showLoading('Calculating your results...');
     
-    // Calculate results using local mappings
+    // Calculate results by comparing text
     let finalScore = 0;
     const results = [];
     
     userAnswers.forEach((answer, index) => {
         const question = quizQuestions[index];
-        const mapping = answerMappings[index];
+        const correctAnswerText = question.correct_answer; // Full text
+        
+        // Find which option letter has the correct answer
+        let correctAnswerLetter = null;
+        Object.entries(question.options).forEach(([key, value]) => {
+            if (value === correctAnswerText) {
+                correctAnswerLetter = key;
+            }
+        });
         
         if (!answer) {
             results.push({
                 id: question.id,
                 userAnswer: null,
-                correctAnswer: mapping.newCorrectAnswer,
+                correctAnswer: correctAnswerLetter,
                 isCorrect: false
             });
             return;
         }
         
         const userAnswerText = question.options[answer];
-        const correctAnswerText = mapping.correctAnswerText;
         const isCorrect = userAnswerText === correctAnswerText;
         
         if (isCorrect) finalScore++;
@@ -438,7 +427,7 @@ function submitQuiz() {
         results.push({
             id: question.id,
             userAnswer: answer,
-            correctAnswer: mapping.newCorrectAnswer,
+            correctAnswer: correctAnswerLetter,
             isCorrect: isCorrect
         });
     });
@@ -532,7 +521,6 @@ function restartQuiz() {
     userAnswers = [];
     score = 0;
     quizQuestions = [];
-    answerMappings = [];
     window.quizResults = null;
     switchScreen(welcomeScreen);
 }
