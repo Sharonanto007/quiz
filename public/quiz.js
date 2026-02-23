@@ -6,6 +6,17 @@ let currentQuestionIndex = 0;
 let userAnswers = [];
 let score = 0;
 let quizQuestions = [];
+let answerMappings = []; // Store mapping of shuffled options to correct answers
+
+// Utility function to shuffle array
+function shuffleArray(array) {
+    const shuffled = [...array];
+    for (let i = shuffled.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    }
+    return shuffled;
+}
 
 // DOM Elements
 const welcomeScreen = document.getElementById('welcomeScreen');
@@ -145,6 +156,60 @@ async function startQuiz() {
             }
         }
 
+        // Shuffle questions
+        quizQuestions = shuffleArray(quizQuestions);
+        
+        // Create answer mappings and shuffle options for each question
+        answerMappings = [];
+        quizQuestions = quizQuestions.map((question, qIndex) => {
+            // Store original options as array [key, value]
+            const optionsArray = Object.entries(question.options);
+            
+            // Get the correct answer text (the actual content, not just the letter)
+            const correctAnswerText = question.options[question.correct_answer];
+            
+            // Shuffle the options
+            const shuffledOptions = shuffleArray(optionsArray);
+            
+            // Create new options object with A, B, C, D keys
+            const newOptions = {};
+            const letters = ['A', 'B', 'C', 'D'];
+            let newCorrectAnswerLetter = '';
+            
+            // Build mapping: originalLetter -> newLetter
+            const optionMapping = {
+                questionId: question.id,
+                originalCorrectAnswer: question.correct_answer,
+                correctAnswerText: correctAnswerText,
+                mapping: {}
+            };
+            
+            shuffledOptions.forEach(([originalKey, value], index) => {
+                const newKey = letters[index];
+                newOptions[newKey] = value;
+                
+                // Store mapping from original to new position
+                optionMapping.mapping[originalKey] = newKey;
+                
+                // If this is the correct answer text, mark the new letter
+                if (value === correctAnswerText) {
+                    newCorrectAnswerLetter = newKey;
+                }
+            });
+            
+            // Store the complete mapping for this question
+            optionMapping.newCorrectAnswer = newCorrectAnswerLetter;
+            answerMappings.push(optionMapping);
+            
+            return {
+                ...question,
+                options: newOptions,
+                correct_answer: newCorrectAnswerLetter,
+                originalCorrectAnswer: question.correct_answer,
+                correctAnswerText: correctAnswerText
+            };
+        });
+
         currentQuestionIndex = 0;
         userAnswers = new Array(quizQuestions.length).fill(null);
         score = 0;
@@ -203,41 +268,24 @@ function displayQuestion() {
 }
 
 // Check and display previous answer when navigating back
-async function checkAndDisplayPreviousAnswer(optionKey, optionDiv) {
+function checkAndDisplayPreviousAnswer(optionKey, optionDiv) {
     const userAnswer = userAnswers[currentQuestionIndex];
-    const questionId = quizQuestions[currentQuestionIndex].id;
+    const question = quizQuestions[currentQuestionIndex];
+    const mapping = answerMappings[currentQuestionIndex];
     
-    try {
-        const response = await fetch(`${API_URL}/api/check`, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({
-                questionId: questionId,
-                answer: userAnswer
-            })
-        });
-        
-        const result = await response.json();
-        
-        if (result.success) {
-            const correctAnswer = result.data.correctAnswer;
-            const isCorrect = result.data.isCorrect;
-            
-            if (optionKey === userAnswer) {
-                optionDiv.classList.add(isCorrect ? 'correct' : 'incorrect');
-            }
-            
-            if (optionKey === correctAnswer) {
-                optionDiv.classList.add('correct');
-            }
-        }
-    } catch (error) {
-        console.error('Error checking previous answer:', error);
-        if (optionKey === userAnswer) {
-            optionDiv.classList.add('selected');
-        }
+    if (!mapping) return;
+    
+    const userAnswerText = question.options[userAnswer];
+    const correctAnswerText = mapping.correctAnswerText;
+    const isCorrect = userAnswerText === correctAnswerText;
+    const correctAnswerLetter = mapping.newCorrectAnswer;
+    
+    if (optionKey === userAnswer) {
+        optionDiv.classList.add(isCorrect ? 'correct' : 'incorrect');
+    }
+    
+    if (optionKey === correctAnswerLetter) {
+        optionDiv.classList.add('correct');
     }
 }
 
@@ -250,63 +298,41 @@ async function selectOption(selectedKey) {
     
     userAnswers[currentQuestionIndex] = selectedKey;
     
-    try {
-        // Check answer with API
-        const questionId = quizQuestions[currentQuestionIndex].id;
-        const response = await fetch(`${API_URL}/api/check`, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({
-                questionId: questionId,
-                answer: selectedKey
-            })
-        });
-        
-        const result = await response.json();
-        
-        if (result.success) {
-            const isCorrect = result.data.isCorrect;
-            const correctAnswer = result.data.correctAnswer;
-            
-            // Update score if correct
-            if (isCorrect) {
-                score++;
-                currentScoreEl.textContent = score;
-            }
-            
-            // Update UI with feedback
-            document.querySelectorAll('.option').forEach(opt => {
-                opt.style.pointerEvents = 'none'; // Disable further clicks
-                
-                if (opt.dataset.option === selectedKey) {
-                    if (isCorrect) {
-                        opt.classList.add('correct');
-                    } else {
-                        opt.classList.add('incorrect');
-                    }
-                }
-                
-                // Always show the correct answer
-                if (opt.dataset.option === correctAnswer) {
-                    opt.classList.add('correct');
-                }
-            });
-            
-            // Show feedback message
-            showFeedbackMessage(isCorrect, correctAnswer);
-        }
-    } catch (error) {
-        console.error('Error checking answer:', error);
-        // Fallback: just mark as selected
-        document.querySelectorAll('.option').forEach(opt => {
-            opt.classList.remove('selected');
-            if (opt.dataset.option === selectedKey) {
-                opt.classList.add('selected');
-            }
-        });
+    const question = quizQuestions[currentQuestionIndex];
+    const mapping = answerMappings[currentQuestionIndex];
+    
+    // Check answer using local mapping (works with shuffled options)
+    const selectedText = question.options[selectedKey];
+    const correctAnswerText = mapping.correctAnswerText;
+    const isCorrect = selectedText === correctAnswerText;
+    const correctAnswerLetter = mapping.newCorrectAnswer;
+    
+    // Update score if correct
+    if (isCorrect) {
+        score++;
+        currentScoreEl.textContent = score;
     }
+    
+    // Update UI with feedback
+    document.querySelectorAll('.option').forEach(opt => {
+        opt.style.pointerEvents = 'none'; // Disable further clicks
+        
+        if (opt.dataset.option === selectedKey) {
+            if (isCorrect) {
+                opt.classList.add('correct');
+            } else {
+                opt.classList.add('incorrect');
+            }
+        }
+        
+        // Always show the correct answer
+        if (opt.dataset.option === correctAnswerLetter) {
+            opt.classList.add('correct');
+        }
+    });
+    
+    // Show feedback message
+    showFeedbackMessage(isCorrect, correctAnswerLetter);
     
     updateNavigationButtons();
 }
@@ -372,8 +398,8 @@ function nextQuestion() {
     }
 }
 
-// Submit quiz to API
-async function submitQuiz() {
+// Submit quiz - calculate results locally
+function submitQuiz() {
     const unanswered = userAnswers.filter(a => a === null).length;
     
     if (unanswered > 0) {
@@ -383,39 +409,48 @@ async function submitQuiz() {
         if (!confirmSubmit) return;
     }
     
-    try {
-        showLoading('Submitting your quiz...');
+    showLoading('Calculating your results...');
+    
+    // Calculate results using local mappings
+    let finalScore = 0;
+    const results = [];
+    
+    userAnswers.forEach((answer, index) => {
+        const question = quizQuestions[index];
+        const mapping = answerMappings[index];
         
-        // Submit to API
-        const response = await fetch(`${API_URL}/api/submit`, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({
-                answers: userAnswers
-            })
-        });
-        
-        const result = await response.json();
-        
-        if (result.success) {
-            score = result.data.score;
-            currentScoreEl.textContent = score;
-            
-            // Store results for review
-            window.quizResults = result.data.results;
-            
-            hideLoading();
-            showResults();
-        } else {
-            throw new Error('Failed to submit quiz');
+        if (!answer) {
+            results.push({
+                id: question.id,
+                userAnswer: null,
+                correctAnswer: mapping.newCorrectAnswer,
+                isCorrect: false
+            });
+            return;
         }
-    } catch (error) {
-        hideLoading();
-        console.error('Error submitting quiz:', error);
-        alert('Error submitting quiz. Please try again.');
-    }
+        
+        const userAnswerText = question.options[answer];
+        const correctAnswerText = mapping.correctAnswerText;
+        const isCorrect = userAnswerText === correctAnswerText;
+        
+        if (isCorrect) finalScore++;
+        
+        results.push({
+            id: question.id,
+            userAnswer: answer,
+            correctAnswer: mapping.newCorrectAnswer,
+            isCorrect: isCorrect
+        });
+    });
+    
+    score = finalScore;
+    currentScoreEl.textContent = score;
+    
+    // Store results for review
+    window.quizResults = results;
+    
+    hideLoading();
+    showResults();
 }
 
 // Show results
@@ -497,6 +532,7 @@ function restartQuiz() {
     userAnswers = [];
     score = 0;
     quizQuestions = [];
+    answerMappings = [];
     window.quizResults = null;
     switchScreen(welcomeScreen);
 }

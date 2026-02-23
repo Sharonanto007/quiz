@@ -4,11 +4,8 @@ let currentQuestionIndex = 0;
 let userAnswers = [];
 let score = 0;
 let quizQuestions = [];
-let timerInterval = null;
-let startTime = null;
-let elapsedSeconds = 0;
 
-// Utility function to shuffle array using Fisher-Yates algorithm
+// Utility function to shuffle array
 function shuffleArray(array) {
     const shuffled = [...array];
     for (let i = shuffled.length - 1; i > 0; i--) {
@@ -104,24 +101,23 @@ function startQuiz() {
         quizQuestions = quizData.slice(start, end);
     }
 
-    // Shuffle questions
+    // Randomize questions
     quizQuestions = shuffleArray(quizQuestions);
     
-    // Shuffle options for each question and track correct answers
+    // Randomize options for each question and store shuffled mapping
     quizQuestions = quizQuestions.map(question => {
         const optionsArray = Object.entries(question.options);
         const shuffledOptions = shuffleArray(optionsArray);
         
+        // Create new options object with A, B, C, D keys
         const newOptions = {};
         const letters = ['A', 'B', 'C', 'D'];
         let newCorrectAnswer = '';
         
         shuffledOptions.forEach(([originalKey, value], index) => {
-            const newKey = letters[index];
-            newOptions[newKey] = value;
-            
+            newOptions[letters[index]] = value;
             if (originalKey === question.correct_answer) {
-                newCorrectAnswer = newKey;
+                newCorrectAnswer = letters[index];
             }
         });
         
@@ -135,12 +131,9 @@ function startQuiz() {
     currentQuestionIndex = 0;
     userAnswers = new Array(quizQuestions.length).fill(null);
     score = 0;
-    elapsedSeconds = 0;
 
     totalQuestionsCounter.textContent = quizQuestions.length;
     
-    startTimer();
-    createQuestionTracker();
     switchScreen(quizScreen);
     displayQuestion();
 }
@@ -179,7 +172,6 @@ function displayQuestion() {
     
     // Update button states
     updateNavigationButtons();
-    updateQuestionTracker();
 }
 
 // Select option
@@ -194,71 +186,7 @@ function selectOption(selectedKey) {
         }
     });
     
-    updateQuestionTracker();
     updateNavigationButtons();
-}
-
-// Timer functions
-function startTimer() {
-    startTime = Date.now();
-    timerInterval = setInterval(updateTimer, 1000);
-}
-
-function updateTimer() {
-    elapsedSeconds = Math.floor((Date.now() - startTime) / 1000);
-    const hours = Math.floor(elapsedSeconds / 3600);
-    const minutes = Math.floor((elapsedSeconds % 3600) / 60);
-    const seconds = elapsedSeconds % 60;
-    
-    const timerDisplay = document.getElementById('timerDisplay');
-    if (timerDisplay) {
-        timerDisplay.textContent = `${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
-    }
-}
-
-function stopTimer() {
-    if (timerInterval) {
-        clearInterval(timerInterval);
-        timerInterval = null;
-    }
-}
-
-// Question Tracker functions
-function createQuestionTracker() {
-    const questionGrid = document.getElementById('questionGrid');
-    questionGrid.innerHTML = '';
-    
-    quizQuestions.forEach((_, index) => {
-        const btn = document.createElement('button');
-        btn.className = 'question-tracker-btn';
-        btn.textContent = index + 1;
-        btn.dataset.questionIndex = index;
-        
-        btn.addEventListener('click', () => {
-            currentQuestionIndex = index;
-            displayQuestion();
-            updateQuestionTracker();
-        });
-        
-        questionGrid.appendChild(btn);
-    });
-    
-    updateQuestionTracker();
-}
-
-function updateQuestionTracker() {
-    const buttons = document.querySelectorAll('.question-tracker-btn');
-    buttons.forEach((btn, index) => {
-        btn.classList.remove('answered', 'current', 'unanswered');
-        
-        if (index === currentQuestionIndex) {
-            btn.classList.add('current');
-        } else if (userAnswers[index] !== null) {
-            btn.classList.add('answered');
-        } else {
-            btn.classList.add('unanswered');
-        }
-    });
 }
 
 // Update navigation buttons
@@ -303,7 +231,6 @@ function submitQuiz() {
         if (!confirmSubmit) return;
     }
     
-    stopTimer();
     calculateScore();
     showResults();
 }
@@ -394,12 +321,10 @@ function backToResults() {
 
 // Restart quiz
 function restartQuiz() {
-    stopTimer();
     currentQuestionIndex = 0;
     userAnswers = [];
     score = 0;
     quizQuestions = [];
-    elapsedSeconds = 0;
     switchScreen(welcomeScreen);
 }
 
