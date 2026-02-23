@@ -281,6 +281,14 @@ async function selectOption(selectedKey) {
     const correctAnswerText = question.correct_answer; // Full text
     const isCorrect = selectedText === correctAnswerText;
     
+    console.log('Answer selected:', {
+        questionId: question.id,
+        selectedKey: selectedKey,
+        selectedText: selectedText,
+        correctAnswerText: correctAnswerText,
+        isCorrect: isCorrect
+    });
+    
     // Find which option letter has the correct answer text
     let correctAnswerLetter = null;
     Object.entries(question.options).forEach(([key, value]) => {
@@ -413,7 +421,9 @@ function submitQuiz() {
             results.push({
                 id: question.id,
                 userAnswer: null,
+                userAnswerText: null,
                 correctAnswer: correctAnswerLetter,
+                correctAnswerText: correctAnswerText,
                 isCorrect: false
             });
             return;
@@ -427,7 +437,9 @@ function submitQuiz() {
         results.push({
             id: question.id,
             userAnswer: answer,
+            userAnswerText: userAnswerText,
             correctAnswer: correctAnswerLetter,
+            correctAnswerText: correctAnswerText,
             isCorrect: isCorrect
         });
     });
@@ -466,6 +478,7 @@ function showReview() {
     results.forEach((result, index) => {
         const question = quizQuestions[index];
         const isCorrect = result.isCorrect;
+        const wasAnswered = result.userAnswer !== null;
         
         const reviewDiv = document.createElement('div');
         reviewDiv.className = `review-question ${isCorrect ? 'correct' : 'incorrect'}`;
@@ -473,31 +486,38 @@ function showReview() {
         let optionsHTML = '';
         Object.entries(question.options).forEach(([key, value]) => {
             let optionClass = 'review-option';
+            let markerText = '';
             
             if (key === result.correctAnswer) {
                 optionClass += ' correct-answer';
+                markerText = ' <span style="color: #10b981; font-weight: bold;">✓ Correct Answer</span>';
             }
             if (key === result.userAnswer && key !== result.correctAnswer) {
                 optionClass += ' user-answer';
+                markerText = ' <span style="color: #ef4444; font-weight: bold;">✗ Your Answer</span>';
+            }
+            if (key === result.userAnswer && key === result.correctAnswer) {
+                markerText = ' <span style="color: #10b981; font-weight: bold;">✓ Your Answer (Correct)</span>';
             }
             
             optionsHTML += `
                 <div class="${optionClass}">
                     <div class="review-option-letter">${key}</div>
                     <div class="option-text">
-                        ${value}
-                        ${key === result.correctAnswer ? ' ✓ Correct Answer' : ''}
-                        ${key === result.userAnswer && key !== result.correctAnswer ? ' ✗ Your Answer' : ''}
+                        ${value}${markerText}
                     </div>
                 </div>
             `;
         });
         
+        const statusText = !wasAnswered ? 'Not Answered' : (isCorrect ? '✓ Correct' : '✗ Incorrect');
+        const statusClass = !wasAnswered ? 'incorrect' : (isCorrect ? 'correct' : 'incorrect');
+        
         reviewDiv.innerHTML = `
             <div class="review-header-row">
                 <div class="review-question-number">Question ${index + 1}</div>
-                <div class="review-status ${isCorrect ? 'correct' : 'incorrect'}">
-                    ${isCorrect ? '✓ Correct' : '✗ Incorrect'}
+                <div class="review-status ${statusClass}">
+                    ${statusText}
                 </div>
             </div>
             <div class="review-question-text">${question.question}</div>
