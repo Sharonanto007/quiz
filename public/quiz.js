@@ -6,19 +6,6 @@ let currentQuestionIndex = 0;
 let userAnswers = [];
 let score = 0;
 let quizQuestions = [];
-let timerInterval = null;
-let startTime = null;
-let elapsedSeconds = 0;
-
-// Utility function to shuffle array using Fisher-Yates algorithm
-function shuffleArray(array) {
-    const shuffled = [...array];
-    for (let i = shuffled.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
-    }
-    return shuffled;
-}
 
 // DOM Elements
 const welcomeScreen = document.getElementById('welcomeScreen');
@@ -158,44 +145,13 @@ async function startQuiz() {
             }
         }
 
-        // Shuffle questions
-        quizQuestions = shuffleArray(quizQuestions);
-        
-        // Shuffle options for each question and track correct answers
-        quizQuestions = quizQuestions.map(question => {
-            const optionsArray = Object.entries(question.options);
-            const shuffledOptions = shuffleArray(optionsArray);
-            
-            const newOptions = {};
-            const letters = ['A', 'B', 'C', 'D'];
-            let newCorrectAnswer = '';
-            
-            shuffledOptions.forEach(([originalKey, value], index) => {
-                const newKey = letters[index];
-                newOptions[newKey] = value;
-                
-                if (originalKey === question.correct_answer) {
-                    newCorrectAnswer = newKey;
-                }
-            });
-            
-            return {
-                ...question,
-                options: newOptions,
-                correct_answer: newCorrectAnswer
-            };
-        });
-
         currentQuestionIndex = 0;
         userAnswers = new Array(quizQuestions.length).fill(null);
         score = 0;
-        elapsedSeconds = 0;
 
         totalQuestionsCounter.textContent = quizQuestions.length;
         
         hideLoading();
-        startTimer();
-        createQuestionTracker();
         switchScreen(quizScreen);
         displayQuestion();
     } catch (error) {
@@ -244,22 +200,44 @@ function displayQuestion() {
     
     // Update button states
     updateNavigationButtons();
-    updateQuestionTracker();
 }
 
 // Check and display previous answer when navigating back
-function checkAndDisplayPreviousAnswer(optionKey, optionDiv) {
+async function checkAndDisplayPreviousAnswer(optionKey, optionDiv) {
     const userAnswer = userAnswers[currentQuestionIndex];
-    const currentQuestion = quizQuestions[currentQuestionIndex];
-    const correctAnswer = currentQuestion.correct_answer;
-    const isCorrect = userAnswer === correctAnswer;
+    const questionId = quizQuestions[currentQuestionIndex].id;
     
-    if (optionKey === userAnswer) {
-        optionDiv.classList.add(isCorrect ? 'correct' : 'incorrect');
-    }
-    
-    if (optionKey === correctAnswer) {
-        optionDiv.classList.add('correct');
+    try {
+        const response = await fetch(`${API_URL}/api/check`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                questionId: questionId,
+                answer: userAnswer
+            })
+        });
+        
+        const result = await response.json();
+        
+        if (result.success) {
+            const correctAnswer = result.data.correctAnswer;
+            const isCorrect = result.data.isCorrect;
+            
+            if (optionKey === userAnswer) {
+                optionDiv.classList.add(isCorrect ? 'correct' : 'incorrect');
+            }
+            
+            if (optionKey === correctAnswer) {
+                optionDiv.classList.add('correct');
+            }
+        }
+    } catch (error) {
+        console.error('Error checking previous answer:', error);
+        if (optionKey === userAnswer) {
+            optionDiv.classList.add('selected');
+        }
     }
 }
 
@@ -272,103 +250,65 @@ async function selectOption(selectedKey) {
     
     userAnswers[currentQuestionIndex] = selectedKey;
     
-    // Check answer locally (since we shuffled options, API won't have the right answer)
-    const currentQuestion = quizQuestions[currentQuestionIndex];
-    const correctAnswer = currentQuestion.correct_answer;
-    const isCorrect = selectedKey === correctAnswer;
-    
-    // Update score if correct
-    if (isCorrect) {
-        score++;
-        currentScoreEl.textContent = score;
-    }
-    
-    // Update UI with feedback
-    document.querySelectorAll('.option').forEach(opt => {
-        opt.style.pointerEvents = 'none'; // Disable further clicks
-        
-        if (opt.dataset.option === selectedKey) {
-            if (isCorrect) {
-                opt.classList.add('correct');
-            } else {
-                opt.classList.add('incorrect');
-            }
-        }
-        
-        // Always show the correct answer
-        if (opt.dataset.option === correctAnswer) {
-            opt.classList.add('correct');
-        }
-    });
-    
-    // Show feedback message
-    showFeedbackMessage(isCorrect, correctAnswer);
-    
-    updateQuestionTracker();
-    updateNavigationButtons();
-}
-
-// Timer functions
-function startTimer() {
-    startTime = Date.now();
-    timerInterval = setInterval(updateTimer, 1000);
-}
-
-function updateTimer() {
-    elapsedSeconds = Math.floor((Date.now() - startTime) / 1000);
-    const hours = Math.floor(elapsedSeconds / 3600);
-    const minutes = Math.floor((elapsedSeconds % 3600) / 60);
-    const seconds = elapsedSeconds % 60;
-    
-    const timerDisplay = document.getElementById('timerDisplay');
-    if (timerDisplay) {
-        timerDisplay.textContent = `${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
-    }
-}
-
-function stopTimer() {
-    if (timerInterval) {
-        clearInterval(timerInterval);
-        timerInterval = null;
-    }
-}
-
-// Question Tracker functions
-function createQuestionTracker() {
-    const questionGrid = document.getElementById('questionGrid');
-    questionGrid.innerHTML = '';
-    
-    quizQuestions.forEach((_, index) => {
-        const btn = document.createElement('button');
-        btn.className = 'question-tracker-btn';
-        btn.textContent = index + 1;
-        btn.dataset.questionIndex = index;
-        
-        btn.addEventListener('click', () => {
-            currentQuestionIndex = index;
-            displayQuestion();
-            updateQuestionTracker();
+    try {
+        // Check answer with API
+        const questionId = quizQuestions[currentQuestionIndex].id;
+        const response = await fetch(`${API_URL}/api/check`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                questionId: questionId,
+                answer: selectedKey
+            })
         });
         
-        questionGrid.appendChild(btn);
-    });
-    
-    updateQuestionTracker();
-}
-
-function updateQuestionTracker() {
-    const buttons = document.querySelectorAll('.question-tracker-btn');
-    buttons.forEach((btn, index) => {
-        btn.classList.remove('answered', 'current', 'unanswered');
+        const result = await response.json();
         
-        if (index === currentQuestionIndex) {
-            btn.classList.add('current');
-        } else if (userAnswers[index] !== null) {
-            btn.classList.add('answered');
-        } else {
-            btn.classList.add('unanswered');
+        if (result.success) {
+            const isCorrect = result.data.isCorrect;
+            const correctAnswer = result.data.correctAnswer;
+            
+            // Update score if correct
+            if (isCorrect) {
+                score++;
+                currentScoreEl.textContent = score;
+            }
+            
+            // Update UI with feedback
+            document.querySelectorAll('.option').forEach(opt => {
+                opt.style.pointerEvents = 'none'; // Disable further clicks
+                
+                if (opt.dataset.option === selectedKey) {
+                    if (isCorrect) {
+                        opt.classList.add('correct');
+                    } else {
+                        opt.classList.add('incorrect');
+                    }
+                }
+                
+                // Always show the correct answer
+                if (opt.dataset.option === correctAnswer) {
+                    opt.classList.add('correct');
+                }
+            });
+            
+            // Show feedback message
+            showFeedbackMessage(isCorrect, correctAnswer);
         }
-    });
+    } catch (error) {
+        console.error('Error checking answer:', error);
+        // Fallback: just mark as selected
+        document.querySelectorAll('.option').forEach(opt => {
+            opt.classList.remove('selected');
+            if (opt.dataset.option === selectedKey) {
+                opt.classList.add('selected');
+            }
+        });
+    }
+    
+    updateNavigationButtons();
 }
 
 // Show feedback message
@@ -443,36 +383,39 @@ async function submitQuiz() {
         if (!confirmSubmit) return;
     }
     
-    stopTimer();
-    
-    // Calculate score and results locally (since we shuffled options)
-    showLoading('Calculating your results...');
-    
-    let finalScore = 0;
-    const results = quizQuestions.map((question, index) => {
-        const userAnswer = userAnswers[index];
-        const correctAnswer = question.correct_answer;
-        const isCorrect = userAnswer === correctAnswer;
+    try {
+        showLoading('Submitting your quiz...');
         
-        if (isCorrect) {
-            finalScore++;
+        // Submit to API
+        const response = await fetch(`${API_URL}/api/submit`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                answers: userAnswers
+            })
+        });
+        
+        const result = await response.json();
+        
+        if (result.success) {
+            score = result.data.score;
+            currentScoreEl.textContent = score;
+            
+            // Store results for review
+            window.quizResults = result.data.results;
+            
+            hideLoading();
+            showResults();
+        } else {
+            throw new Error('Failed to submit quiz');
         }
-        
-        return {
-            isCorrect: isCorrect,
-            userAnswer: userAnswer,
-            correctAnswer: correctAnswer
-        };
-    });
-    
-    score = finalScore;
-    currentScoreEl.textContent = score;
-    
-    // Store results for review
-    window.quizResults = results;
-    
-    hideLoading();
-    showResults();
+    } catch (error) {
+        hideLoading();
+        console.error('Error submitting quiz:', error);
+        alert('Error submitting quiz. Please try again.');
+    }
 }
 
 // Show results
@@ -550,12 +493,10 @@ function backToResults() {
 
 // Restart quiz
 function restartQuiz() {
-    stopTimer();
     currentQuestionIndex = 0;
     userAnswers = [];
     score = 0;
     quizQuestions = [];
-    elapsedSeconds = 0;
     window.quizResults = null;
     switchScreen(welcomeScreen);
 }
