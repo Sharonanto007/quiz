@@ -248,41 +248,18 @@ function displayQuestion() {
 }
 
 // Check and display previous answer when navigating back
-async function checkAndDisplayPreviousAnswer(optionKey, optionDiv) {
+function checkAndDisplayPreviousAnswer(optionKey, optionDiv) {
     const userAnswer = userAnswers[currentQuestionIndex];
-    const questionId = quizQuestions[currentQuestionIndex].id;
+    const currentQuestion = quizQuestions[currentQuestionIndex];
+    const correctAnswer = currentQuestion.correct_answer;
+    const isCorrect = userAnswer === correctAnswer;
     
-    try {
-        const response = await fetch(`${API_URL}/api/check`, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({
-                questionId: questionId,
-                answer: userAnswer
-            })
-        });
-        
-        const result = await response.json();
-        
-        if (result.success) {
-            const correctAnswer = result.data.correctAnswer;
-            const isCorrect = result.data.isCorrect;
-            
-            if (optionKey === userAnswer) {
-                optionDiv.classList.add(isCorrect ? 'correct' : 'incorrect');
-            }
-            
-            if (optionKey === correctAnswer) {
-                optionDiv.classList.add('correct');
-            }
-        }
-    } catch (error) {
-        console.error('Error checking previous answer:', error);
-        if (optionKey === userAnswer) {
-            optionDiv.classList.add('selected');
-        }
+    if (optionKey === userAnswer) {
+        optionDiv.classList.add(isCorrect ? 'correct' : 'incorrect');
+    }
+    
+    if (optionKey === correctAnswer) {
+        optionDiv.classList.add('correct');
     }
 }
 
@@ -295,63 +272,37 @@ async function selectOption(selectedKey) {
     
     userAnswers[currentQuestionIndex] = selectedKey;
     
-    try {
-        // Check answer with API
-        const questionId = quizQuestions[currentQuestionIndex].id;
-        const response = await fetch(`${API_URL}/api/check`, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({
-                questionId: questionId,
-                answer: selectedKey
-            })
-        });
-        
-        const result = await response.json();
-        
-        if (result.success) {
-            const isCorrect = result.data.isCorrect;
-            const correctAnswer = result.data.correctAnswer;
-            
-            // Update score if correct
-            if (isCorrect) {
-                score++;
-                currentScoreEl.textContent = score;
-            }
-            
-            // Update UI with feedback
-            document.querySelectorAll('.option').forEach(opt => {
-                opt.style.pointerEvents = 'none'; // Disable further clicks
-                
-                if (opt.dataset.option === selectedKey) {
-                    if (isCorrect) {
-                        opt.classList.add('correct');
-                    } else {
-                        opt.classList.add('incorrect');
-                    }
-                }
-                
-                // Always show the correct answer
-                if (opt.dataset.option === correctAnswer) {
-                    opt.classList.add('correct');
-                }
-            });
-            
-            // Show feedback message
-            showFeedbackMessage(isCorrect, correctAnswer);
-        }
-    } catch (error) {
-        console.error('Error checking answer:', error);
-        // Fallback: just mark as selected
-        document.querySelectorAll('.option').forEach(opt => {
-            opt.classList.remove('selected');
-            if (opt.dataset.option === selectedKey) {
-                opt.classList.add('selected');
-            }
-        });
+    // Check answer locally (since we shuffled options, API won't have the right answer)
+    const currentQuestion = quizQuestions[currentQuestionIndex];
+    const correctAnswer = currentQuestion.correct_answer;
+    const isCorrect = selectedKey === correctAnswer;
+    
+    // Update score if correct
+    if (isCorrect) {
+        score++;
+        currentScoreEl.textContent = score;
     }
+    
+    // Update UI with feedback
+    document.querySelectorAll('.option').forEach(opt => {
+        opt.style.pointerEvents = 'none'; // Disable further clicks
+        
+        if (opt.dataset.option === selectedKey) {
+            if (isCorrect) {
+                opt.classList.add('correct');
+            } else {
+                opt.classList.add('incorrect');
+            }
+        }
+        
+        // Always show the correct answer
+        if (opt.dataset.option === correctAnswer) {
+            opt.classList.add('correct');
+        }
+    });
+    
+    // Show feedback message
+    showFeedbackMessage(isCorrect, correctAnswer);
     
     updateQuestionTracker();
     updateNavigationButtons();
@@ -494,39 +445,34 @@ async function submitQuiz() {
     
     stopTimer();
     
-    try {
-        showLoading('Submitting your quiz...');
+    // Calculate score and results locally (since we shuffled options)
+    showLoading('Calculating your results...');
+    
+    let finalScore = 0;
+    const results = quizQuestions.map((question, index) => {
+        const userAnswer = userAnswers[index];
+        const correctAnswer = question.correct_answer;
+        const isCorrect = userAnswer === correctAnswer;
         
-        // Submit to API
-        const response = await fetch(`${API_URL}/api/submit`, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({
-                answers: userAnswers
-            })
-        });
-        
-        const result = await response.json();
-        
-        if (result.success) {
-            score = result.data.score;
-            currentScoreEl.textContent = score;
-            
-            // Store results for review
-            window.quizResults = result.data.results;
-            
-            hideLoading();
-            showResults();
-        } else {
-            throw new Error('Failed to submit quiz');
+        if (isCorrect) {
+            finalScore++;
         }
-    } catch (error) {
-        hideLoading();
-        console.error('Error submitting quiz:', error);
-        alert('Error submitting quiz. Please try again.');
-    }
+        
+        return {
+            isCorrect: isCorrect,
+            userAnswer: userAnswer,
+            correctAnswer: correctAnswer
+        };
+    });
+    
+    score = finalScore;
+    currentScoreEl.textContent = score;
+    
+    // Store results for review
+    window.quizResults = results;
+    
+    hideLoading();
+    showResults();
 }
 
 // Show results
