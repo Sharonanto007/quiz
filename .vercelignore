@@ -1,0 +1,12 @@
+node_modules
+npm-debug.log
+.env
+.DS_Store
+*.log
+parse_pdf.py
+update_answers.py
+verify_answers.py
+Green_Highlighted_Answers.pdf
+hell.txt
+__pycache__
+*.pyc
