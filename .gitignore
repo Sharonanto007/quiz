@@ -103,3 +103,4 @@ $RECYCLE.BIN/
 
 # TypeScript cache
 *.tsbuildinfo
+.env*.local

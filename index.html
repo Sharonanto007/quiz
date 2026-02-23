@@ -76,28 +76,47 @@
 
         <!-- Quiz Screen -->
         <div id="quizScreen" class="screen">
-            <div class="quiz-header">
-                <div class="progress-section">
-                    <div class="progress-info">
-                        <span class="question-counter">
-                            Question <span id="currentQuestion">1</span> of <span id="totalQuestionsCounter">300</span>
-                        </span>
-                        <span class="score-badge">Score: <span id="currentScore">0</span></span>
-                    </div>
-                    <div class="progress-bar">
-                        <div id="progressFill" class="progress-fill"></div>
+            <!-- Question Tracker Sidebar -->
+            <div class="question-tracker-sidebar">
+                <div class="tracker-header">
+                    <h3>Questions</h3>
+                    <div class="timer-display">
+                        <span class="timer-icon">⏱️</span>
+                        <span id="timerDisplay">00:00:00</span>
                     </div>
                 </div>
-                <button id="exitBtn" class="btn btn-secondary btn-small">Exit Quiz</button>
+                <div id="questionGrid" class="question-grid"></div>
+                <div class="tracker-legend">
+                    <div class="legend-item"><span class="legend-box answered"></span> Answered</div>
+                    <div class="legend-item"><span class="legend-box current"></span> Current</div>
+                    <div class="legend-item"><span class="legend-box unanswered"></span> Unanswered</div>
+                </div>
             </div>
 
-            <div class="quiz-content">
-                <div class="question-card">
-                    <h2 id="questionText" class="question-text"></h2>
-                    <div id="optionsContainer" class="options-container"></div>
+            <!-- Main Quiz Content -->
+            <div class="quiz-main-content">
+                <div class="quiz-header">
+                    <div class="progress-section">
+                        <div class="progress-info">
+                            <span class="question-counter">
+                                Question <span id="currentQuestion">1</span> of <span id="totalQuestionsCounter">300</span>
+                            </span>
+                            <span class="score-badge">Score: <span id="currentScore">0</span></span>
+                        </div>
+                        <div class="progress-bar">
+                            <div id="progressFill" class="progress-fill"></div>
+                        </div>
+                    </div>
+                    <button id="exitBtn" class="btn btn-secondary btn-small">Exit Quiz</button>
                 </div>
 
-                <div class="quiz-controls">
+                <div class="quiz-content">
+                    <div class="question-card">
+                        <h2 id="questionText" class="question-text"></h2>
+                        <div id="optionsContainer" class="options-container"></div>
+                    </div>
+
+                    <div class="quiz-controls">
                     <button id="prevBtn" class="btn btn-secondary" disabled>
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
                             <path d="M12.5 15L7.5 10L12.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -117,6 +136,7 @@
                         </svg>
                     </button>
                 </div>
+            </div>
             </div>
         </div>
 
