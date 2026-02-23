@@ -7,6 +7,16 @@ let userAnswers = [];
 let score = 0;
 let quizQuestions = [];
 
+// Utility function to shuffle array using Fisher-Yates algorithm
+function shuffleArray(array) {
+    const shuffled = [...array];
+    for (let i = shuffled.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    }
+    return shuffled;
+}
+
 // DOM Elements
 const welcomeScreen = document.getElementById('welcomeScreen');
 const quizScreen = document.getElementById('quizScreen');
@@ -144,6 +154,42 @@ async function startQuiz() {
                 throw new Error('Failed to load question range');
             }
         }
+
+        // Shuffle questions randomly
+        quizQuestions = shuffleArray(quizQuestions);
+        
+        // Shuffle options for each question while maintaining correct answer tracking
+        quizQuestions = quizQuestions.map(question => {
+            // Get all options as array of [key, value] pairs
+            const optionsArray = Object.entries(question.options);
+            
+            // Shuffle the options
+            const shuffledOptions = shuffleArray(optionsArray);
+            
+            // Create new options object with A, B, C, D keys in new shuffled order
+            const newOptions = {};
+            const letters = ['A', 'B', 'C', 'D'];
+            let newCorrectAnswer = '';
+            
+            // Map shuffled options to new letters and find new correct answer position
+            shuffledOptions.forEach(([originalKey, value], index) => {
+                const newKey = letters[index];
+                newOptions[newKey] = value;
+                
+                // If this was the original correct answer, store its new position
+                if (originalKey === question.correct_answer) {
+                    newCorrectAnswer = newKey;
+                }
+            });
+            
+            // Return question with shuffled options and updated correct answer
+            return {
+                ...question,
+                options: newOptions,
+                correct_answer: newCorrectAnswer,
+                original_correct_answer: question.correct_answer // Keep for debugging if needed
+            };
+        });
 
         currentQuestionIndex = 0;
         userAnswers = new Array(quizQuestions.length).fill(null);
