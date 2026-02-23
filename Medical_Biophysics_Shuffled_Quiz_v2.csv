@@ -1,0 +1,301 @@
+#,Question,Option A,Option B,Option C,Option D,Correct Answer
+1,The Hounsfield unit (HU) in CT represents:,Linear attenuation coefficient,Magnetic field strength,Radiation dose,Ultrasound velocity,A) Linear attenuation coefficient
+2,Lead aprons protect against:,Ionizing radiation,RF noise,Ultrasound,Magnetic field,A) Ionizing radiation
+3,The electrophoresis technique that uses isoelectric focusing is,SDS-PAGE,PFGE,2D-PAGE,AGE,C) 2D-PAGE
+4,The Bragg peak is characteristic of:,Ultrasound waves,Proton beams,MRI signals,X-ray beams,B) Proton beams
+5,Which of the following statements is true regarding migration of biomolecules?,Low voltage is used for the separation of high molecular weight compounds,The rate of migration is directly proportional to the resistance of the medium,The rate of migration is directly proportional to the current,The rate of migration is inversely proportional to current,C) The rate of migration is directly proportional to the current
+6,EEG measures:,Blood flow,Heart rate,Muscle activity,Brain electrical activity,D) Brain electrical activity
+7,Normal end-tidal CO2 (EtCO2) is:,50–60 mmHg,20–25 mmHg,10–15 mmHg,35–45 mmHg,D) 35–45 mmHg
+8,Acoustic impedance mismatch causes:,Image noise,Ultrasound absorption,Doppler shift,Ultrasound reflection,D) Ultrasound reflection
+9,Which of the following pair of scattering is important for diagnostic purposes?,Pair Production and Disintegration,Compton and Photoelectric,Photoelectric and Pair Production,Coherent and Compton,B) Compton and Photoelectric
+10,Collimators in X-ray:,Detect RF signals,Reduce beam area,Increase scatter,Produce gamma rays,B) Reduce beam area
+11,What does the electrophoresis apparatus consist of?,"Gel, buffer chamber and fire pack",Electrophoresis unit and gel separator,Power pack and electrophoresis unit,Buffer chamber and electrophoresis unit,C) Power pack and electrophoresis unit
+12,ECG QRS duration represents:,Atrial depolarization,PR interval,Ventricular repolarization,Ventricular depolarization,D) Ventricular depolarization
+13,The heel effect in X-ray imaging results in:,Reduction of image contrast,Uneven beam intensity across the field,Increase in photon energy,Change in focal spot size,B) Uneven beam intensity across the field
+14,Low-LET radiation includes:,Protons,Neutrons,Gamma rays and X-rays,Alpha particles,C) Gamma rays and X-rays
+15,Spiral CT allows:,Continuous helical acquisition,Doppler imaging,MRI compatibility,Slice-by-slice scanning,A) Continuous helical acquisition
+16,Nerve conduction slowing occurs in:,EEG abnormality,Demyelination,Myopathy,Muscle fatigue,B) Demyelination
+17,MRI safety: main risk in pacemaker patients is:,Ultrasound artifact,X-ray dose,EEG interference,RF heating,D) RF heating
+18,"In agarose gel electrophoresis, DNA is moved towards the",Moves slowly,Anode,Cathode,DNA doesn't move,B) Anode
+19,"In radiotherapy, fractionation is used to:",Increase single dose,Deliver total dose in parts,Reduce photon energy,Avoid imaging,B) Deliver total dose in parts
+20,PET detects:,Coincident gamma photons from annihilation,Emitted positrons directly,X-ray scatter,Ultrasound waves,A) Coincident gamma photons from annihilation
+21,QT interval represents:,AV conduction,Atrial depolarization,T wave only,Ventricular depolarization and repolarization,D) Ventricular depolarization and repolarization
+22,What surgical functions are performed by the diathermy machine?,"Cutting, fulguration","Coagulation, fulguration","Cutting, coagulation","Cutting, coagulation, fulguration","D) Cutting, coagulation, fulguration"
+23,Scatter radiation in X-ray reduces:,Resolution,Patient dose,Image contrast,Beam intensity,C) Image contrast
+24,Alpha rhythm in EEG is:,>30 Hz,4–7 Hz,8–13 Hz,13–30 Hz,C) 8–13 Hz
+25,Pulmonary function tests (PFTs) include:,EEG,Spirometry,ECG,EMG,B) Spirometry
+26,Theta waves in EEG are associated with:,Active thinking,Drowsiness and early sleep,Deep sleep,Alertness,B) Drowsiness and early sleep
+27,EMG measures:,Nerve conduction only,Heart function,Muscle electrical activity,EEG,C) Muscle electrical activity
+28,Contrast agents in CT commonly contain:,Technetium,Iodine,Gadolinium,Barium for MRI,B) Iodine
+29,Radiation therapy mainly uses:,Ultrasound,PET,MRI,X-rays and gamma rays,D) X-rays and gamma rays
+30,What precaution is used in diathermy?,Pads are used for grounding and completing the circuit,The patient is made to lie on a soft pillow,The patient is made to drink a large number of fluids,Wooden blocks are used for grounding,A) Pads are used for grounding and completing the circuit
+31,Half-value layer (HVL) depends on:,Field strength,Ultrasound frequency,EEG amplitude,X-ray energy,D) X-ray energy
+32,Continuous-wave Doppler differs from pulsed-wave Doppler in that it:,Uses MRI,Uses CT,Can measure location precisely,Measures only peak velocity,D) Measures only peak velocity
+33,"In pulse oximetry, normal SpO2 is:",95–100%,85–90%,70–80%,60–70%,A) 95–100%
+34,Which is the technique suited for the separation of large DNA fragments,SDS-PAGE,AGE,PAGE,PFGE,D) PFGE
+35,Spin-echo sequence reduces:,T2* effects,Doppler shift,T1 contrast,MRI signal,A) T2* effects
+36,MRI angiography visualizes:,Nerves,Lungs,Bones,Blood vessels,D) Blood vessels
+37,Beta rhythm in EEG is:,<4 Hz,4–7 Hz,8–13 Hz,13–30 Hz,D) 13–30 Hz
+38,Multislice CT scanners improve:,MRI signal-to-noise ratio,Slice thickness and scanning speed,Ultrasound resolution,Patient heart rate,B) Slice thickness and scanning speed
+39,Gadolinium-based agents are primarily used in:,CT,PET,X-ray,MRI,D) MRI
+40,For which of these areas can the ultrasound be taken for an infant but not for an adult?,Chest,Cranium,Arms,Legs,B) Cranium
+41,Theta rhythm in EEG is:,8–13 Hz,>30 Hz,4–7 Hz,13–30 Hz,C) 4–7 Hz
+42,ECG paper speed is usually:,50 mm/s,25 mm/s,10 mm/s,100 mm/s,B) 25 mm/s
+43,Gamma camera detects:,RF signals,Ultrasound echoes,Beta particles,Gamma photons,D) Gamma photons
+44,The typical energy range of X-rays used in diagnostic radiology is:,0.01–0.1 keV,0.1–0.5 keV,1–150 keV,1–10 MeV,C) 1–150 keV
+45,ECG R wave represents:,P wave,Ventricular repolarization,Atrial depolarization,Ventricular depolarization,D) Ventricular depolarization
+46,The basic principle of X-ray production involves:,Electron acceleration and sudden deceleration,Neutron decay,Proton emission,Photon absorption,A) Electron acceleration and sudden deceleration
+47,"In EEG, posterior dominant rhythm appears during:",EMG artifact,Seizure,"Eyes closed, awake",Sleep,"C) Eyes closed, awake"
+48,Linear accelerator (LINAC) produces:,Ultrasound waves,High-energy X-rays or electrons,MRI signals,Gamma rays only,B) High-energy X-rays or electrons
+49,Higher ultrasound frequency provides:,More scattering,Higher resolution,Less image quality,Greater depth,B) Higher resolution
+50,Doppler ultrasound is primarily used to measure:,Tissue elasticity,Muscle strength,Bone density,Blood flow,D) Blood flow
+51,"In heat wave diathermy, the maximum power given out is 500 W and the maximum voltage possible is 4000V. Thus, what is the highest resistance that heat wave diathermy machine can deal with?",320 K ohm,32 K ohm,3200 K ohm,3.2 K ohm,B) 32 K ohm
+52,ECG T wave represents:,Atrial depolarization,Ventricular depolarization,QRS complex,Ventricular repolarization,D) Ventricular repolarization
+53,The electrophoretic mobility denoted as µ is mathematically expressed as:,E/V,VE,1/EV,V/E,D) V/E
+54,Gadolinium contrast shortens:,T2 relaxation,T1 relaxation,T2*,MRI noise,B) T1 relaxation
+55,MRI safety concerns include:,Nuclear decay,Strong magnetic fields,Ionizing radiation,Ultrasound exposure,B) Strong magnetic fields
+56,Electrophysiology study (EPS) is used to:,Measure blood pressure,Image lungs,Perform ultrasound,Map heart electrical activity,D) Map heart electrical activity
+57,Gamma rays are:,Alpha particles,Charged particles,High-energy photons,Neutrons,C) High-energy photons
+58,Contrast agents in X-ray imaging are often:,Low atomic number elements,High atomic number elements,Radioactive isotopes,Gases only,B) High atomic number elements
+59,Radiotherapy dose distribution is optimized using:,PET only,Ultrasound,EEG,CT imaging,D) CT imaging
+60,Surface EMG is less precise than:,EEG,Intramuscular EMG,PET,ECG,B) Intramuscular EMG
+61,Gradient echo sequence is sensitive to:,Susceptibility effects,Ultrasound reflection,T1 only,Noise,A) Susceptibility effects
+62,Standard limb leads in ECG:,V1–V6,All of the above,"I, II, III","aVR, aVL, aVF","C) I, II, III"
+63,What property of sound waves acts like the principle of ultrasound?,Reflection only,Reflection and Refraction,Refraction only,Propagation,B) Reflection and Refraction
+64,EEG artifact from blinking appears as:,Beta activity,Sharp spikes,Slow waves in frontal leads,Delta rhythm,C) Slow waves in frontal leads
+65,MRI main magnetic field strength is:,100 T,1–3 T typically,0.1 T,10 T,B) 1–3 T typically
+66,"In radiation therapy, bolus is used to:",Increase dose at surface,Decrease total dose,Shield organs,Improve MRI contrast,A) Increase dose at surface
+67,"In SPECT, collimator resolution affects:",Depth only,Photon energy,Spatial resolution,MRI signal,C) Spatial resolution
+68,"In EEG, delta waves are predominant in:",Awake state,Alert activity,Relaxed wakefulness,Deep sleep,D) Deep sleep
+69,"In T2-weighted MRI images, water appears:",Grey,Dark,Black,Bright,D) Bright
+70,Ultrasound frequency affects:,Depth and resolution,Magnetic field,PET tracer uptake,Radiation dose,A) Depth and resolution
+71,"A ship sends ultrasound that returns from seabed and is detected after 3.42 s. If speed of ultrasound through seawater is 1300 m/s, then distance of seabed from ship would be",2200 m,2600 m,2800 m,3000 m,A) 2200 m
+72,PR interval represents:,None,Atrial repolarization,Conduction from SA to AV node,Ventricular contraction,C) Conduction from SA to AV node
+73,ST segment elevation indicates:,Myocardial infarction,AV block,Normal variant,Myocardial ischemia,A) Myocardial infarction
+74,QT prolongation may lead to:,Torsades de pointes,Bradycardia,Stroke,Pulmonary embolism,A) Torsades de pointes
+75,Half-value layer (HVL) indicates:,Ultrasound velocity,Beam penetration,MRI field strength,PET tracer decay,B) Beam penetration
+76,"What is the relation between 1 Rad, 1 Rem and 1 R?",1 Rad ≈ 1.5 Rem ≈ 1000 R,1 Rad ≈ 1 Rem ≈ 1 R,1 Rad ≈ 10 Rem ≈ 1.8 R,1 Rad ≈ 10 Rem ≈ 100 R,B) 1 Rad ≈ 1 Rem ≈ 1 R
+77,EMG measures:,Lung pressure,Heart electrical activity,Brain activity,Muscle electrical activity,D) Muscle electrical activity
+78,Bioimpedance measures:,Blood pressure,Heart rate,Electrical activity of brain,Electrical resistance of body tissues,D) Electrical resistance of body tissues
+79,PET measures:,Anatomy only,Magnetic susceptibility,Ultrasound reflection,Metabolic activity,D) Metabolic activity
+80,Gray (Gy) measures:,Radiation exposure,Magnetic field,Dose equivalent,Absorbed dose,D) Absorbed dose
+81,Depolarization occurs when:,Cl- enters the cell,Ca2+ exits the cell,K+ enters the cell,Na+ enters the cell,D) Na+ enters the cell
+82,Alpha particles are:,High-penetration radiation,"Low-penetration, highly ionizing",Neutrons,Electrons,"B) Low-penetration, highly ionizing"
+83,ALARA principle in radiology means:,Maximize radiation,Keep exposure 'As Low As Reasonably Achievable',Ignore safety,Increase contrast,B) Keep exposure 'As Low As Reasonably Achievable'
+84,Optically stimulated luminescence (OSL) dosimeters are:,MRI coils,Single-use only,Reusable,Ultrasound probes,C) Reusable
+85,Capnography measures:,Nitrogen,Oxygen,Carbon dioxide in exhaled air,pH,C) Carbon dioxide in exhaled air
+86,Doppler angle affects:,Flow velocity measurement,X-ray attenuation,EEG amplitude,MRI T1,A) Flow velocity measurement
+87,The speed of migration of ions in an electric field depends on,Magnitude of charge and mass of molecules,Shape and size of the molecule,Magnitude of charge and shape of molecules,"Magnitude of charge, shape and mass of molecules","D) Magnitude of charge, shape and mass of molecules"
+88,Low LET radiation includes:,Neutrons,"Beta, X-ray, gamma",Alpha particles,Protons,"B) Beta, X-ray, gamma"
+89,Action potential amplitude in large myelinated fibers is:,Larger than small fibers,Same as unmyelinated,Zero,Smaller than small fibers,B) Same as unmyelinated
+90,CT scan imaging is based on:,X-ray attenuation,Ultrasound reflection,MRI,Nuclear resonance,A) X-ray attenuation
+91,Spatial resolution in nuclear medicine is limited by:,Sound frequency,Gradient strength,Detector size and collimator design,Tube voltage,C) Detector size and collimator design
+92,Repolarization occurs when:,K+ exits,Na+ enters,Cl- enters,Ca2+ enters,A) K+ exits
+93,Acoustic impedance depends on:,X-ray absorption,Electrode placement,Tissue density and sound velocity,Magnetic field,C) Tissue density and sound velocity
+94,The main advantage of PET over SPECT is:,Higher resolution and quantification,No radioactivity,Lower cost,No need for detectors,A) Higher resolution and quantification
+95,The range of frequency used for medical ultrasound is,20–200 kHz,1–20 MHz,1–10 kHz,100–1000 MHz,B) 1–20 MHz
+96,Cardiac stress testing is used to detect:,Arrhythmia only,Resting heart rate,Ischemia during exercise,Blood pressure,C) Ischemia during exercise
+97,Standard ECG leads are:,3,6,12,9,C) 12
+98,Electrode impedance in ECG should be:,High,Irrelevant,Low,Variable,C) Low
+99,Linear accelerator in radiotherapy produces:,Ultrasound,High-energy X-rays,Gamma rays only,MRI signals,B) High-energy X-rays
+100,Radiotherapy planning often uses:,Ultrasound only,CT and MRI,MRI only,X-ray alone,B) CT and MRI
+101,Beta waves in EEG are associated with:,Sleep,Relaxed state,Active thinking and alertness,Coma,C) Active thinking and alertness
+102,PET/CT combines:,Ultrasound and CT,MRI and X-ray,Metabolic and anatomical imaging,EEG and EMG,C) Metabolic and anatomical imaging
+103,Artifacts in ultrasound include:,Photon scatter,Reverberation,Magnetic interference,Motion blur,B) Reverberation
+104,Ionizing radiation interacts with tissue via:,Ultrasound reflection,Doppler shift,MRI,Photoelectric effect,D) Photoelectric effect
+105,The main advantage of digital radiography over conventional film is:,Longer processing time,Lower resolution,Higher radiation dose,Faster image acquisition,D) Faster image acquisition
+106,FEV1/FVC ratio is used to detect:,Liver function,Heart disease,Kidney function,Obstructive vs restrictive lung disease,D) Obstructive vs restrictive lung disease
+107,The most common type of gel used for DNA separation is,All of the above,Agarose,Polyacrylamide,Agar,B) Agarose
+108,Electrophoresis was developed by:,Sanger,Tsvedberg,Tswett,Tiselius,D) Tiselius
+109,The unit of absorbed dose in SI is:,Rad,Curie,Rem,Gray,D) Gray
+110,The resolution of ultrasound imaging depends on:,Wavelength,Tissue color,Temperature,Electrical voltage,A) Wavelength
+111,The resolution in MRI is mainly limited by:,Frequency of ultrasound,Gamma ray intensity,Wavelength of X-ray,Signal-to-noise ratio,D) Signal-to-noise ratio
+112,"In ECG, standard limb leads are:",V1–V6,All of the above,"aVR, aVL, aVF","I, II, III","D) I, II, III"
+113,Grid in radiography:,Enhances signal,Detects ultrasound,Produces X-rays,Absorbs scattered radiation,D) Absorbs scattered radiation
+114,Capnography waveform shows:,Exhaled CO2,Blood pressure,Heart rate,Arterial oxygen,A) Exhaled CO2
+115,Half-life of a radionuclide is:,Time for half of nuclei to decay,Time for energy release,Time for radiation to stop,Time for activity to double,A) Time for half of nuclei to decay
+116,X-ray contrast is enhanced by:,Ultrasound gel,Low field MRI,High photon energy,Iodine-based agents,D) Iodine-based agents
+117,Windowing in CT adjusts:,Brightness and contrast,Ultrasound penetration,Radiation dose,Scan time,A) Brightness and contrast
+118,The source-to-image distance (SID) affects:,Image magnification and sharpness,X-ray wavelength,Tube current,Patient heart rate,A) Image magnification and sharpness
+119,High-LET radiation is:,More damaging,Only gamma rays,Less damaging,Only X-rays,A) More damaging
+120,"In EEG, spike-and-wave pattern is typical for:",Muscle artifact,Focal seizure,Beta rhythm,Absence seizure,D) Absence seizure
+121,Ultrasound gel is used to:,Increase wavelength,Improve Doppler shift,Reduce impedance mismatch,Cool the transducer,C) Reduce impedance mismatch
+122,The two known units of radioactivity and the relation between the two are _______,Curie and Becquerel 1 Bq = 3.7 x 10¹⁰ Ci,Curie and Becquerel 1 Ci = 3.7 x 10¹⁰ Bq,Curie and Roentgens 1 Ci = 1000 R,Roentgen and Becquerel 1 R = 1000 Bq,B) Curie and Becquerel 1 Ci = 3.7 x 10¹⁰ Bq
+123,Time-gain compensation (TGC) in ultrasound corrects for:,Attenuation with depth,MRI artifacts,Doppler shift,Variation in beam frequency,A) Attenuation with depth
+124,Which of the following is true about X-rays?,They are mechanical waves,They are electromagnetic waves,They are sound waves,They are longitudinal waves,B) They are electromagnetic waves
+125,Lead shielding in X-ray protects:,Staff only,MRI coils,Both patient and staff,Patient only,C) Both patient and staff
+126,"In electrophoresis, DNA will migrate towards",Cathode or positive electrode,Anode or negative electrode,Anode or positive electrode,Cathode or negative electrode,C) Anode or positive electrode
+127,Which of the following is used to measure the biological damage caused by radiation?,Roentgens,Rem,Curie,Rad,B) Rem
+128,Which is the non-ionizing imaging technique?,PET scan,MRI,CT scan,X-ray,B) MRI
+129,"In fluoroscopy, real-time imaging is achieved using:",Gamma camera,Ultrasound,X-ray,MRI,C) X-ray
+130,"In cardiology, stress echocardiography assesses:",Bone density,Heart valves and function under stress,Liver function,Brain activity,B) Heart valves and function under stress
+131,Radiographic contrast increases with:,Low mA,High kVp,Low kVp,High kVp and contrast media,C) Low kVp
+132,What is the frequency range of the sound used for ultrasound diathermy?,0.1 – 0.7 MHz,3.3 – 5 MHz,0.7 – 3.3 MHz,5 – 15 MHz,C) 0.7 – 3.3 MHz
+133,EMG detects:,Blood pressure,Muscle electrical activity,Brain waves,Heart rate,B) Muscle electrical activity
+134,Half-life of a radioactive substance is:,Time taken for half the atoms to move,Time taken for activity to disappear,Time taken for activity to decrease by half,Time taken for activity to double,C) Time taken for activity to decrease by half
+135,Delta rhythm in EEG is:,0.5–4 Hz,8–13 Hz,13–30 Hz,4–7 Hz,A) 0.5–4 Hz
+136,Reflex latency in EMG testing indicates:,Heart rate,Muscle strength,Synaptic and nerve conduction time,ECG interval,C) Synaptic and nerve conduction time
+137,Precordial leads in ECG:,Limb leads,V1–V6,I–III,aVR–aVF,B) V1–V6
+138,"In EEG, alpha waves are predominant in:",Deep sleep,Active mental task,Epileptic seizure,Relaxed wakefulness,D) Relaxed wakefulness
+139,Diffusion-weighted MRI is used to detect:,Ischemic stroke,Pulmonary embolism,Bone fractures,Heart valve defects,A) Ischemic stroke
+140,Piezoelectric crystal converts:,Electrical energy into light energy,Chemical energy into electrical energy,Sound energy into magnetic energy,Mechanical energy into electrical energy,D) Mechanical energy into electrical energy
+141,EEG electrodes follow:,6-lead system,12-lead system,32-lead system,10–20 system,D) 10–20 system
+142,Photoelectric effect in X-rays occurs predominantly with:,High atomic number elements,Low atomic number elements,Gases only,Water,A) High atomic number elements
+143,Which of the following factors does not influence electrophoretic mobility?,Molecular weight,Shape of molecule,Size of molecule,Stereochemistry of molecule,D) Stereochemistry of molecule
+144,The QRS duration normally is:,80–120 ms,120–200 ms,<80 ms,>200 ms,A) 80–120 ms
+145,"Ultrasound is also useful for detecting fault in metal sheets, imaging marine depths, looking for metals beneath the earth's surface, detecting distances, detecting earthquakes","ii, iii","i, iv, v","ii, iii, v","i, ii, iv","D) i, ii, iv"
+146,Standard ECG calibration is:,0.1 mV/mm,5 mV/cm,10 mV/mm,1 mV/cm,D) 1 mV/cm
+147,"In nerve conduction studies, distal latency reflects:",Axon diameter,Conduction through distal segment,Muscle fatigue,Brain activity,B) Conduction through distal segment
+148,For what all purposes is diathermy principal used?,Surgical and Therapeutic,Therapeutic and Diagnostic,Diagnostic and Surgical,Diagnostic and Rehabilitative,A) Surgical and Therapeutic
+149,Common PET isotope ^18F has half-life:,110 minutes,6 hours,24 hours,1 hour,A) 110 minutes
+150,T2-weighted MRI images highlight:,Fat,Air,Water/edema,Bone,C) Water/edema
+151,LET (linear energy transfer) affects:,Ultrasound reflection,MRI SNR,Tissue penetration,Biological effect per unit dose,D) Biological effect per unit dose
+152,Compton scattering occurs when:,High-energy photons are absorbed,Coherent reflection occurs,Low-energy photons interact with outer electrons,Pair production happens,C) Low-energy photons interact with outer electrons
+153,MRI Larmor frequency depends on:,Tissue density,X-ray tube voltage,RF power,Magnetic field,D) Magnetic field
+154,"In radiotherapy, the target volume is defined as:",Volume of tumor,Entire body,Volume of organs only,Volume of healthy tissue,A) Volume of tumor
+155,Increasing mA in X-ray increases:,Magnetic resonance,Number of photons,Ultrasound amplitude,Photon energy,B) Number of photons
+156,Continuous-wave Doppler cannot:,Detect blood flow,Measure peak velocity,Detect valve stenosis,Localize exact depth,D) Localize exact depth
+157,What cannot be a reason for using electrophoresis?,Organizing DNA by shape of backbone,Organizing DNA in order we can see,Comparing two sets of DNA,Organizing DNA fragments from largest to smallest,A) Organizing DNA by shape of backbone
+158,The types of therapeutic diathermy machines that exist are ___________,"Short wave, ultrasound and cold compress","Electrical impulse, microwave and ultrasound","Short wave, micro wave and ultrasound","Cold compress, microwave and electrical impulse","C) Short wave, micro wave and ultrasound"
+159,ST-segment elevation is a marker of:,Acute myocardial infarction,Arrhythmia,Hyperkalemia,Hypertension,A) Acute myocardial infarction
+160,"In T1-weighted MRI images, fat appears:",Bright,Black,Dark,Grey,A) Bright
+161,Action potential propagation is:,Electrical conduction along axon,Ultrasound wave,Muscle contraction,Blood flow,A) Electrical conduction along axon
+162,Fractionated radiotherapy reduces:,Scan time,Tumor effect,Normal tissue damage,Radiation energy,C) Normal tissue damage
+163,Deterministic effects appear:,After decades,Randomly,Above threshold dose,Below threshold dose,C) Above threshold dose
+164,Functional MRI BOLD signal reflects:,Tissue density,Blood oxygenation level,Ion concentration,Electrical activity,B) Blood oxygenation level
+165,Electromyography (EMG) measures:,Muscle electrical activity,Heart electrical activity,Brain electrical activity,Lung function,A) Muscle electrical activity
+166,X-ray tube voltage affects:,Magnetic field,Ultrasound frequency,Image contrast,Photon energy,D) Photon energy
+167,Beta particles are:,Protons,Neutrons,Gamma rays,Electrons or positrons,D) Electrons or positrons
+168,The term 'windowing' in CT refers to:,Opening X-ray tube,Adjusting brightness and contrast,Positioning patient,Changing slice thickness,B) Adjusting brightness and contrast
+169,EMG needle electrodes are used for:,Surface recording,Heart monitoring,Intramuscular recording,Brain activity,C) Intramuscular recording
+170,Radiopharmaceuticals are used in:,CT,PET and SPECT,MRI,Ultrasound,B) PET and SPECT
+171,A technique which separates charged particles using electric field is,Electrophoresis,Hydrolysis,Protein denaturing,Protein synthesis,A) Electrophoresis
+172,When is electrophoresis not used?,Separation of amino acids,Separation of lipids,Separation of nucleic acids,Separation of proteins,B) Separation of lipids
+173,Synaptic delay is approximately:,10 ms,1 ms,0.1 ms,100 ms,B) 1 ms
+174,Which of the following statements is true about migration of biomolecules?,Rate of migration is inversely proportional to current,Low voltage is used for separation of high mass molecules,The rate of migration is directly proportional to the resistance of medium,Rate of migration is directly proportional to current,D) Rate of migration is directly proportional to current
+175,Chest leads in ECG are:,aVR–aVF,V1–V6,None,I–III,B) V1–V6
+176,QT interval represents:,Atrial depolarization,Ventricular depolarization only,Ventricular depolarization and repolarization,Atrial repolarization,C) Ventricular depolarization and repolarization
+177,EMG amplitude reflects:,Number of active motor units,Oxygen saturation,Conduction velocity,Heart activity,A) Number of active motor units
+178,Echogenicity is:,Tissue absorption,Tissue reflection of ultrasound,Radiation dose,Bone density,B) Tissue reflection of ultrasound
+179,"In ECG, P wave represents:",Atrial depolarization,Ventricular repolarization,Ventricular depolarization,Atrial repolarization,A) Atrial depolarization
+180,CT number (HU) of water is:,100,0,1000,-100,B) 0
+181,CT angiography uses:,X-ray with contrast,MRI,Ultrasound,PET,A) X-ray with contrast
+182,SPECT imaging uses:,Magnetic resonance,Single photon emission,Ultrasound,Positron emission,B) Single photon emission
+183,"In bioimpedance, fat tissue has:",High resistance,Zero resistance,Infinite resistance,Low resistance,A) High resistance
+184,Nerve conduction velocity decreases in:,Neuropathy,Healthy nerves,ECG,Muscle fatigue,A) Neuropathy
+185,Holter monitoring records ECG for:,24–48 hours,Minutes,Seconds,Weeks,A) 24–48 hours
+186,Ventricular fibrillation is:,Organized contraction,"Disorganized, life-threatening rhythm",Normal variant,Slow heart rate,"B) Disorganized, life-threatening rhythm"
+187,CMAP amplitude reflects:,Muscle contraction strength,Nerve myelination,ECG QRS,Brain activity,A) Muscle contraction strength
+188,What is the role of SDS in SDS-PAGE?,Imparting overall negative charge to the protein,Imparting equal mass to all proteins,Protein denaturing and imparting net negative charge,Protein unfolding and imparting net positive charge,C) Protein denaturing and imparting net negative charge
+189,Which imaging modality uses positron emission?,SPECT,PET,MRI,Ultrasound,B) PET
+190,"In SDS-PAGE, separation is based on",Shape,All of the above,Molecular weight,Charge,C) Molecular weight
+191,Scatter radiation reduces:,Slice thickness,Image contrast,Beam energy,Patient dose,B) Image contrast
+192,Radioprotective agents reduce:,Radiation damage to tissues,Image contrast,Beam intensity,Radiation energy,A) Radiation damage to tissues
+193,Grid ratio in radiography affects:,Scatter absorption,MRI T1,Ultrasound frequency,Spatial resolution,A) Scatter absorption
+194,ECG paper speed is typically:,100 mm/s,25 mm/s,10 mm/s,50 mm/s,B) 25 mm/s
+195,MRI signal intensity depends on:,Ultrasound frequency,X-ray tube current,Proton density and relaxation times,PET tracer concentration,C) Proton density and relaxation times
+196,MRI safety contraindications include:,Pacemakers,All of the above,Cochlear implants,Metallic foreign bodies,B) All of the above
+197,Bone appears on CT as:,Hyperdense,Hypodense,Dark gray,Isodense,A) Hyperdense
+198,Synaptic transmission occurs at:,Node of Ranvier,Axon hillock,T-tubule,Synapse,D) Synapse
+199,Spirometry measures:,Blood pressure,Heart rate,Lung volumes and airflow,Muscle activity,C) Lung volumes and airflow
+200,Echogenicity in ultrasound imaging represents:,Blood flow,Tissue temperature,The ability of tissue to reflect ultrasound,Tissue density,C) The ability of tissue to reflect ultrasound
+201,Thermoluminescent dosimeter (TLD) works by:,Absorbing photons and releasing light when heated,Ultrasound reflection,Generating magnetic field,Conducting electricity,A) Absorbing photons and releasing light when heated
+202,Half-life of ^18F in PET is:,24 hours,12 hours,6 hours,110 minutes,D) 110 minutes
+203,Filtration in X-ray tubes is used to:,Increase scatter,Increase patient dose,Remove low-energy X-rays,Decrease tube voltage,C) Remove low-energy X-rays
+204,What does ALARA principle stand for?,As Low As Reasonably Achievable,As Low As Radiation Appears,As Light As Radiant Area,As Long As Radiation Accumulates,A) As Low As Reasonably Achievable
+205,Beyond what dose does the cerebral system show signs of failure?,25 – 200 rad,200 – 600 rad,600 – 1000 rad,> 1000 rad,D) > 1000 rad
+206,Conduction velocity is slowed in:,Healthy nerves,Demyelinating neuropathy,Pacemaker patients,Myopathy,B) Demyelinating neuropathy
+207,"In the induction field diathermy, the heating effects are done by",Using magnetic field,Using an electric field,Made of metal that is shaped into a coil,Induce an electrical current within body parts,D) Induce an electrical current within body parts
+208,"In CT, beam hardening artifacts result from:",Polychromatic X-ray spectrum,MRI interference,Photon scatter,Ultrasound reflection,A) Polychromatic X-ray spectrum
+209,Compton scattering dominates in:,Ultrasound,Low-energy X-rays,MRI,Diagnostic to high-energy X-rays,D) Diagnostic to high-energy X-rays
+210,"In gamma camera imaging, which isotope is commonly used?",Iodine-131,Technetium-99m,Radon-222,Carbon-14,B) Technetium-99m
+211,The principle of nuclear medicine imaging is:,Detection of gamma rays from radiotracers,Ultrasound reflection,External magnetic field,X-ray attenuation,A) Detection of gamma rays from radiotracers
+212,"In Doppler ultrasound, red shift indicates:",No flow,Turbulent flow,Flow away from the transducer,Flow towards the transducer,D) Flow towards the transducer
+213,Signal-to-noise ratio (SNR) in MRI improves with:,Lower field strength,Lower voxel size,Faster scan,Higher field strength,D) Higher field strength
+214,Myelin increases:,Conduction velocity,CT contrast,Muscle strength,EEG amplitude,A) Conduction velocity
+215,"In radiation therapy, megavoltage photons penetrate:",Only bone,Deep tissue,Superficial tissue,Only air,B) Deep tissue
+216,Ionizing radiation can damage tissues primarily by:,Pressure,Heating,Magnetism,Ionization of molecules,D) Ionization of molecules
+217,MRI safety: quenching occurs when:,Coil detunes,RF fails,Magnet warms rapidly,Gradient fails,C) Magnet warms rapidly
+218,Radiographic magnification occurs when:,Patient is closer to detector,Tube voltage decreases,Patient is farther from detector,Tube current increases,C) Patient is farther from detector
+219,CT spatial resolution is limited by:,Patient age,Gradient field,RF coil,Detector size and focal spot,D) Detector size and focal spot
+220,MRI images are formed based on:,Ultrasound reflection,Nuclear magnetic resonance,X-ray absorption,Gamma emission,B) Nuclear magnetic resonance
+221,Beta waves in EEG indicate:,Active thinking and attention,Muscle artifact,Sleep,Resting state,A) Active thinking and attention
+222,Pacemaker spikes in ECG indicate:,Atrial or ventricular stimulation,Heart block,Ventricular repolarization,Artifact,A) Atrial or ventricular stimulation
+223,Ultrasonic waves carry more,Both frequency and energy,Energy,Heat,Frequency,A) Both frequency and energy
+224,Half-life of ^99mTc is:,24 hours,1 hour,6 hours,12 hours,C) 6 hours
+225,Sievert (Sv) measures:,Photon energy,Radioactivity,Equivalent/effective dose,Absorbed dose,C) Equivalent/effective dose
+226,The process of destroying cancer cells with the help of radiation is ________,Uroplasty,Radiotherapy,Physiotherapy,Rehabilitation,B) Radiotherapy
+227,Stochastic effects of radiation include:,Cancer risk,Hair loss,Deterministic injury,Skin burn,A) Cancer risk
+228,"In diffusion-weighted MRI, restricted diffusion indicates:",Fatty liver,Hemorrhage,Ischemic stroke,Tumor,C) Ischemic stroke
+229,Myocardial perfusion imaging shows:,Muscle strength,Blood flow distribution,ECG intervals,Heart anatomy,B) Blood flow distribution
+230,Gamma camera in nuclear medicine detects:,Beta particles,Neutrons,Gamma rays,Alpha particles,C) Gamma rays
+231,Gradient coils in MRI are used for:,Spatial encoding of signal,Producing main magnetic field,Radiofrequency pulse,Cooling,A) Spatial encoding of signal
+232,Which phenomenon helps ultrasound to image internal body structures?,Dispersion,Diffraction,Reflection,Refraction,C) Reflection
+233,"In electrophysiology, ECG measures:",Mechanical activity of the heart,Electrical activity of the heart,Blood pressure,Blood flow,B) Electrical activity of the heart
+234,T wave in ECG represents:,Atrial repolarization,Ventricular repolarization,Ventricular depolarization,Atrial depolarization,B) Ventricular repolarization
+235,SONAR is abbreviation of,Small navigation and random,Sky navigation and ranging,Sound navigation and ranging,Sun nuclear ranging,C) Sound navigation and ranging
+236,QRS complex in ECG represents:,Ventricular depolarization,Atrial repolarization,Ventricular repolarization,Atrial depolarization,A) Ventricular depolarization
+237,MRI T2* images are sensitive to:,Water content,X-rays,Fat only,Magnetic susceptibility,D) Magnetic susceptibility
+238,Brachytherapy involves:,MRI-guided surgery,External radiation,Ultrasound therapy,Internal radiation,D) Internal radiation
+239,The pitch in CT scanning defines:,X-ray wavelength,MRI signal,Table movement per rotation relative to slice thickness,Ultrasound frequency,C) Table movement per rotation relative to slice thickness
+240,fMRI temporal resolution depends on:,Field strength,TE only,TR (repetition time),Voxel size,C) TR (repetition time)
+241,ECG electrodes should be placed on:,Only limbs,Chest and limbs,Forehead,Only chest,B) Chest and limbs
+242,If proteins are separated according to their electrophoretic mobility then the type of electrophoresis is:,Free flow electrophoresis,Electro focusing,Affinity Electrophoresis,SDS PAGE,A) Free flow electrophoresis
+243,Thermoluminescent dosimeters (TLD) measure:,Ultrasound intensity,Electrical signals,Radiation dose,Blood flow,C) Radiation dose
+244,"In ultrasound imaging, B-mode represents:",Brightness,Bulk modulus,Bone density,Blood velocity,A) Brightness
+245,Linear energy transfer (LET) is:,Doppler frequency,X-ray tube voltage,Energy deposited per unit distance,Magnetic field gradient,C) Energy deposited per unit distance
+246,Which technique separates charged particles using electric field?,Protein denaturing,Electrophoresis,Protein synthesis,Hydrolysis,B) Electrophoresis
+247,Coherent scattering is also called:,Photoelectric effect,Rayleigh scattering,Pair production,Compton scattering,B) Rayleigh scattering
+248,Photoelectric effect increases with:,Low atomic number,Low photon energy,Both b and c,High atomic number,C) Both b and c
+249,"In ultrasound imaging, A-mode represents:",Area vs volume,Amplitude vs time,Angle vs distance,Amplitude vs frequency,B) Amplitude vs time
+250,T1-weighted MRI images highlight:,Air,Water,Fat,Metal,C) Fat
+251,"In a hypothetical radioactive material, the total number of active photons are 20000 and the decay constant is found out to be 4.916 × 10⁻¹⁷ per second. How much of the material will be left in 100 years?",123.99999,19.999999,"19,999.9999",1589.99999,"C) 19,999.9999"
+252,The electric field will,Converge onto substance with high dielectric constant,Converge onto substance with low dielectric constant,Diverge within substances with low dielectric constant,Diverge within substances with high dielectric constant,A) Converge onto substance with high dielectric constant
+253,Doppler echocardiography measures:,Blood flow velocity,Oxygen saturation,Bone density,Heart rhythm only,A) Blood flow velocity
+254,Resting membrane potential is typically:,0 mV,+70 mV,-100 mV,-70 mV,D) -70 mV
+255,Pulse oximetry measures:,Heart rate only,Oxygen saturation,Blood sugar,Blood pressure,B) Oxygen saturation
+256,"In EEG, alpha rhythm is predominant in:",Deep sleep,Relaxed wakefulness with eyes closed,Drowsiness,Alert mental activity,B) Relaxed wakefulness with eyes closed
+257,Ionizing radiation can cause:,Hair loss only,Muscle fatigue,DNA damage,Bone fracture,C) DNA damage
+258,"Sounds of frequency higher than 20,000 Hz which are inaudible to normal human ear are called",Frequency,Amplitude,Noise,Ultrasonics,D) Ultrasonics
+259,Bioimpedance is used to estimate:,Heart rhythm,Muscle activity,"Body composition, especially fat and water",Blood pressure,"C) Body composition, especially fat and water"
+260,The main contrast in MRI comes from:,Electron density,Electrical conductivity,Proton density and relaxation times,Gamma rays,C) Proton density and relaxation times
+261,Noise in CT can be reduced by:,Decreasing kVp,Increasing mA,Using ultrasound,Using MRI coils,B) Increasing mA
+262,The speed of migration of ions in electric field depends upon:,"Magnitude of charge, shape and mass of molecule",Magnitude of charge and mass of molecule,Magnitude of charge and shape of molecule,Shape and size of molecule,"A) Magnitude of charge, shape and mass of molecule"
+263,Nerve conduction studies measure:,EEG frequency,Muscle contraction strength,Conduction velocity of peripheral nerves,Blood flow,C) Conduction velocity of peripheral nerves
+264,Gamma cameras use:,Electrodes,Scintillation detectors,Piezoelectric crystals,RF coils,B) Scintillation detectors
+265,Pulse Doppler in ultrasound gives:,X-ray intensity,Image brightness,Global average only,Location-specific velocity,D) Location-specific velocity
+266,A piezoelectric crystal is used to produce the ultrasound waves. What kind of ultrasound is produced?,Electrical wave ultrasound,Sound wave ultrasound,Pressure wave ultrasound,Simple ultrasound,C) Pressure wave ultrasound
+267,Electrical impedance tomography (EIT) images:,Brain activity,Heart valves,Bone density,Lung ventilation,D) Lung ventilation
+268,High LET radiation includes:,Ultrasound,Gamma rays,X-rays,Alpha particles,D) Alpha particles
+269,Cryogenic cooling in MRI is used for:,RF coils,Gradient,Superconducting magnet,Patient cooling,C) Superconducting magnet
+270,RF coils in MRI:,Provide magnetic shielding,Measure X-rays,Produce gradient,Detect and transmit RF signal,D) Detect and transmit RF signal
+271,PET imaging requires:,High-frequency sound,X-ray filtration,Gamma rays only,Positron-emitting radiotracers,D) Positron-emitting radiotracers
+272,Lead shielding in X-ray rooms is used to:,Focus X-rays,Protect patients and staff from radiation,Enhance image quality,Reduce noise,B) Protect patients and staff from radiation
+273,Radiopharmaceutical ^131I is used for:,Cardiac perfusion,PET oncology,Thyroid imaging,Bone scan,C) Thyroid imaging
+274,PET tracers commonly include:,^18F-FDG,Barium,Iodine,Gadolinium,A) ^18F-FDG
+275,Optically stimulated luminescent (OSL) dosimeters:,Use heat,Use light for readout,Measure current,Detect ultrasound,B) Use light for readout
+276,The energy required to remove an electron from an atom is called:,Kinetic energy,Thermal energy,Potential energy,Binding energy,D) Binding energy
+277,Which of the diathermy machine is good for deep tissue healing?,Cold compress,Ultrasound,Short wave,Electrical impulse,C) Short wave
+278,Bundle branch block affects:,Purkinje fibers only,SA node,Ventricular conduction pathways,AV node,C) Ventricular conduction pathways
+279,Superconducting magnets in MRI require:,Room temperature,Cryogenic cooling,X-ray shielding,Ultrasound gel,B) Cryogenic cooling
+280,Functional MRI (fMRI) detects:,Blood oxygen level-dependent (BOLD) signal,X-ray attenuation,Tissue density,Ultrasound reflection,A) Blood oxygen level-dependent (BOLD) signal
+281,Functional MRI (fMRI) measures:,Electrical activity directly,Tissue density,Radiation dose,Blood oxygenation changes,D) Blood oxygenation changes
+282,MRI gradient switching may cause:,Peripheral nerve stimulation,Radiation,Nausea,Ultrasound reflection,A) Peripheral nerve stimulation
+283,The energy of diagnostic X-rays is typically measured in:,Joules,Electronvolts (eV),Megaelectronvolts (MeV),Kiloelectronvolts (keV),D) Kiloelectronvolts (keV)
+284,With what energy must the radiation be given to image a bone of thickness 5 cm which has covering of skin of thickness of 2 cm on both sides and the emerging intensity of the X-ray is 200 MeV?,2000e9,20/e,200e(4s + 5B),2e,C) 200e(4s + 5B)
+285,Nerve conduction velocity (NCV) is measured in:,Hz,m/s,V,Ohms,B) m/s
+286,"In ultrasound, attenuation increases with:",Increasing frequency,Decreasing frequency,Increasing wavelength,Decreasing intensity,A) Increasing frequency
+287,MRI relaxation times are:,T1 (spin-lattice) and T2 (spin-spin),Alpha and Beta,Gamma and Delta,Delta and Omega,A) T1 (spin-lattice) and T2 (spin-spin)
+288,Which of the following medical imaging modality other than ultrasound does not use any form of radiation?,MRI,SPECT Scan,PET Scan,CT Scan,A) MRI
+289,A low dielectric constant & conductivity is to,"High water content, muscle, nerve, blood vessels, internal organs & moist skin",All of the above,None of the above,"Low water content, bone, capsule, ligaments, fat, dry skin","D) Low water content, bone, capsule, ligaments, fat, dry skin"
+290,A high dielectric constant & conductivity is to,All of the above,"High water content, muscle, nerve, blood vessels, internal organs & moist skin",None of the above,"Low water content, bone, capsule, ligaments, fat, dry skin","B) High water content, muscle, nerve, blood vessels, internal organs & moist skin"
+291,SPECT uses:,Coincidence detection,Single gamma detection,Ultrasound,RF pulses,B) Single gamma detection
+292,Wavelength of ultrasonic waves is,Greater than light wave,Equal to audible sound,Less than audible sound,More than audible sound,C) Less than audible sound
+293,SPECT tracer Tc-99m decays by:,Gamma emission,Positron emission,Alpha emission,Beta emission,A) Gamma emission
+294,Which of the following ultrasound type is used for deep tissue imaging?,High frequency ultrasound,Very high frequency ultrasound,Audible frequency ultrasound,Low frequency ultrasound,D) Low frequency ultrasound
+295,The unit of equivalent dose in SI is:,Roentgen,Sievert,Curie,Gray,B) Sievert
+296,CT contrast media are often based on:,Silicon,Gadolinium,Iodine,Barium,C) Iodine
+297,Augmented limb leads are:,"aVR, aVL, aVF",None,V1–V6,"I, II, III","A) aVR, aVL, aVF"
+298,T-wave inversion may indicate:,Muscle activity,Artifact,Normal ECG,Ischemia,D) Ischemia
+299,"If the half-life is found to be 100 msec, what is the decay constant?",59875.2 per day,693 per second,0.1155 per minute,24948 per hour,B) 693 per second
+300,Piezoelectric materials in ultrasound transducers are often made of:,Quartz,Copper,Silicon,Iron,A) Quartz

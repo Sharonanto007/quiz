@@ -1,3302 +1,3302 @@
 [
   {
     "id": 1,
-    "question": "Question 62",
+    "question": "The Hounsfield unit (HU) in CT represents:",
     "options": {
-      "A": "Option A",
-      "C": "Option C",
-      "D": "Option D",
-      "B": "Option B"
+      "A": "Linear attenuation coefficient",
+      "B": "Magnetic field strength",
+      "C": "Radiation dose",
+      "D": "Ultrasound velocity"
     },
-    "correct_answer": "C"
+    "correct_answer": "A"
   },
   {
     "id": 2,
-    "question": "Question 206",
+    "question": "Lead aprons protect against:",
     "options": {
-      "C": "Option C",
-      "A": "Option A",
-      "B": "Option B",
-      "D": "Option D"
+      "A": "Ionizing radiation",
+      "B": "RF noise",
+      "C": "Ultrasound",
+      "D": "Magnetic field"
     },
-    "correct_answer": "D"
+    "correct_answer": "A"
   },
   {
     "id": 3,
-    "question": "Question 91",
+    "question": "The electrophoresis technique that uses isoelectric focusing is",
     "options": {
-      "A": "Option A",
-      "C": "Option C",
-      "D": "Option D",
-      "B": "Option B"
+      "A": "SDS-PAGE",
+      "B": "PFGE",
+      "C": "2D-PAGE",
+      "D": "AGE"
+    },
+    "correct_answer": "C"
+  },
+  {
+    "id": 4,
+    "question": "The Bragg peak is characteristic of:",
+    "options": {
+      "A": "Ultrasound waves",
+      "B": "Proton beams",
+      "C": "MRI signals",
+      "D": "X-ray beams"
     },
     "correct_answer": "B"
   },
   {
-    "id": 4,
-    "question": "Question 184",
+    "id": 5,
+    "question": "Which of the following statements is true regarding migration of biomolecules?",
     "options": {
-      "B": "Option B",
-      "C": "Option C",
-      "A": "Option A",
-      "D": "Option D"
+      "A": "Low voltage is used for the separation of high molecular weight compounds",
+      "B": "The rate of migration is directly proportional to the resistance of the medium",
+      "C": "The rate of migration is directly proportional to the current",
+      "D": "The rate of migration is inversely proportional to current"
+    },
+    "correct_answer": "C"
+  },
+  {
+    "id": 6,
+    "question": "EEG measures:",
+    "options": {
+      "A": "Blood flow",
+      "B": "Heart rate",
+      "C": "Muscle activity",
+      "D": "Brain electrical activity"
     },
     "correct_answer": "D"
   },
   {
-    "id": 5,
-    "question": "Question 68",
+    "id": 7,
+    "question": "Normal end-tidal CO2 (EtCO2) is:",
     "options": {
-      "C": "Option C",
-      "A": "Option A",
-      "B": "Option B",
-      "D": "Option D"
+      "A": "50–60 mmHg",
+      "B": "20–25 mmHg",
+      "C": "10–15 mmHg",
+      "D": "35–45 mmHg"
+    },
+    "correct_answer": "D"
+  },
+  {
+    "id": 8,
+    "question": "Acoustic impedance mismatch causes:",
+    "options": {
+      "A": "Image noise",
+      "B": "Ultrasound absorption",
+      "C": "Doppler shift",
+      "D": "Ultrasound reflection"
+    },
+    "correct_answer": "D"
+  },
+  {
+    "id": 9,
+    "question": "Which of the following pair of scattering is important for diagnostic purposes?",
+    "options": {
+      "A": "Pair Production and Disintegration",
+      "B": "Compton and Photoelectric",
+      "C": "Photoelectric and Pair Production",
+      "D": "Coherent and Compton"
     },
     "correct_answer": "B"
   },
   {
-    "id": 6,
-    "question": "Question 295",
-    "options": {
-      "A": "Option A",
-      "B": "Option B",
-      "D": "Option D",
-      "C": "Option C"
-    },
-    "correct_answer": "C"
-  },
-  {
-    "id": 7,
-    "question": "Question 13",
-    "options": {
-      "D": "Option D",
-      "B": "Option B",
-      "A": "Option A",
-      "C": "Option C"
-    },
-    "correct_answer": "A"
-  },
-  {
-    "id": 8,
-    "question": "Question 258",
-    "options": {
-      "B": "Option B",
-      "A": "Option A",
-      "C": "Option C",
-      "D": "Option D"
-    },
-    "correct_answer": "A"
-  },
-  {
-    "id": 9,
-    "question": "Question 102",
-    "options": {
-      "A": "Option A",
-      "C": "Option C",
-      "B": "Option B",
-      "D": "Option D"
-    },
-    "correct_answer": "A"
-  },
-  {
     "id": 10,
-    "question": "Question 86",
+    "question": "Collimators in X-ray:",
     "options": {
-      "C": "Option C",
-      "B": "Option B",
-      "A": "Option A",
-      "D": "Option D"
+      "A": "Detect RF signals",
+      "B": "Reduce beam area",
+      "C": "Increase scatter",
+      "D": "Produce gamma rays"
     },
-    "correct_answer": "A"
+    "correct_answer": "B"
   },
   {
     "id": 11,
-    "question": "Question 226",
+    "question": "What does the electrophoresis apparatus consist of?",
     "options": {
-      "B": "Option B",
-      "C": "Option C",
-      "D": "Option D",
-      "A": "Option A"
-    },
-    "correct_answer": "A"
-  },
-  {
-    "id": 12,
-    "question": "Question 193",
-    "options": {
-      "A": "Option A",
-      "D": "Option D",
-      "C": "Option C",
-      "B": "Option B"
-    },
-    "correct_answer": "A"
-  },
-  {
-    "id": 13,
-    "question": "Question 187",
-    "options": {
-      "A": "Option A",
-      "D": "Option D",
-      "C": "Option C",
-      "B": "Option B"
+      "A": "Gel, buffer chamber and fire pack",
+      "B": "Electrophoresis unit and gel separator",
+      "C": "Power pack and electrophoresis unit",
+      "D": "Buffer chamber and electrophoresis unit"
     },
     "correct_answer": "C"
   },
   {
-    "id": 14,
-    "question": "Question 152",
+    "id": 12,
+    "question": "ECG QRS duration represents:",
     "options": {
-      "C": "Option C",
-      "A": "Option A",
-      "B": "Option B",
-      "D": "Option D"
+      "A": "Atrial depolarization",
+      "B": "PR interval",
+      "C": "Ventricular repolarization",
+      "D": "Ventricular depolarization"
+    },
+    "correct_answer": "D"
+  },
+  {
+    "id": 13,
+    "question": "The heel effect in X-ray imaging results in:",
+    "options": {
+      "A": "Reduction of image contrast",
+      "B": "Uneven beam intensity across the field",
+      "C": "Increase in photon energy",
+      "D": "Change in focal spot size"
+    },
+    "correct_answer": "B"
+  },
+  {
+    "id": 14,
+    "question": "Low-LET radiation includes:",
+    "options": {
+      "A": "Protons",
+      "B": "Neutrons",
+      "C": "Gamma rays and X-rays",
+      "D": "Alpha particles"
     },
     "correct_answer": "C"
   },
   {
     "id": 15,
-    "question": "Question 267",
+    "question": "Spiral CT allows:",
     "options": {
-      "B": "Option B",
-      "C": "Option C",
-      "A": "Option A",
-      "D": "Option D"
+      "A": "Continuous helical acquisition",
+      "B": "Doppler imaging",
+      "C": "MRI compatibility",
+      "D": "Slice-by-slice scanning"
     },
     "correct_answer": "A"
   },
   {
     "id": 16,
-    "question": "Question 138",
+    "question": "Nerve conduction slowing occurs in:",
     "options": {
-      "D": "Option D",
-      "A": "Option A",
-      "C": "Option C",
-      "B": "Option B"
-    },
-    "correct_answer": "A"
-  },
-  {
-    "id": 17,
-    "question": "Question 39",
-    "options": {
-      "C": "Option C",
-      "B": "Option B",
-      "D": "Option D",
-      "A": "Option A"
+      "A": "EEG abnormality",
+      "B": "Demyelination",
+      "C": "Myopathy",
+      "D": "Muscle fatigue"
     },
     "correct_answer": "B"
   },
   {
-    "id": 18,
-    "question": "Question 17",
+    "id": 17,
+    "question": "MRI safety: main risk in pacemaker patients is:",
     "options": {
-      "C": "Option C",
-      "D": "Option D",
-      "B": "Option B",
-      "A": "Option A"
+      "A": "Ultrasound artifact",
+      "B": "X-ray dose",
+      "C": "EEG interference",
+      "D": "RF heating"
+    },
+    "correct_answer": "D"
+  },
+  {
+    "id": 18,
+    "question": "In agarose gel electrophoresis, DNA is moved towards the",
+    "options": {
+      "A": "Moves slowly",
+      "B": "Anode",
+      "C": "Cathode",
+      "D": "DNA doesn't move"
+    },
+    "correct_answer": "B"
+  },
+  {
+    "id": 19,
+    "question": "In radiotherapy, fractionation is used to:",
+    "options": {
+      "A": "Increase single dose",
+      "B": "Deliver total dose in parts",
+      "C": "Reduce photon energy",
+      "D": "Avoid imaging"
+    },
+    "correct_answer": "B"
+  },
+  {
+    "id": 20,
+    "question": "PET detects:",
+    "options": {
+      "A": "Coincident gamma photons from annihilation",
+      "B": "Emitted positrons directly",
+      "C": "X-ray scatter",
+      "D": "Ultrasound waves"
     },
     "correct_answer": "A"
   },
   {
-    "id": 19,
-    "question": "Question 290",
-    "options": {
-      "C": "Option C",
-      "A": "Option A",
-      "B": "Option B",
-      "D": "Option D"
-    },
-    "correct_answer": "D"
-  },
-  {
-    "id": 20,
-    "question": "Question 202",
-    "options": {
-      "D": "Option D",
-      "B": "Option B",
-      "C": "Option C",
-      "A": "Option A"
-    },
-    "correct_answer": "D"
-  },
-  {
     "id": 21,
-    "question": "Question 227",
+    "question": "QT interval represents:",
     "options": {
-      "C": "Option C",
-      "D": "Option D",
-      "A": "Option A",
-      "B": "Option B"
+      "A": "AV conduction",
+      "B": "Atrial depolarization",
+      "C": "T wave only",
+      "D": "Ventricular depolarization and repolarization"
     },
     "correct_answer": "D"
   },
   {
     "id": 22,
-    "question": "Question 296",
+    "question": "What surgical functions are performed by the diathermy machine?",
     "options": {
-      "A": "Option A",
-      "C": "Option C",
-      "D": "Option D",
-      "B": "Option B"
-    },
-    "correct_answer": "C"
-  },
-  {
-    "id": 23,
-    "question": "Question 205",
-    "options": {
-      "B": "Option B",
-      "D": "Option D",
-      "C": "Option C",
-      "A": "Option A"
-    },
-    "correct_answer": "A"
-  },
-  {
-    "id": 24,
-    "question": "Question 26",
-    "options": {
-      "A": "Option A",
-      "D": "Option D",
-      "B": "Option B",
-      "C": "Option C"
-    },
-    "correct_answer": "A"
-  },
-  {
-    "id": 25,
-    "question": "Question 109",
-    "options": {
-      "A": "Option A",
-      "B": "Option B",
-      "C": "Option C",
-      "D": "Option D"
+      "A": "Cutting, fulguration",
+      "B": "Coagulation, fulguration",
+      "C": "Cutting, coagulation",
+      "D": "Cutting, coagulation, fulguration"
     },
     "correct_answer": "D"
   },
   {
-    "id": 26,
-    "question": "Question 160",
+    "id": 23,
+    "question": "Scatter radiation in X-ray reduces:",
     "options": {
-      "D": "Option D",
-      "B": "Option B",
-      "A": "Option A",
-      "C": "Option C"
+      "A": "Resolution",
+      "B": "Patient dose",
+      "C": "Image contrast",
+      "D": "Beam intensity"
     },
-    "correct_answer": "A"
+    "correct_answer": "C"
+  },
+  {
+    "id": 24,
+    "question": "Alpha rhythm in EEG is:",
+    "options": {
+      "A": ">30 Hz",
+      "B": "4–7 Hz",
+      "C": "8–13 Hz",
+      "D": "13–30 Hz"
+    },
+    "correct_answer": "C"
+  },
+  {
+    "id": 25,
+    "question": "Pulmonary function tests (PFTs) include:",
+    "options": {
+      "A": "EEG",
+      "B": "Spirometry",
+      "C": "ECG",
+      "D": "EMG"
+    },
+    "correct_answer": "B"
+  },
+  {
+    "id": 26,
+    "question": "Theta waves in EEG are associated with:",
+    "options": {
+      "A": "Active thinking",
+      "B": "Drowsiness and early sleep",
+      "C": "Deep sleep",
+      "D": "Alertness"
+    },
+    "correct_answer": "B"
   },
   {
     "id": 27,
-    "question": "Question 6",
+    "question": "EMG measures:",
     "options": {
-      "C": "Option C",
-      "B": "Option B",
-      "A": "Option A",
-      "D": "Option D"
+      "A": "Nerve conduction only",
+      "B": "Heart function",
+      "C": "Muscle electrical activity",
+      "D": "EEG"
     },
-    "correct_answer": "B"
+    "correct_answer": "C"
   },
   {
     "id": 28,
-    "question": "Question 69",
+    "question": "Contrast agents in CT commonly contain:",
     "options": {
-      "B": "Option B",
-      "A": "Option A",
-      "D": "Option D",
-      "C": "Option C"
+      "A": "Technetium",
+      "B": "Iodine",
+      "C": "Gadolinium",
+      "D": "Barium for MRI"
     },
-    "correct_answer": "C"
+    "correct_answer": "B"
   },
   {
     "id": 29,
-    "question": "Question 61",
+    "question": "Radiation therapy mainly uses:",
     "options": {
-      "B": "Option B",
-      "C": "Option C",
-      "A": "Option A",
-      "D": "Option D"
+      "A": "Ultrasound",
+      "B": "PET",
+      "C": "MRI",
+      "D": "X-rays and gamma rays"
     },
-    "correct_answer": "A"
+    "correct_answer": "D"
   },
   {
     "id": 30,
-    "question": "Question 151",
+    "question": "What precaution is used in diathermy?",
     "options": {
-      "D": "Option D",
-      "C": "Option C",
-      "B": "Option B",
-      "A": "Option A"
-    },
-    "correct_answer": "C"
-  },
-  {
-    "id": 31,
-    "question": "Question 119",
-    "options": {
-      "A": "Option A",
-      "D": "Option D",
-      "B": "Option B",
-      "C": "Option C"
-    },
-    "correct_answer": "B"
-  },
-  {
-    "id": 32,
-    "question": "Question 133",
-    "options": {
-      "D": "Option D",
-      "C": "Option C",
-      "A": "Option A",
-      "B": "Option B"
-    },
-    "correct_answer": "B"
-  },
-  {
-    "id": 33,
-    "question": "Question 186",
-    "options": {
-      "B": "Option B",
-      "A": "Option A",
-      "D": "Option D",
-      "C": "Option C"
-    },
-    "correct_answer": "B"
-  },
-  {
-    "id": 34,
-    "question": "Question 149",
-    "options": {
-      "B": "Option B",
-      "D": "Option D",
-      "C": "Option C",
-      "A": "Option A"
+      "A": "Pads are used for grounding and completing the circuit",
+      "B": "The patient is made to lie on a soft pillow",
+      "C": "The patient is made to drink a large number of fluids",
+      "D": "Wooden blocks are used for grounding"
     },
     "correct_answer": "A"
   },
   {
-    "id": 35,
-    "question": "Question 116",
+    "id": 31,
+    "question": "Half-value layer (HVL) depends on:",
     "options": {
-      "C": "Option C",
-      "B": "Option B",
-      "D": "Option D",
-      "A": "Option A"
+      "A": "Field strength",
+      "B": "Ultrasound frequency",
+      "C": "EEG amplitude",
+      "D": "X-ray energy"
     },
-    "correct_answer": "C"
+    "correct_answer": "D"
+  },
+  {
+    "id": 32,
+    "question": "Continuous-wave Doppler differs from pulsed-wave Doppler in that it:",
+    "options": {
+      "A": "Uses MRI",
+      "B": "Uses CT",
+      "C": "Can measure location precisely",
+      "D": "Measures only peak velocity"
+    },
+    "correct_answer": "D"
+  },
+  {
+    "id": 33,
+    "question": "In pulse oximetry, normal SpO2 is:",
+    "options": {
+      "A": "95–100%",
+      "B": "85–90%",
+      "C": "70–80%",
+      "D": "60–70%"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "id": 34,
+    "question": "Which is the technique suited for the separation of large DNA fragments",
+    "options": {
+      "A": "SDS-PAGE",
+      "B": "AGE",
+      "C": "PAGE",
+      "D": "PFGE"
+    },
+    "correct_answer": "D"
+  },
+  {
+    "id": 35,
+    "question": "Spin-echo sequence reduces:",
+    "options": {
+      "A": "T2* effects",
+      "B": "Doppler shift",
+      "C": "T1 contrast",
+      "D": "MRI signal"
+    },
+    "correct_answer": "A"
   },
   {
     "id": 36,
-    "question": "Question 48",
+    "question": "MRI angiography visualizes:",
     "options": {
-      "D": "Option D",
-      "C": "Option C",
-      "A": "Option A",
-      "B": "Option B"
+      "A": "Nerves",
+      "B": "Lungs",
+      "C": "Bones",
+      "D": "Blood vessels"
     },
     "correct_answer": "D"
   },
   {
     "id": 37,
-    "question": "Question 137",
+    "question": "Beta rhythm in EEG is:",
     "options": {
-      "C": "Option C",
-      "B": "Option B",
-      "D": "Option D",
-      "A": "Option A"
+      "A": "<4 Hz",
+      "B": "4–7 Hz",
+      "C": "8–13 Hz",
+      "D": "13–30 Hz"
     },
-    "correct_answer": "A"
+    "correct_answer": "D"
   },
   {
     "id": 38,
-    "question": "Question 274",
+    "question": "Multislice CT scanners improve:",
     "options": {
-      "C": "Option C",
-      "A": "Option A",
-      "D": "Option D",
-      "B": "Option B"
-    },
-    "correct_answer": "C"
-  },
-  {
-    "id": 39,
-    "question": "Question 60",
-    "options": {
-      "D": "Option D",
-      "A": "Option A",
-      "B": "Option B",
-      "C": "Option C"
-    },
-    "correct_answer": "A"
-  },
-  {
-    "id": 40,
-    "question": "Question 163",
-    "options": {
-      "A": "Option A",
-      "D": "Option D",
-      "B": "Option B",
-      "C": "Option C"
-    },
-    "correct_answer": "A"
-  },
-  {
-    "id": 41,
-    "question": "Question 162",
-    "options": {
-      "A": "Option A",
-      "B": "Option B",
-      "C": "Option C",
-      "D": "Option D"
+      "A": "MRI signal-to-noise ratio",
+      "B": "Slice thickness and scanning speed",
+      "C": "Ultrasound resolution",
+      "D": "Patient heart rate"
     },
     "correct_answer": "B"
   },
   {
-    "id": 42,
-    "question": "Question 66",
+    "id": 39,
+    "question": "Gadolinium-based agents are primarily used in:",
     "options": {
-      "B": "Option B",
-      "A": "Option A",
-      "C": "Option C",
-      "D": "Option D"
+      "A": "CT",
+      "B": "PET",
+      "C": "X-ray",
+      "D": "MRI"
+    },
+    "correct_answer": "D"
+  },
+  {
+    "id": 40,
+    "question": "For which of these areas can the ultrasound be taken for an infant but not for an adult?",
+    "options": {
+      "A": "Chest",
+      "B": "Cranium",
+      "C": "Arms",
+      "D": "Legs"
+    },
+    "correct_answer": "B"
+  },
+  {
+    "id": 41,
+    "question": "Theta rhythm in EEG is:",
+    "options": {
+      "A": "8–13 Hz",
+      "B": ">30 Hz",
+      "C": "4–7 Hz",
+      "D": "13–30 Hz"
+    },
+    "correct_answer": "C"
+  },
+  {
+    "id": 42,
+    "question": "ECG paper speed is usually:",
+    "options": {
+      "A": "50 mm/s",
+      "B": "25 mm/s",
+      "C": "10 mm/s",
+      "D": "100 mm/s"
     },
     "correct_answer": "B"
   },
   {
     "id": 43,
-    "question": "Question 229",
+    "question": "Gamma camera detects:",
     "options": {
-      "A": "Option A",
-      "D": "Option D",
-      "C": "Option C",
-      "B": "Option B"
+      "A": "RF signals",
+      "B": "Ultrasound echoes",
+      "C": "Beta particles",
+      "D": "Gamma photons"
     },
-    "correct_answer": "C"
+    "correct_answer": "D"
   },
   {
     "id": 44,
-    "question": "Question 188",
+    "question": "The typical energy range of X-rays used in diagnostic radiology is:",
     "options": {
-      "A": "Option A",
-      "D": "Option D",
-      "C": "Option C",
-      "B": "Option B"
+      "A": "0.01–0.1 keV",
+      "B": "0.1–0.5 keV",
+      "C": "1–150 keV",
+      "D": "1–10 MeV"
     },
     "correct_answer": "C"
   },
   {
     "id": 45,
-    "question": "Question 142",
+    "question": "ECG R wave represents:",
     "options": {
-      "D": "Option D",
-      "A": "Option A",
-      "C": "Option C",
-      "B": "Option B"
+      "A": "P wave",
+      "B": "Ventricular repolarization",
+      "C": "Atrial depolarization",
+      "D": "Ventricular depolarization"
     },
-    "correct_answer": "B"
+    "correct_answer": "D"
   },
   {
     "id": 46,
-    "question": "Question 204",
+    "question": "The basic principle of X-ray production involves:",
     "options": {
-      "A": "Option A",
-      "D": "Option D",
-      "C": "Option C",
-      "B": "Option B"
+      "A": "Electron acceleration and sudden deceleration",
+      "B": "Neutron decay",
+      "C": "Proton emission",
+      "D": "Photon absorption"
     },
-    "correct_answer": "B"
+    "correct_answer": "A"
   },
   {
     "id": 47,
-    "question": "Question 223",
+    "question": "In EEG, posterior dominant rhythm appears during:",
     "options": {
-      "B": "Option B",
-      "A": "Option A",
-      "C": "Option C",
-      "D": "Option D"
+      "A": "EMG artifact",
+      "B": "Seizure",
+      "C": "Eyes closed, awake",
+      "D": "Sleep"
     },
-    "correct_answer": "B"
+    "correct_answer": "C"
   },
   {
     "id": 48,
-    "question": "Question 52",
+    "question": "Linear accelerator (LINAC) produces:",
     "options": {
-      "B": "Option B",
-      "C": "Option C",
-      "A": "Option A",
-      "D": "Option D"
-    },
-    "correct_answer": "C"
-  },
-  {
-    "id": 49,
-    "question": "Question 88",
-    "options": {
-      "C": "Option C",
-      "D": "Option D",
-      "A": "Option A",
-      "B": "Option B"
-    },
-    "correct_answer": "A"
-  },
-  {
-    "id": 50,
-    "question": "Question 237",
-    "options": {
-      "A": "Option A",
-      "B": "Option B",
-      "D": "Option D",
-      "C": "Option C"
+      "A": "Ultrasound waves",
+      "B": "High-energy X-rays or electrons",
+      "C": "MRI signals",
+      "D": "Gamma rays only"
     },
     "correct_answer": "B"
   },
   {
-    "id": 51,
-    "question": "Question 3",
+    "id": 49,
+    "question": "Higher ultrasound frequency provides:",
     "options": {
-      "D": "Option D",
-      "B": "Option B",
-      "C": "Option C",
-      "A": "Option A"
+      "A": "More scattering",
+      "B": "Higher resolution",
+      "C": "Less image quality",
+      "D": "Greater depth"
     },
-    "correct_answer": "A"
+    "correct_answer": "B"
+  },
+  {
+    "id": 50,
+    "question": "Doppler ultrasound is primarily used to measure:",
+    "options": {
+      "A": "Tissue elasticity",
+      "B": "Muscle strength",
+      "C": "Bone density",
+      "D": "Blood flow"
+    },
+    "correct_answer": "D"
+  },
+  {
+    "id": 51,
+    "question": "In heat wave diathermy, the maximum power given out is 500 W and the maximum voltage possible is 4000V. Thus, what is the highest resistance that heat wave diathermy machine can deal with?",
+    "options": {
+      "A": "320 K ohm",
+      "B": "32 K ohm",
+      "C": "3200 K ohm",
+      "D": "3.2 K ohm"
+    },
+    "correct_answer": "B"
   },
   {
     "id": 52,
-    "question": "Question 297",
+    "question": "ECG T wave represents:",
     "options": {
-      "C": "Option C",
-      "B": "Option B",
-      "D": "Option D",
-      "A": "Option A"
+      "A": "Atrial depolarization",
+      "B": "Ventricular depolarization",
+      "C": "QRS complex",
+      "D": "Ventricular repolarization"
     },
-    "correct_answer": "A"
+    "correct_answer": "D"
   },
   {
     "id": 53,
-    "question": "Question 248",
+    "question": "The electrophoretic mobility denoted as µ is mathematically expressed as:",
     "options": {
-      "A": "Option A",
-      "B": "Option B",
-      "D": "Option D",
-      "C": "Option C"
+      "A": "E/V",
+      "B": "VE",
+      "C": "1/EV",
+      "D": "V/E"
     },
-    "correct_answer": "A"
+    "correct_answer": "D"
   },
   {
     "id": 54,
-    "question": "Question 148",
+    "question": "Gadolinium contrast shortens:",
     "options": {
-      "C": "Option C",
-      "A": "Option A",
-      "B": "Option B",
-      "D": "Option D"
+      "A": "T2 relaxation",
+      "B": "T1 relaxation",
+      "C": "T2*",
+      "D": "MRI noise"
     },
-    "correct_answer": "C"
+    "correct_answer": "B"
   },
   {
     "id": 55,
-    "question": "Question 11",
+    "question": "MRI safety concerns include:",
     "options": {
-      "C": "Option C",
-      "B": "Option B",
-      "A": "Option A",
-      "D": "Option D"
+      "A": "Nuclear decay",
+      "B": "Strong magnetic fields",
+      "C": "Ionizing radiation",
+      "D": "Ultrasound exposure"
     },
-    "correct_answer": "A"
+    "correct_answer": "B"
   },
   {
     "id": 56,
-    "question": "Question 195",
+    "question": "Electrophysiology study (EPS) is used to:",
     "options": {
-      "D": "Option D",
-      "A": "Option A",
-      "B": "Option B",
-      "C": "Option C"
+      "A": "Measure blood pressure",
+      "B": "Image lungs",
+      "C": "Perform ultrasound",
+      "D": "Map heart electrical activity"
     },
-    "correct_answer": "A"
+    "correct_answer": "D"
   },
   {
     "id": 57,
-    "question": "Question 196",
+    "question": "Gamma rays are:",
     "options": {
-      "A": "Option A",
-      "D": "Option D",
-      "B": "Option B",
-      "C": "Option C"
+      "A": "Alpha particles",
+      "B": "Charged particles",
+      "C": "High-energy photons",
+      "D": "Neutrons"
     },
     "correct_answer": "C"
   },
   {
     "id": 58,
-    "question": "Question 150",
+    "question": "Contrast agents in X-ray imaging are often:",
     "options": {
-      "A": "Option A",
-      "C": "Option C",
-      "D": "Option D",
-      "B": "Option B"
+      "A": "Low atomic number elements",
+      "B": "High atomic number elements",
+      "C": "Radioactive isotopes",
+      "D": "Gases only"
     },
     "correct_answer": "B"
   },
   {
     "id": 59,
-    "question": "Question 117",
+    "question": "Radiotherapy dose distribution is optimized using:",
     "options": {
-      "A": "Option A",
-      "C": "Option C",
-      "B": "Option B",
-      "D": "Option D"
+      "A": "PET only",
+      "B": "Ultrasound",
+      "C": "EEG",
+      "D": "CT imaging"
+    },
+    "correct_answer": "D"
+  },
+  {
+    "id": 60,
+    "question": "Surface EMG is less precise than:",
+    "options": {
+      "A": "EEG",
+      "B": "Intramuscular EMG",
+      "C": "PET",
+      "D": "ECG"
+    },
+    "correct_answer": "B"
+  },
+  {
+    "id": 61,
+    "question": "Gradient echo sequence is sensitive to:",
+    "options": {
+      "A": "Susceptibility effects",
+      "B": "Ultrasound reflection",
+      "C": "T1 only",
+      "D": "Noise"
     },
     "correct_answer": "A"
   },
   {
-    "id": 60,
-    "question": "Question 42",
-    "options": {
-      "A": "Option A",
-      "C": "Option C",
-      "D": "Option D",
-      "B": "Option B"
-    },
-    "correct_answer": "D"
-  },
-  {
-    "id": 61,
-    "question": "Question 259",
-    "options": {
-      "B": "Option B",
-      "D": "Option D",
-      "C": "Option C",
-      "A": "Option A"
-    },
-    "correct_answer": "B"
-  },
-  {
     "id": 62,
-    "question": "Question 157",
+    "question": "Standard limb leads in ECG:",
     "options": {
-      "C": "Option C",
-      "D": "Option D",
-      "A": "Option A",
-      "B": "Option B"
-    },
-    "correct_answer": "D"
-  },
-  {
-    "id": 63,
-    "question": "Question 144",
-    "options": {
-      "B": "Option B",
-      "A": "Option A",
-      "C": "Option C",
-      "D": "Option D"
+      "A": "V1–V6",
+      "B": "All of the above",
+      "C": "I, II, III",
+      "D": "aVR, aVL, aVF"
     },
     "correct_answer": "C"
   },
   {
-    "id": 64,
-    "question": "Question 208",
+    "id": 63,
+    "question": "What property of sound waves acts like the principle of ultrasound?",
     "options": {
-      "C": "Option C",
-      "B": "Option B",
-      "A": "Option A",
-      "D": "Option D"
+      "A": "Reflection only",
+      "B": "Reflection and Refraction",
+      "C": "Refraction only",
+      "D": "Propagation"
     },
     "correct_answer": "B"
   },
   {
-    "id": 65,
-    "question": "Question 128",
+    "id": 64,
+    "question": "EEG artifact from blinking appears as:",
     "options": {
-      "A": "Option A",
-      "D": "Option D",
-      "B": "Option B",
-      "C": "Option C"
+      "A": "Beta activity",
+      "B": "Sharp spikes",
+      "C": "Slow waves in frontal leads",
+      "D": "Delta rhythm"
     },
-    "correct_answer": "D"
+    "correct_answer": "C"
+  },
+  {
+    "id": 65,
+    "question": "MRI main magnetic field strength is:",
+    "options": {
+      "A": "100 T",
+      "B": "1–3 T typically",
+      "C": "0.1 T",
+      "D": "10 T"
+    },
+    "correct_answer": "B"
   },
   {
     "id": 66,
-    "question": "Question 299",
+    "question": "In radiation therapy, bolus is used to:",
     "options": {
-      "A": "Option A",
-      "C": "Option C",
-      "B": "Option B",
-      "D": "Option D"
+      "A": "Increase dose at surface",
+      "B": "Decrease total dose",
+      "C": "Shield organs",
+      "D": "Improve MRI contrast"
     },
     "correct_answer": "A"
   },
   {
     "id": 67,
-    "question": "Question 242",
+    "question": "In SPECT, collimator resolution affects:",
     "options": {
-      "C": "Option C",
-      "D": "Option D",
-      "B": "Option B",
-      "A": "Option A"
+      "A": "Depth only",
+      "B": "Photon energy",
+      "C": "Spatial resolution",
+      "D": "MRI signal"
     },
     "correct_answer": "C"
   },
   {
     "id": 68,
-    "question": "Question 155",
+    "question": "In EEG, delta waves are predominant in:",
     "options": {
-      "D": "Option D",
-      "B": "Option B",
-      "C": "Option C",
-      "A": "Option A"
+      "A": "Awake state",
+      "B": "Alert activity",
+      "C": "Relaxed wakefulness",
+      "D": "Deep sleep"
     },
-    "correct_answer": "B"
+    "correct_answer": "D"
   },
   {
     "id": 69,
-    "question": "Question 79",
+    "question": "In T2-weighted MRI images, water appears:",
     "options": {
-      "D": "Option D",
-      "B": "Option B",
-      "C": "Option C",
-      "A": "Option A"
+      "A": "Grey",
+      "B": "Dark",
+      "C": "Black",
+      "D": "Bright"
     },
-    "correct_answer": "B"
+    "correct_answer": "D"
   },
   {
     "id": 70,
-    "question": "Question 80",
+    "question": "Ultrasound frequency affects:",
     "options": {
-      "A": "Option A",
-      "D": "Option D",
-      "C": "Option C",
-      "B": "Option B"
-    },
-    "correct_answer": "B"
-  },
-  {
-    "id": 71,
-    "question": "Question 234",
-    "options": {
-      "C": "Option C",
-      "A": "Option A",
-      "B": "Option B",
-      "D": "Option D"
-    },
-    "correct_answer": "C"
-  },
-  {
-    "id": 72,
-    "question": "Question 45",
-    "options": {
-      "B": "Option B",
-      "D": "Option D",
-      "A": "Option A",
-      "C": "Option C"
-    },
-    "correct_answer": "B"
-  },
-  {
-    "id": 73,
-    "question": "Question 63",
-    "options": {
-      "B": "Option B",
-      "C": "Option C",
-      "A": "Option A",
-      "D": "Option D"
-    },
-    "correct_answer": "B"
-  },
-  {
-    "id": 74,
-    "question": "Question 97",
-    "options": {
-      "C": "Option C",
-      "D": "Option D",
-      "B": "Option B",
-      "A": "Option A"
-    },
-    "correct_answer": "B"
-  },
-  {
-    "id": 75,
-    "question": "Question 85",
-    "options": {
-      "B": "Option B",
-      "C": "Option C",
-      "A": "Option A",
-      "D": "Option D"
+      "A": "Depth and resolution",
+      "B": "Magnetic field",
+      "C": "PET tracer uptake",
+      "D": "Radiation dose"
     },
     "correct_answer": "A"
   },
   {
-    "id": 76,
-    "question": "Question 73",
+    "id": 71,
+    "question": "A ship sends ultrasound that returns from seabed and is detected after 3.42 s. If speed of ultrasound through seawater is 1300 m/s, then distance of seabed from ship would be",
     "options": {
-      "A": "Option A",
-      "C": "Option C",
-      "D": "Option D",
-      "B": "Option B"
+      "A": "2200 m",
+      "B": "2600 m",
+      "C": "2800 m",
+      "D": "3000 m"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "id": 72,
+    "question": "PR interval represents:",
+    "options": {
+      "A": "None",
+      "B": "Atrial repolarization",
+      "C": "Conduction from SA to AV node",
+      "D": "Ventricular contraction"
+    },
+    "correct_answer": "C"
+  },
+  {
+    "id": 73,
+    "question": "ST segment elevation indicates:",
+    "options": {
+      "A": "Myocardial infarction",
+      "B": "AV block",
+      "C": "Normal variant",
+      "D": "Myocardial ischemia"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "id": 74,
+    "question": "QT prolongation may lead to:",
+    "options": {
+      "A": "Torsades de pointes",
+      "B": "Bradycardia",
+      "C": "Stroke",
+      "D": "Pulmonary embolism"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "id": 75,
+    "question": "Half-value layer (HVL) indicates:",
+    "options": {
+      "A": "Ultrasound velocity",
+      "B": "Beam penetration",
+      "C": "MRI field strength",
+      "D": "PET tracer decay"
+    },
+    "correct_answer": "B"
+  },
+  {
+    "id": 76,
+    "question": "What is the relation between 1 Rad, 1 Rem and 1 R?",
+    "options": {
+      "A": "1 Rad ≈ 1.5 Rem ≈ 1000 R",
+      "B": "1 Rad ≈ 1 Rem ≈ 1 R",
+      "C": "1 Rad ≈ 10 Rem ≈ 1.8 R",
+      "D": "1 Rad ≈ 10 Rem ≈ 100 R"
     },
     "correct_answer": "B"
   },
   {
     "id": 77,
-    "question": "Question 198",
+    "question": "EMG measures:",
     "options": {
-      "A": "Option A",
-      "C": "Option C",
-      "D": "Option D",
-      "B": "Option B"
+      "A": "Lung pressure",
+      "B": "Heart electrical activity",
+      "C": "Brain activity",
+      "D": "Muscle electrical activity"
     },
     "correct_answer": "D"
   },
   {
     "id": 78,
-    "question": "Question 268",
+    "question": "Bioimpedance measures:",
     "options": {
-      "B": "Option B",
-      "C": "Option C",
-      "D": "Option D",
-      "A": "Option A"
+      "A": "Blood pressure",
+      "B": "Heart rate",
+      "C": "Electrical activity of brain",
+      "D": "Electrical resistance of body tissues"
     },
-    "correct_answer": "A"
+    "correct_answer": "D"
   },
   {
     "id": 79,
-    "question": "Question 136",
+    "question": "PET measures:",
     "options": {
-      "C": "Option C",
-      "B": "Option B",
-      "D": "Option D",
-      "A": "Option A"
+      "A": "Anatomy only",
+      "B": "Magnetic susceptibility",
+      "C": "Ultrasound reflection",
+      "D": "Metabolic activity"
     },
-    "correct_answer": "C"
+    "correct_answer": "D"
   },
   {
     "id": 80,
-    "question": "Question 64",
+    "question": "Gray (Gy) measures:",
     "options": {
-      "B": "Option B",
-      "A": "Option A",
-      "D": "Option D",
-      "C": "Option C"
+      "A": "Radiation exposure",
+      "B": "Magnetic field",
+      "C": "Dose equivalent",
+      "D": "Absorbed dose"
     },
-    "correct_answer": "A"
+    "correct_answer": "D"
   },
   {
     "id": 81,
-    "question": "Question 225",
+    "question": "Depolarization occurs when:",
     "options": {
-      "C": "Option C",
-      "B": "Option B",
-      "A": "Option A",
-      "D": "Option D"
+      "A": "Cl- enters the cell",
+      "B": "Ca2+ exits the cell",
+      "C": "K+ enters the cell",
+      "D": "Na+ enters the cell"
     },
     "correct_answer": "D"
   },
   {
     "id": 82,
-    "question": "Question 244",
+    "question": "Alpha particles are:",
     "options": {
-      "A": "Option A",
-      "D": "Option D",
-      "B": "Option B",
-      "C": "Option C"
+      "A": "High-penetration radiation",
+      "B": "Low-penetration, highly ionizing",
+      "C": "Neutrons",
+      "D": "Electrons"
     },
-    "correct_answer": "C"
+    "correct_answer": "B"
   },
   {
     "id": 83,
-    "question": "Question 194",
+    "question": "ALARA principle in radiology means:",
     "options": {
-      "A": "Option A",
-      "D": "Option D",
-      "C": "Option C",
-      "B": "Option B"
+      "A": "Maximize radiation",
+      "B": "Keep exposure 'As Low As Reasonably Achievable'",
+      "C": "Ignore safety",
+      "D": "Increase contrast"
     },
-    "correct_answer": "C"
+    "correct_answer": "B"
   },
   {
     "id": 84,
-    "question": "Question 231",
+    "question": "Optically stimulated luminescence (OSL) dosimeters are:",
     "options": {
-      "D": "Option D",
-      "C": "Option C",
-      "A": "Option A",
-      "B": "Option B"
+      "A": "MRI coils",
+      "B": "Single-use only",
+      "C": "Reusable",
+      "D": "Ultrasound probes"
     },
     "correct_answer": "C"
   },
   {
     "id": 85,
-    "question": "Question 46",
+    "question": "Capnography measures:",
     "options": {
-      "C": "Option C",
-      "D": "Option D",
-      "B": "Option B",
-      "A": "Option A"
+      "A": "Nitrogen",
+      "B": "Oxygen",
+      "C": "Carbon dioxide in exhaled air",
+      "D": "pH"
     },
     "correct_answer": "C"
   },
   {
     "id": 86,
-    "question": "Question 78",
+    "question": "Doppler angle affects:",
     "options": {
-      "C": "Option C",
-      "A": "Option A",
-      "B": "Option B",
-      "D": "Option D"
+      "A": "Flow velocity measurement",
+      "B": "X-ray attenuation",
+      "C": "EEG amplitude",
+      "D": "MRI T1"
     },
     "correct_answer": "A"
   },
   {
     "id": 87,
-    "question": "Question 181",
+    "question": "The speed of migration of ions in an electric field depends on",
     "options": {
-      "B": "Option B",
-      "A": "Option A",
-      "C": "Option C",
-      "D": "Option D"
+      "A": "Magnitude of charge and mass of molecules",
+      "B": "Shape and size of the molecule",
+      "C": "Magnitude of charge and shape of molecules",
+      "D": "Magnitude of charge, shape and mass of molecules"
     },
-    "correct_answer": "C"
+    "correct_answer": "D"
   },
   {
     "id": 88,
-    "question": "Question 83",
+    "question": "Low LET radiation includes:",
     "options": {
-      "D": "Option D",
-      "B": "Option B",
-      "A": "Option A",
-      "C": "Option C"
+      "A": "Neutrons",
+      "B": "Beta, X-ray, gamma",
+      "C": "Alpha particles",
+      "D": "Protons"
     },
     "correct_answer": "B"
   },
   {
     "id": 89,
-    "question": "Question 59",
+    "question": "Action potential amplitude in large myelinated fibers is:",
     "options": {
-      "D": "Option D",
-      "A": "Option A",
-      "C": "Option C",
-      "B": "Option B"
+      "A": "Larger than small fibers",
+      "B": "Same as unmyelinated",
+      "C": "Zero",
+      "D": "Smaller than small fibers"
+    },
+    "correct_answer": "B"
+  },
+  {
+    "id": 90,
+    "question": "CT scan imaging is based on:",
+    "options": {
+      "A": "X-ray attenuation",
+      "B": "Ultrasound reflection",
+      "C": "MRI",
+      "D": "Nuclear resonance"
     },
     "correct_answer": "A"
   },
   {
-    "id": 90,
-    "question": "Question 276",
-    "options": {
-      "B": "Option B",
-      "C": "Option C",
-      "D": "Option D",
-      "A": "Option A"
-    },
-    "correct_answer": "D"
-  },
-  {
     "id": 91,
-    "question": "Question 124",
+    "question": "Spatial resolution in nuclear medicine is limited by:",
     "options": {
-      "D": "Option D",
-      "B": "Option B",
-      "C": "Option C",
-      "A": "Option A"
+      "A": "Sound frequency",
+      "B": "Gradient strength",
+      "C": "Detector size and collimator design",
+      "D": "Tube voltage"
     },
     "correct_answer": "C"
   },
   {
     "id": 92,
-    "question": "Question 279",
+    "question": "Repolarization occurs when:",
     "options": {
-      "D": "Option D",
-      "B": "Option B",
-      "A": "Option A",
-      "C": "Option C"
-    },
-    "correct_answer": "B"
-  },
-  {
-    "id": 93,
-    "question": "Question 139",
-    "options": {
-      "D": "Option D",
-      "B": "Option B",
-      "C": "Option C",
-      "A": "Option A"
-    },
-    "correct_answer": "D"
-  },
-  {
-    "id": 94,
-    "question": "Question 256",
-    "options": {
-      "D": "Option D",
-      "C": "Option C",
-      "A": "Option A",
-      "B": "Option B"
-    },
-    "correct_answer": "B"
-  },
-  {
-    "id": 95,
-    "question": "Question 166",
-    "options": {
-      "A": "Option A",
-      "C": "Option C",
-      "D": "Option D",
-      "B": "Option B"
+      "A": "K+ exits",
+      "B": "Na+ enters",
+      "C": "Cl- enters",
+      "D": "Ca2+ enters"
     },
     "correct_answer": "A"
   },
   {
-    "id": 96,
-    "question": "Question 161",
+    "id": 93,
+    "question": "Acoustic impedance depends on:",
     "options": {
-      "D": "Option D",
-      "C": "Option C",
-      "A": "Option A",
-      "B": "Option B"
+      "A": "X-ray absorption",
+      "B": "Electrode placement",
+      "C": "Tissue density and sound velocity",
+      "D": "Magnetic field"
+    },
+    "correct_answer": "C"
+  },
+  {
+    "id": 94,
+    "question": "The main advantage of PET over SPECT is:",
+    "options": {
+      "A": "Higher resolution and quantification",
+      "B": "No radioactivity",
+      "C": "Lower cost",
+      "D": "No need for detectors"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "id": 95,
+    "question": "The range of frequency used for medical ultrasound is",
+    "options": {
+      "A": "20–200 kHz",
+      "B": "1–20 MHz",
+      "C": "1–10 kHz",
+      "D": "100–1000 MHz"
     },
     "correct_answer": "B"
   },
   {
-    "id": 97,
-    "question": "Question 34",
+    "id": 96,
+    "question": "Cardiac stress testing is used to detect:",
     "options": {
-      "B": "Option B",
-      "C": "Option C",
-      "A": "Option A",
-      "D": "Option D"
+      "A": "Arrhythmia only",
+      "B": "Resting heart rate",
+      "C": "Ischemia during exercise",
+      "D": "Blood pressure"
+    },
+    "correct_answer": "C"
+  },
+  {
+    "id": 97,
+    "question": "Standard ECG leads are:",
+    "options": {
+      "A": "3",
+      "B": "6",
+      "C": "12",
+      "D": "9"
     },
     "correct_answer": "C"
   },
   {
     "id": 98,
-    "question": "Question 282",
+    "question": "Electrode impedance in ECG should be:",
     "options": {
-      "A": "Option A",
-      "D": "Option D",
-      "B": "Option B",
-      "C": "Option C"
-    },
-    "correct_answer": "A"
-  },
-  {
-    "id": 99,
-    "question": "Question 273",
-    "options": {
-      "D": "Option D",
-      "A": "Option A",
-      "B": "Option B",
-      "C": "Option C"
-    },
-    "correct_answer": "D"
-  },
-  {
-    "id": 100,
-    "question": "Question 36",
-    "options": {
-      "C": "Option C",
-      "B": "Option B",
-      "D": "Option D",
-      "A": "Option A"
-    },
-    "correct_answer": "A"
-  },
-  {
-    "id": 101,
-    "question": "Question 210",
-    "options": {
-      "D": "Option D",
-      "B": "Option B",
-      "C": "Option C",
-      "A": "Option A"
-    },
-    "correct_answer": "D"
-  },
-  {
-    "id": 102,
-    "question": "Question 76",
-    "options": {
-      "D": "Option D",
-      "A": "Option A",
-      "B": "Option B",
-      "C": "Option C"
-    },
-    "correct_answer": "A"
-  },
-  {
-    "id": 103,
-    "question": "Question 209",
-    "options": {
-      "D": "Option D",
-      "A": "Option A",
-      "C": "Option C",
-      "B": "Option B"
+      "A": "High",
+      "B": "Irrelevant",
+      "C": "Low",
+      "D": "Variable"
     },
     "correct_answer": "C"
   },
   {
-    "id": 104,
-    "question": "Question 201",
+    "id": 99,
+    "question": "Linear accelerator in radiotherapy produces:",
     "options": {
-      "A": "Option A",
-      "D": "Option D",
-      "C": "Option C",
-      "B": "Option B"
+      "A": "Ultrasound",
+      "B": "High-energy X-rays",
+      "C": "Gamma rays only",
+      "D": "MRI signals"
     },
     "correct_answer": "B"
+  },
+  {
+    "id": 100,
+    "question": "Radiotherapy planning often uses:",
+    "options": {
+      "A": "Ultrasound only",
+      "B": "CT and MRI",
+      "C": "MRI only",
+      "D": "X-ray alone"
+    },
+    "correct_answer": "B"
+  },
+  {
+    "id": 101,
+    "question": "Beta waves in EEG are associated with:",
+    "options": {
+      "A": "Sleep",
+      "B": "Relaxed state",
+      "C": "Active thinking and alertness",
+      "D": "Coma"
+    },
+    "correct_answer": "C"
+  },
+  {
+    "id": 102,
+    "question": "PET/CT combines:",
+    "options": {
+      "A": "Ultrasound and CT",
+      "B": "MRI and X-ray",
+      "C": "Metabolic and anatomical imaging",
+      "D": "EEG and EMG"
+    },
+    "correct_answer": "C"
+  },
+  {
+    "id": 103,
+    "question": "Artifacts in ultrasound include:",
+    "options": {
+      "A": "Photon scatter",
+      "B": "Reverberation",
+      "C": "Magnetic interference",
+      "D": "Motion blur"
+    },
+    "correct_answer": "B"
+  },
+  {
+    "id": 104,
+    "question": "Ionizing radiation interacts with tissue via:",
+    "options": {
+      "A": "Ultrasound reflection",
+      "B": "Doppler shift",
+      "C": "MRI",
+      "D": "Photoelectric effect"
+    },
+    "correct_answer": "D"
   },
   {
     "id": 105,
-    "question": "Question 24",
+    "question": "The main advantage of digital radiography over conventional film is:",
     "options": {
-      "C": "Option C",
-      "D": "Option D",
-      "A": "Option A",
-      "B": "Option B"
+      "A": "Longer processing time",
+      "B": "Lower resolution",
+      "C": "Higher radiation dose",
+      "D": "Faster image acquisition"
     },
-    "correct_answer": "B"
+    "correct_answer": "D"
   },
   {
     "id": 106,
-    "question": "Question 57",
+    "question": "FEV1/FVC ratio is used to detect:",
     "options": {
-      "D": "Option D",
-      "A": "Option A",
-      "B": "Option B",
-      "C": "Option C"
+      "A": "Liver function",
+      "B": "Heart disease",
+      "C": "Kidney function",
+      "D": "Obstructive vs restrictive lung disease"
     },
-    "correct_answer": "A"
+    "correct_answer": "D"
   },
   {
     "id": 107,
-    "question": "Question 32",
+    "question": "The most common type of gel used for DNA separation is",
     "options": {
-      "A": "Option A",
-      "B": "Option B",
-      "C": "Option C",
-      "D": "Option D"
+      "A": "All of the above",
+      "B": "Agarose",
+      "C": "Polyacrylamide",
+      "D": "Agar"
     },
     "correct_answer": "B"
   },
   {
     "id": 108,
-    "question": "Question 141",
+    "question": "Electrophoresis was developed by:",
     "options": {
-      "D": "Option D",
-      "B": "Option B",
-      "C": "Option C",
-      "A": "Option A"
+      "A": "Sanger",
+      "B": "Tsvedberg",
+      "C": "Tswett",
+      "D": "Tiselius"
     },
-    "correct_answer": "C"
+    "correct_answer": "D"
   },
   {
     "id": 109,
-    "question": "Question 217",
+    "question": "The unit of absorbed dose in SI is:",
     "options": {
-      "B": "Option B",
-      "A": "Option A",
-      "D": "Option D",
-      "C": "Option C"
+      "A": "Rad",
+      "B": "Curie",
+      "C": "Rem",
+      "D": "Gray"
     },
     "correct_answer": "D"
   },
   {
     "id": 110,
-    "question": "Question 174",
+    "question": "The resolution of ultrasound imaging depends on:",
     "options": {
-      "A": "Option A",
-      "D": "Option D",
-      "B": "Option B",
-      "C": "Option C"
+      "A": "Wavelength",
+      "B": "Tissue color",
+      "C": "Temperature",
+      "D": "Electrical voltage"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "id": 111,
+    "question": "The resolution in MRI is mainly limited by:",
+    "options": {
+      "A": "Frequency of ultrasound",
+      "B": "Gamma ray intensity",
+      "C": "Wavelength of X-ray",
+      "D": "Signal-to-noise ratio"
     },
     "correct_answer": "D"
   },
   {
-    "id": 111,
-    "question": "Question 178",
-    "options": {
-      "C": "Option C",
-      "B": "Option B",
-      "D": "Option D",
-      "A": "Option A"
-    },
-    "correct_answer": "C"
-  },
-  {
     "id": 112,
-    "question": "Question 67",
+    "question": "In ECG, standard limb leads are:",
     "options": {
-      "C": "Option C",
-      "B": "Option B",
-      "D": "Option D",
-      "A": "Option A"
+      "A": "V1–V6",
+      "B": "All of the above",
+      "C": "aVR, aVL, aVF",
+      "D": "I, II, III"
     },
-    "correct_answer": "B"
+    "correct_answer": "D"
   },
   {
     "id": 113,
-    "question": "Question 21",
+    "question": "Grid in radiography:",
     "options": {
-      "C": "Option C",
-      "B": "Option B",
-      "D": "Option D",
-      "A": "Option A"
+      "A": "Enhances signal",
+      "B": "Detects ultrasound",
+      "C": "Produces X-rays",
+      "D": "Absorbs scattered radiation"
     },
-    "correct_answer": "B"
+    "correct_answer": "D"
   },
   {
     "id": 114,
-    "question": "Question 74",
+    "question": "Capnography waveform shows:",
     "options": {
-      "A": "Option A",
-      "D": "Option D",
-      "B": "Option B",
-      "C": "Option C"
+      "A": "Exhaled CO2",
+      "B": "Blood pressure",
+      "C": "Heart rate",
+      "D": "Arterial oxygen"
     },
-    "correct_answer": "B"
+    "correct_answer": "A"
   },
   {
     "id": 115,
-    "question": "Question 49",
+    "question": "Half-life of a radionuclide is:",
     "options": {
-      "B": "Option B",
-      "D": "Option D",
-      "C": "Option C",
-      "A": "Option A"
+      "A": "Time for half of nuclei to decay",
+      "B": "Time for energy release",
+      "C": "Time for radiation to stop",
+      "D": "Time for activity to double"
     },
     "correct_answer": "A"
   },
   {
     "id": 116,
-    "question": "Question 95",
+    "question": "X-ray contrast is enhanced by:",
     "options": {
-      "D": "Option D",
-      "C": "Option C",
-      "B": "Option B",
-      "A": "Option A"
+      "A": "Ultrasound gel",
+      "B": "Low field MRI",
+      "C": "High photon energy",
+      "D": "Iodine-based agents"
     },
-    "correct_answer": "C"
+    "correct_answer": "D"
   },
   {
     "id": 117,
-    "question": "Question 31",
+    "question": "Windowing in CT adjusts:",
     "options": {
-      "D": "Option D",
-      "B": "Option B",
-      "A": "Option A",
-      "C": "Option C"
+      "A": "Brightness and contrast",
+      "B": "Ultrasound penetration",
+      "C": "Radiation dose",
+      "D": "Scan time"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "id": 118,
+    "question": "The source-to-image distance (SID) affects:",
+    "options": {
+      "A": "Image magnification and sharpness",
+      "B": "X-ray wavelength",
+      "C": "Tube current",
+      "D": "Patient heart rate"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "id": 119,
+    "question": "High-LET radiation is:",
+    "options": {
+      "A": "More damaging",
+      "B": "Only gamma rays",
+      "C": "Less damaging",
+      "D": "Only X-rays"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "id": 120,
+    "question": "In EEG, spike-and-wave pattern is typical for:",
+    "options": {
+      "A": "Muscle artifact",
+      "B": "Focal seizure",
+      "C": "Beta rhythm",
+      "D": "Absence seizure"
     },
     "correct_answer": "D"
   },
   {
-    "id": 118,
-    "question": "Question 281",
+    "id": 121,
+    "question": "Ultrasound gel is used to:",
     "options": {
-      "B": "Option B",
-      "D": "Option D",
-      "C": "Option C",
-      "A": "Option A"
-    },
-    "correct_answer": "B"
-  },
-  {
-    "id": 119,
-    "question": "Question 35",
-    "options": {
-      "D": "Option D",
-      "A": "Option A",
-      "C": "Option C",
-      "B": "Option B"
+      "A": "Increase wavelength",
+      "B": "Improve Doppler shift",
+      "C": "Reduce impedance mismatch",
+      "D": "Cool the transducer"
     },
     "correct_answer": "C"
   },
   {
-    "id": 120,
-    "question": "Question 143",
-    "options": {
-      "C": "Option C",
-      "D": "Option D",
-      "A": "Option A",
-      "B": "Option B"
-    },
-    "correct_answer": "B"
-  },
-  {
-    "id": 121,
-    "question": "Question 192",
-    "options": {
-      "C": "Option C",
-      "D": "Option D",
-      "A": "Option A",
-      "B": "Option B"
-    },
-    "correct_answer": "B"
-  },
-  {
     "id": 122,
-    "question": "Question 165",
+    "question": "The two known units of radioactivity and the relation between the two are _______",
     "options": {
-      "B": "Option B",
-      "C": "Option C",
-      "D": "Option D",
-      "A": "Option A"
+      "A": "Curie and Becquerel 1 Bq = 3.7 x 10¹⁰ Ci",
+      "B": "Curie and Becquerel 1 Ci = 3.7 x 10¹⁰ Bq",
+      "C": "Curie and Roentgens 1 Ci = 1000 R",
+      "D": "Roentgen and Becquerel 1 R = 1000 Bq"
     },
-    "correct_answer": "D"
+    "correct_answer": "B"
   },
   {
     "id": 123,
-    "question": "Question 245",
+    "question": "Time-gain compensation (TGC) in ultrasound corrects for:",
     "options": {
-      "B": "Option B",
-      "C": "Option C",
-      "A": "Option A",
-      "D": "Option D"
+      "A": "Attenuation with depth",
+      "B": "MRI artifacts",
+      "C": "Doppler shift",
+      "D": "Variation in beam frequency"
     },
-    "correct_answer": "B"
+    "correct_answer": "A"
   },
   {
     "id": 124,
-    "question": "Question 147",
+    "question": "Which of the following is true about X-rays?",
     "options": {
-      "B": "Option B",
-      "A": "Option A",
-      "D": "Option D",
-      "C": "Option C"
+      "A": "They are mechanical waves",
+      "B": "They are electromagnetic waves",
+      "C": "They are sound waves",
+      "D": "They are longitudinal waves"
     },
     "correct_answer": "B"
   },
   {
     "id": 125,
-    "question": "Question 129",
+    "question": "Lead shielding in X-ray protects:",
     "options": {
-      "A": "Option A",
-      "B": "Option B",
-      "C": "Option C",
-      "D": "Option D"
+      "A": "Staff only",
+      "B": "MRI coils",
+      "C": "Both patient and staff",
+      "D": "Patient only"
     },
-    "correct_answer": "B"
+    "correct_answer": "C"
   },
   {
     "id": 126,
-    "question": "Question 280",
+    "question": "In electrophoresis, DNA will migrate towards",
     "options": {
-      "A": "Option A",
-      "B": "Option B",
-      "D": "Option D",
-      "C": "Option C"
+      "A": "Cathode or positive electrode",
+      "B": "Anode or negative electrode",
+      "C": "Anode or positive electrode",
+      "D": "Cathode or negative electrode"
     },
-    "correct_answer": "D"
+    "correct_answer": "C"
   },
   {
     "id": 127,
-    "question": "Question 93",
+    "question": "Which of the following is used to measure the biological damage caused by radiation?",
     "options": {
-      "C": "Option C",
-      "B": "Option B",
-      "A": "Option A",
-      "D": "Option D"
+      "A": "Roentgens",
+      "B": "Rem",
+      "C": "Curie",
+      "D": "Rad"
     },
     "correct_answer": "B"
   },
   {
     "id": 128,
-    "question": "Question 53",
+    "question": "Which is the non-ionizing imaging technique?",
     "options": {
-      "D": "Option D",
-      "C": "Option C",
-      "A": "Option A",
-      "B": "Option B"
+      "A": "PET scan",
+      "B": "MRI",
+      "C": "CT scan",
+      "D": "X-ray"
     },
-    "correct_answer": "A"
+    "correct_answer": "B"
   },
   {
     "id": 129,
-    "question": "Question 277",
+    "question": "In fluoroscopy, real-time imaging is achieved using:",
     "options": {
-      "A": "Option A",
-      "D": "Option D",
-      "B": "Option B",
-      "C": "Option C"
+      "A": "Gamma camera",
+      "B": "Ultrasound",
+      "C": "X-ray",
+      "D": "MRI"
     },
-    "correct_answer": "D"
+    "correct_answer": "C"
   },
   {
     "id": 130,
-    "question": "Question 240",
+    "question": "In cardiology, stress echocardiography assesses:",
     "options": {
-      "B": "Option B",
-      "C": "Option C",
-      "D": "Option D",
-      "A": "Option A"
+      "A": "Bone density",
+      "B": "Heart valves and function under stress",
+      "C": "Liver function",
+      "D": "Brain activity"
     },
-    "correct_answer": "D"
+    "correct_answer": "B"
   },
   {
     "id": 131,
-    "question": "Question 250",
+    "question": "Radiographic contrast increases with:",
     "options": {
-      "B": "Option B",
-      "A": "Option A",
-      "C": "Option C",
-      "D": "Option D"
+      "A": "Low mA",
+      "B": "High kVp",
+      "C": "Low kVp",
+      "D": "High kVp and contrast media"
     },
-    "correct_answer": "A"
+    "correct_answer": "C"
   },
   {
     "id": 132,
-    "question": "Question 50",
+    "question": "What is the frequency range of the sound used for ultrasound diathermy?",
     "options": {
-      "C": "Option C",
-      "A": "Option A",
-      "D": "Option D",
-      "B": "Option B"
+      "A": "0.1 – 0.7 MHz",
+      "B": "3.3 – 5 MHz",
+      "C": "0.7 – 3.3 MHz",
+      "D": "5 – 15 MHz"
     },
     "correct_answer": "C"
   },
   {
     "id": 133,
-    "question": "Question 84",
+    "question": "EMG detects:",
     "options": {
-      "B": "Option B",
-      "C": "Option C",
-      "A": "Option A",
-      "D": "Option D"
-    },
-    "correct_answer": "A"
-  },
-  {
-    "id": 134,
-    "question": "Question 203",
-    "options": {
-      "C": "Option C",
-      "B": "Option B",
-      "A": "Option A",
-      "D": "Option D"
+      "A": "Blood pressure",
+      "B": "Muscle electrical activity",
+      "C": "Brain waves",
+      "D": "Heart rate"
     },
     "correct_answer": "B"
   },
   {
-    "id": 135,
-    "question": "Question 121",
+    "id": 134,
+    "question": "Half-life of a radioactive substance is:",
     "options": {
-      "A": "Option A",
-      "D": "Option D",
-      "B": "Option B",
-      "C": "Option C"
+      "A": "Time taken for half the atoms to move",
+      "B": "Time taken for activity to disappear",
+      "C": "Time taken for activity to decrease by half",
+      "D": "Time taken for activity to double"
     },
     "correct_answer": "C"
   },
   {
-    "id": 136,
-    "question": "Question 168",
+    "id": 135,
+    "question": "Delta rhythm in EEG is:",
     "options": {
-      "A": "Option A",
-      "D": "Option D",
-      "C": "Option C",
-      "B": "Option B"
+      "A": "0.5–4 Hz",
+      "B": "8–13 Hz",
+      "C": "13–30 Hz",
+      "D": "4–7 Hz"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "id": 136,
+    "question": "Reflex latency in EMG testing indicates:",
+    "options": {
+      "A": "Heart rate",
+      "B": "Muscle strength",
+      "C": "Synaptic and nerve conduction time",
+      "D": "ECG interval"
     },
     "correct_answer": "C"
   },
   {
     "id": 137,
-    "question": "Question 233",
+    "question": "Precordial leads in ECG:",
     "options": {
-      "B": "Option B",
-      "A": "Option A",
-      "C": "Option C",
-      "D": "Option D"
+      "A": "Limb leads",
+      "B": "V1–V6",
+      "C": "I–III",
+      "D": "aVR–aVF"
     },
-    "correct_answer": "A"
+    "correct_answer": "B"
   },
   {
     "id": 138,
-    "question": "Question 105",
+    "question": "In EEG, alpha waves are predominant in:",
     "options": {
-      "B": "Option B",
-      "A": "Option A",
-      "D": "Option D",
-      "C": "Option C"
+      "A": "Deep sleep",
+      "B": "Active mental task",
+      "C": "Epileptic seizure",
+      "D": "Relaxed wakefulness"
     },
     "correct_answer": "D"
   },
   {
     "id": 139,
-    "question": "Question 100",
+    "question": "Diffusion-weighted MRI is used to detect:",
     "options": {
-      "A": "Option A",
-      "D": "Option D",
-      "C": "Option C",
-      "B": "Option B"
+      "A": "Ischemic stroke",
+      "B": "Pulmonary embolism",
+      "C": "Bone fractures",
+      "D": "Heart valve defects"
     },
     "correct_answer": "A"
   },
   {
     "id": 140,
-    "question": "Question 263",
+    "question": "Piezoelectric crystal converts:",
     "options": {
-      "B": "Option B",
-      "A": "Option A",
-      "D": "Option D",
-      "C": "Option C"
+      "A": "Electrical energy into light energy",
+      "B": "Chemical energy into electrical energy",
+      "C": "Sound energy into magnetic energy",
+      "D": "Mechanical energy into electrical energy"
     },
-    "correct_answer": "C"
+    "correct_answer": "D"
   },
   {
     "id": 141,
-    "question": "Question 4",
+    "question": "EEG electrodes follow:",
     "options": {
-      "B": "Option B",
-      "C": "Option C",
-      "A": "Option A",
-      "D": "Option D"
+      "A": "6-lead system",
+      "B": "12-lead system",
+      "C": "32-lead system",
+      "D": "10–20 system"
+    },
+    "correct_answer": "D"
+  },
+  {
+    "id": 142,
+    "question": "Photoelectric effect in X-rays occurs predominantly with:",
+    "options": {
+      "A": "High atomic number elements",
+      "B": "Low atomic number elements",
+      "C": "Gases only",
+      "D": "Water"
     },
     "correct_answer": "A"
   },
   {
-    "id": 142,
-    "question": "Question 56",
-    "options": {
-      "B": "Option B",
-      "A": "Option A",
-      "C": "Option C",
-      "D": "Option D"
-    },
-    "correct_answer": "B"
-  },
-  {
     "id": 143,
-    "question": "Question 7",
+    "question": "Which of the following factors does not influence electrophoretic mobility?",
     "options": {
-      "D": "Option D",
-      "A": "Option A",
-      "B": "Option B",
-      "C": "Option C"
+      "A": "Molecular weight",
+      "B": "Shape of molecule",
+      "C": "Size of molecule",
+      "D": "Stereochemistry of molecule"
     },
-    "correct_answer": "B"
+    "correct_answer": "D"
   },
   {
     "id": 144,
-    "question": "Question 40",
+    "question": "The QRS duration normally is:",
     "options": {
-      "C": "Option C",
-      "A": "Option A",
-      "B": "Option B",
-      "D": "Option D"
+      "A": "80–120 ms",
+      "B": "120–200 ms",
+      "C": "<80 ms",
+      "D": ">200 ms"
     },
-    "correct_answer": "B"
+    "correct_answer": "A"
   },
   {
     "id": 145,
-    "question": "Question 218",
+    "question": "Ultrasound is also useful for detecting fault in metal sheets, imaging marine depths, looking for metals beneath the earth's surface, detecting distances, detecting earthquakes",
     "options": {
-      "D": "Option D",
-      "C": "Option C",
-      "A": "Option A",
-      "B": "Option B"
+      "A": "ii, iii",
+      "B": "i, iv, v",
+      "C": "ii, iii, v",
+      "D": "i, ii, iv"
     },
     "correct_answer": "D"
   },
   {
     "id": 146,
-    "question": "Question 103",
+    "question": "Standard ECG calibration is:",
     "options": {
-      "C": "Option C",
-      "D": "Option D",
-      "A": "Option A",
-      "B": "Option B"
+      "A": "0.1 mV/mm",
+      "B": "5 mV/cm",
+      "C": "10 mV/mm",
+      "D": "1 mV/cm"
     },
     "correct_answer": "D"
   },
   {
     "id": 147,
-    "question": "Question 96",
+    "question": "In nerve conduction studies, distal latency reflects:",
     "options": {
-      "B": "Option B",
-      "C": "Option C",
-      "D": "Option D",
-      "A": "Option A"
+      "A": "Axon diameter",
+      "B": "Conduction through distal segment",
+      "C": "Muscle fatigue",
+      "D": "Brain activity"
     },
     "correct_answer": "B"
   },
   {
     "id": 148,
-    "question": "Question 261",
+    "question": "For what all purposes is diathermy principal used?",
     "options": {
-      "D": "Option D",
-      "B": "Option B",
-      "A": "Option A",
-      "C": "Option C"
+      "A": "Surgical and Therapeutic",
+      "B": "Therapeutic and Diagnostic",
+      "C": "Diagnostic and Surgical",
+      "D": "Diagnostic and Rehabilitative"
     },
-    "correct_answer": "B"
+    "correct_answer": "A"
   },
   {
     "id": 149,
-    "question": "Question 70",
+    "question": "Common PET isotope ^18F has half-life:",
     "options": {
-      "A": "Option A",
-      "D": "Option D",
-      "B": "Option B",
-      "C": "Option C"
+      "A": "110 minutes",
+      "B": "6 hours",
+      "C": "24 hours",
+      "D": "1 hour"
     },
-    "correct_answer": "B"
+    "correct_answer": "A"
   },
   {
     "id": 150,
-    "question": "Question 37",
+    "question": "T2-weighted MRI images highlight:",
     "options": {
-      "B": "Option B",
-      "D": "Option D",
-      "A": "Option A",
-      "C": "Option C"
+      "A": "Fat",
+      "B": "Air",
+      "C": "Water/edema",
+      "D": "Bone"
     },
-    "correct_answer": "A"
+    "correct_answer": "C"
   },
   {
     "id": 151,
-    "question": "Question 10",
+    "question": "LET (linear energy transfer) affects:",
     "options": {
-      "A": "Option A",
-      "D": "Option D",
-      "C": "Option C",
-      "B": "Option B"
+      "A": "Ultrasound reflection",
+      "B": "MRI SNR",
+      "C": "Tissue penetration",
+      "D": "Biological effect per unit dose"
+    },
+    "correct_answer": "D"
+  },
+  {
+    "id": 152,
+    "question": "Compton scattering occurs when:",
+    "options": {
+      "A": "High-energy photons are absorbed",
+      "B": "Coherent reflection occurs",
+      "C": "Low-energy photons interact with outer electrons",
+      "D": "Pair production happens"
     },
     "correct_answer": "C"
   },
   {
-    "id": 152,
-    "question": "Question 55",
+    "id": 153,
+    "question": "MRI Larmor frequency depends on:",
     "options": {
-      "B": "Option B",
-      "A": "Option A",
-      "C": "Option C",
-      "D": "Option D"
+      "A": "Tissue density",
+      "B": "X-ray tube voltage",
+      "C": "RF power",
+      "D": "Magnetic field"
     },
-    "correct_answer": "B"
+    "correct_answer": "D"
   },
   {
-    "id": 153,
-    "question": "Question 294",
+    "id": 154,
+    "question": "In radiotherapy, the target volume is defined as:",
     "options": {
-      "C": "Option C",
-      "D": "Option D",
-      "A": "Option A",
-      "B": "Option B"
+      "A": "Volume of tumor",
+      "B": "Entire body",
+      "C": "Volume of organs only",
+      "D": "Volume of healthy tissue"
     },
     "correct_answer": "A"
   },
   {
-    "id": 154,
-    "question": "Question 221",
-    "options": {
-      "D": "Option D",
-      "B": "Option B",
-      "A": "Option A",
-      "C": "Option C"
-    },
-    "correct_answer": "C"
-  },
-  {
     "id": 155,
-    "question": "Question 146",
+    "question": "Increasing mA in X-ray increases:",
     "options": {
-      "C": "Option C",
-      "D": "Option D",
-      "A": "Option A",
-      "B": "Option B"
+      "A": "Magnetic resonance",
+      "B": "Number of photons",
+      "C": "Ultrasound amplitude",
+      "D": "Photon energy"
     },
     "correct_answer": "B"
   },
   {
     "id": 156,
-    "question": "Question 270",
+    "question": "Continuous-wave Doppler cannot:",
     "options": {
-      "D": "Option D",
-      "C": "Option C",
-      "A": "Option A",
-      "B": "Option B"
+      "A": "Detect blood flow",
+      "B": "Measure peak velocity",
+      "C": "Detect valve stenosis",
+      "D": "Localize exact depth"
     },
     "correct_answer": "D"
   },
   {
     "id": 157,
-    "question": "Question 114",
+    "question": "What cannot be a reason for using electrophoresis?",
     "options": {
-      "B": "Option B",
-      "D": "Option D",
-      "C": "Option C",
-      "A": "Option A"
+      "A": "Organizing DNA by shape of backbone",
+      "B": "Organizing DNA in order we can see",
+      "C": "Comparing two sets of DNA",
+      "D": "Organizing DNA fragments from largest to smallest"
     },
     "correct_answer": "A"
   },
   {
     "id": 158,
-    "question": "Question 278",
+    "question": "The types of therapeutic diathermy machines that exist are ___________",
     "options": {
-      "A": "Option A",
-      "C": "Option C",
-      "B": "Option B",
-      "D": "Option D"
+      "A": "Short wave, ultrasound and cold compress",
+      "B": "Electrical impulse, microwave and ultrasound",
+      "C": "Short wave, micro wave and ultrasound",
+      "D": "Cold compress, microwave and electrical impulse"
     },
     "correct_answer": "C"
   },
   {
     "id": 159,
-    "question": "Question 54",
+    "question": "ST-segment elevation is a marker of:",
     "options": {
-      "C": "Option C",
-      "B": "Option B",
-      "D": "Option D",
-      "A": "Option A"
-    },
-    "correct_answer": "B"
-  },
-  {
-    "id": 160,
-    "question": "Question 283",
-    "options": {
-      "C": "Option C",
-      "A": "Option A",
-      "D": "Option D",
-      "B": "Option B"
-    },
-    "correct_answer": "B"
-  },
-  {
-    "id": 161,
-    "question": "Question 23",
-    "options": {
-      "B": "Option B",
-      "A": "Option A",
-      "D": "Option D",
-      "C": "Option C"
-    },
-    "correct_answer": "B"
-  },
-  {
-    "id": 162,
-    "question": "Question 153",
-    "options": {
-      "D": "Option D",
-      "C": "Option C",
-      "A": "Option A",
-      "B": "Option B"
-    },
-    "correct_answer": "B"
-  },
-  {
-    "id": 163,
-    "question": "Question 130",
-    "options": {
-      "D": "Option D",
-      "B": "Option B",
-      "A": "Option A",
-      "C": "Option C"
+      "A": "Acute myocardial infarction",
+      "B": "Arrhythmia",
+      "C": "Hyperkalemia",
+      "D": "Hypertension"
     },
     "correct_answer": "A"
   },
   {
-    "id": 164,
-    "question": "Question 27",
+    "id": 160,
+    "question": "In T1-weighted MRI images, fat appears:",
     "options": {
-      "C": "Option C",
-      "B": "Option B",
-      "D": "Option D",
-      "A": "Option A"
+      "A": "Bright",
+      "B": "Black",
+      "C": "Dark",
+      "D": "Grey"
     },
-    "correct_answer": "D"
+    "correct_answer": "A"
+  },
+  {
+    "id": 161,
+    "question": "Action potential propagation is:",
+    "options": {
+      "A": "Electrical conduction along axon",
+      "B": "Ultrasound wave",
+      "C": "Muscle contraction",
+      "D": "Blood flow"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "id": 162,
+    "question": "Fractionated radiotherapy reduces:",
+    "options": {
+      "A": "Scan time",
+      "B": "Tumor effect",
+      "C": "Normal tissue damage",
+      "D": "Radiation energy"
+    },
+    "correct_answer": "C"
+  },
+  {
+    "id": 163,
+    "question": "Deterministic effects appear:",
+    "options": {
+      "A": "After decades",
+      "B": "Randomly",
+      "C": "Above threshold dose",
+      "D": "Below threshold dose"
+    },
+    "correct_answer": "C"
+  },
+  {
+    "id": 164,
+    "question": "Functional MRI BOLD signal reflects:",
+    "options": {
+      "A": "Tissue density",
+      "B": "Blood oxygenation level",
+      "C": "Ion concentration",
+      "D": "Electrical activity"
+    },
+    "correct_answer": "B"
   },
   {
     "id": 165,
-    "question": "Question 25",
+    "question": "Electromyography (EMG) measures:",
     "options": {
-      "D": "Option D",
-      "B": "Option B",
-      "C": "Option C",
-      "A": "Option A"
+      "A": "Muscle electrical activity",
+      "B": "Heart electrical activity",
+      "C": "Brain electrical activity",
+      "D": "Lung function"
     },
-    "correct_answer": "D"
+    "correct_answer": "A"
   },
   {
     "id": 166,
-    "question": "Question 171",
+    "question": "X-ray tube voltage affects:",
     "options": {
-      "B": "Option B",
-      "A": "Option A",
-      "D": "Option D",
-      "C": "Option C"
+      "A": "Magnetic field",
+      "B": "Ultrasound frequency",
+      "C": "Image contrast",
+      "D": "Photon energy"
     },
-    "correct_answer": "C"
+    "correct_answer": "D"
   },
   {
     "id": 167,
-    "question": "Question 159",
+    "question": "Beta particles are:",
     "options": {
-      "D": "Option D",
-      "C": "Option C",
-      "B": "Option B",
-      "A": "Option A"
+      "A": "Protons",
+      "B": "Neutrons",
+      "C": "Gamma rays",
+      "D": "Electrons or positrons"
     },
-    "correct_answer": "B"
+    "correct_answer": "D"
   },
   {
     "id": 168,
-    "question": "Question 211",
+    "question": "The term 'windowing' in CT refers to:",
     "options": {
-      "A": "Option A",
-      "B": "Option B",
-      "D": "Option D",
-      "C": "Option C"
-    },
-    "correct_answer": "D"
-  },
-  {
-    "id": 169,
-    "question": "Question 212",
-    "options": {
-      "D": "Option D",
-      "C": "Option C",
-      "B": "Option B",
-      "A": "Option A"
+      "A": "Opening X-ray tube",
+      "B": "Adjusting brightness and contrast",
+      "C": "Positioning patient",
+      "D": "Changing slice thickness"
     },
     "correct_answer": "B"
   },
   {
-    "id": 170,
-    "question": "Question 108",
+    "id": 169,
+    "question": "EMG needle electrodes are used for:",
     "options": {
-      "A": "Option A",
-      "B": "Option B",
-      "D": "Option D",
-      "C": "Option C"
-    },
-    "correct_answer": "D"
-  },
-  {
-    "id": 171,
-    "question": "Question 122",
-    "options": {
-      "C": "Option C",
-      "D": "Option D",
-      "B": "Option B",
-      "A": "Option A"
-    },
-    "correct_answer": "D"
-  },
-  {
-    "id": 172,
-    "question": "Question 189",
-    "options": {
-      "C": "Option C",
-      "B": "Option B",
-      "A": "Option A",
-      "D": "Option D"
+      "A": "Surface recording",
+      "B": "Heart monitoring",
+      "C": "Intramuscular recording",
+      "D": "Brain activity"
     },
     "correct_answer": "C"
   },
   {
-    "id": 173,
-    "question": "Question 115",
+    "id": 170,
+    "question": "Radiopharmaceuticals are used in:",
     "options": {
-      "C": "Option C",
-      "D": "Option D",
-      "A": "Option A",
-      "B": "Option B"
+      "A": "CT",
+      "B": "PET and SPECT",
+      "C": "MRI",
+      "D": "Ultrasound"
+    },
+    "correct_answer": "B"
+  },
+  {
+    "id": 171,
+    "question": "A technique which separates charged particles using electric field is",
+    "options": {
+      "A": "Electrophoresis",
+      "B": "Hydrolysis",
+      "C": "Protein denaturing",
+      "D": "Protein synthesis"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "id": 172,
+    "question": "When is electrophoresis not used?",
+    "options": {
+      "A": "Separation of amino acids",
+      "B": "Separation of lipids",
+      "C": "Separation of nucleic acids",
+      "D": "Separation of proteins"
+    },
+    "correct_answer": "B"
+  },
+  {
+    "id": 173,
+    "question": "Synaptic delay is approximately:",
+    "options": {
+      "A": "10 ms",
+      "B": "1 ms",
+      "C": "0.1 ms",
+      "D": "100 ms"
     },
     "correct_answer": "B"
   },
   {
     "id": 174,
-    "question": "Question 199",
+    "question": "Which of the following statements is true about migration of biomolecules?",
     "options": {
-      "C": "Option C",
-      "A": "Option A",
-      "B": "Option B",
-      "D": "Option D"
-    },
-    "correct_answer": "A"
-  },
-  {
-    "id": 175,
-    "question": "Question 167",
-    "options": {
-      "D": "Option D",
-      "B": "Option B",
-      "C": "Option C",
-      "A": "Option A"
-    },
-    "correct_answer": "C"
-  },
-  {
-    "id": 176,
-    "question": "Question 140",
-    "options": {
-      "B": "Option B",
-      "D": "Option D",
-      "A": "Option A",
-      "C": "Option C"
+      "A": "Rate of migration is inversely proportional to current",
+      "B": "Low voltage is used for separation of high mass molecules",
+      "C": "The rate of migration is directly proportional to the resistance of medium",
+      "D": "Rate of migration is directly proportional to current"
     },
     "correct_answer": "D"
   },
   {
-    "id": 177,
-    "question": "Question 2",
+    "id": 175,
+    "question": "Chest leads in ECG are:",
     "options": {
-      "A": "Option A",
-      "D": "Option D",
-      "B": "Option B",
-      "C": "Option C"
+      "A": "aVR–aVF",
+      "B": "V1–V6",
+      "C": "None",
+      "D": "I–III"
+    },
+    "correct_answer": "B"
+  },
+  {
+    "id": 176,
+    "question": "QT interval represents:",
+    "options": {
+      "A": "Atrial depolarization",
+      "B": "Ventricular depolarization only",
+      "C": "Ventricular depolarization and repolarization",
+      "D": "Atrial repolarization"
+    },
+    "correct_answer": "C"
+  },
+  {
+    "id": 177,
+    "question": "EMG amplitude reflects:",
+    "options": {
+      "A": "Number of active motor units",
+      "B": "Oxygen saturation",
+      "C": "Conduction velocity",
+      "D": "Heart activity"
     },
     "correct_answer": "A"
   },
   {
     "id": 178,
-    "question": "Question 145",
+    "question": "Echogenicity is:",
     "options": {
-      "C": "Option C",
-      "A": "Option A",
-      "B": "Option B",
-      "D": "Option D"
-    },
-    "correct_answer": "C"
-  },
-  {
-    "id": 179,
-    "question": "Question 120",
-    "options": {
-      "C": "Option C",
-      "D": "Option D",
-      "A": "Option A",
-      "B": "Option B"
-    },
-    "correct_answer": "D"
-  },
-  {
-    "id": 180,
-    "question": "Question 123",
-    "options": {
-      "A": "Option A",
-      "D": "Option D",
-      "C": "Option C",
-      "B": "Option B"
-    },
-    "correct_answer": "C"
-  },
-  {
-    "id": 181,
-    "question": "Question 98",
-    "options": {
-      "C": "Option C",
-      "D": "Option D",
-      "B": "Option B",
-      "A": "Option A"
+      "A": "Tissue absorption",
+      "B": "Tissue reflection of ultrasound",
+      "C": "Radiation dose",
+      "D": "Bone density"
     },
     "correct_answer": "B"
   },
   {
-    "id": 182,
-    "question": "Question 246",
+    "id": 179,
+    "question": "In ECG, P wave represents:",
     "options": {
-      "C": "Option C",
-      "B": "Option B",
-      "D": "Option D",
-      "A": "Option A"
+      "A": "Atrial depolarization",
+      "B": "Ventricular repolarization",
+      "C": "Ventricular depolarization",
+      "D": "Atrial repolarization"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "id": 180,
+    "question": "CT number (HU) of water is:",
+    "options": {
+      "A": "100",
+      "B": "0",
+      "C": "1000",
+      "D": "-100"
+    },
+    "correct_answer": "B"
+  },
+  {
+    "id": 181,
+    "question": "CT angiography uses:",
+    "options": {
+      "A": "X-ray with contrast",
+      "B": "MRI",
+      "C": "Ultrasound",
+      "D": "PET"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "id": 182,
+    "question": "SPECT imaging uses:",
+    "options": {
+      "A": "Magnetic resonance",
+      "B": "Single photon emission",
+      "C": "Ultrasound",
+      "D": "Positron emission"
     },
     "correct_answer": "B"
   },
   {
     "id": 183,
-    "question": "Question 113",
+    "question": "In bioimpedance, fat tissue has:",
     "options": {
-      "B": "Option B",
-      "C": "Option C",
-      "A": "Option A",
-      "D": "Option D"
+      "A": "High resistance",
+      "B": "Zero resistance",
+      "C": "Infinite resistance",
+      "D": "Low resistance"
     },
-    "correct_answer": "B"
+    "correct_answer": "A"
   },
   {
     "id": 184,
-    "question": "Question 9",
+    "question": "Nerve conduction velocity decreases in:",
     "options": {
-      "C": "Option C",
-      "B": "Option B",
-      "A": "Option A",
-      "D": "Option D"
+      "A": "Neuropathy",
+      "B": "Healthy nerves",
+      "C": "ECG",
+      "D": "Muscle fatigue"
     },
-    "correct_answer": "D"
+    "correct_answer": "A"
   },
   {
     "id": 185,
-    "question": "Question 190",
+    "question": "Holter monitoring records ECG for:",
     "options": {
-      "C": "Option C",
-      "D": "Option D",
-      "A": "Option A",
-      "B": "Option B"
+      "A": "24–48 hours",
+      "B": "Minutes",
+      "C": "Seconds",
+      "D": "Weeks"
     },
-    "correct_answer": "C"
+    "correct_answer": "A"
   },
   {
     "id": 186,
-    "question": "Question 158",
+    "question": "Ventricular fibrillation is:",
     "options": {
-      "B": "Option B",
-      "D": "Option D",
-      "A": "Option A",
-      "C": "Option C"
+      "A": "Organized contraction",
+      "B": "Disorganized, life-threatening rhythm",
+      "C": "Normal variant",
+      "D": "Slow heart rate"
     },
     "correct_answer": "B"
   },
   {
     "id": 187,
-    "question": "Question 191",
+    "question": "CMAP amplitude reflects:",
     "options": {
-      "B": "Option B",
-      "D": "Option D",
-      "A": "Option A",
-      "C": "Option C"
+      "A": "Muscle contraction strength",
+      "B": "Nerve myelination",
+      "C": "ECG QRS",
+      "D": "Brain activity"
     },
-    "correct_answer": "D"
+    "correct_answer": "A"
   },
   {
     "id": 188,
-    "question": "Question 101",
+    "question": "What is the role of SDS in SDS-PAGE?",
     "options": {
-      "C": "Option C",
-      "D": "Option D",
-      "B": "Option B",
-      "A": "Option A"
+      "A": "Imparting overall negative charge to the protein",
+      "B": "Imparting equal mass to all proteins",
+      "C": "Protein denaturing and imparting net negative charge",
+      "D": "Protein unfolding and imparting net positive charge"
     },
     "correct_answer": "C"
   },
   {
     "id": 189,
-    "question": "Question 247",
+    "question": "Which imaging modality uses positron emission?",
     "options": {
-      "C": "Option C",
-      "D": "Option D",
-      "B": "Option B",
-      "A": "Option A"
+      "A": "SPECT",
+      "B": "PET",
+      "C": "MRI",
+      "D": "Ultrasound"
     },
-    "correct_answer": "C"
+    "correct_answer": "B"
   },
   {
     "id": 190,
-    "question": "Question 236",
+    "question": "In SDS-PAGE, separation is based on",
     "options": {
-      "B": "Option B",
-      "D": "Option D",
-      "C": "Option C",
-      "A": "Option A"
+      "A": "Shape",
+      "B": "All of the above",
+      "C": "Molecular weight",
+      "D": "Charge"
     },
     "correct_answer": "C"
   },
   {
     "id": 191,
-    "question": "Question 265",
+    "question": "Scatter radiation reduces:",
     "options": {
-      "B": "Option B",
-      "D": "Option D",
-      "C": "Option C",
-      "A": "Option A"
+      "A": "Slice thickness",
+      "B": "Image contrast",
+      "C": "Beam energy",
+      "D": "Patient dose"
     },
-    "correct_answer": "D"
+    "correct_answer": "B"
   },
   {
     "id": 192,
-    "question": "Question 241",
+    "question": "Radioprotective agents reduce:",
     "options": {
-      "B": "Option B",
-      "D": "Option D",
-      "A": "Option A",
-      "C": "Option C"
+      "A": "Radiation damage to tissues",
+      "B": "Image contrast",
+      "C": "Beam intensity",
+      "D": "Radiation energy"
     },
-    "correct_answer": "D"
+    "correct_answer": "A"
   },
   {
     "id": 193,
-    "question": "Question 43",
+    "question": "Grid ratio in radiography affects:",
     "options": {
-      "A": "Option A",
-      "C": "Option C",
-      "D": "Option D",
-      "B": "Option B"
+      "A": "Scatter absorption",
+      "B": "MRI T1",
+      "C": "Ultrasound frequency",
+      "D": "Spatial resolution"
     },
-    "correct_answer": "C"
+    "correct_answer": "A"
   },
   {
     "id": 194,
-    "question": "Question 291",
+    "question": "ECG paper speed is typically:",
     "options": {
-      "D": "Option D",
-      "B": "Option B",
-      "A": "Option A",
-      "C": "Option C"
+      "A": "100 mm/s",
+      "B": "25 mm/s",
+      "C": "10 mm/s",
+      "D": "50 mm/s"
     },
-    "correct_answer": "D"
+    "correct_answer": "B"
   },
   {
     "id": 195,
-    "question": "Question 286",
+    "question": "MRI signal intensity depends on:",
     "options": {
-      "A": "Option A",
-      "D": "Option D",
-      "C": "Option C",
-      "B": "Option B"
+      "A": "Ultrasound frequency",
+      "B": "X-ray tube current",
+      "C": "Proton density and relaxation times",
+      "D": "PET tracer concentration"
     },
     "correct_answer": "C"
   },
   {
     "id": 196,
-    "question": "Question 220",
+    "question": "MRI safety contraindications include:",
     "options": {
-      "A": "Option A",
-      "C": "Option C",
-      "D": "Option D",
-      "B": "Option B"
+      "A": "Pacemakers",
+      "B": "All of the above",
+      "C": "Cochlear implants",
+      "D": "Metallic foreign bodies"
     },
-    "correct_answer": "D"
+    "correct_answer": "B"
   },
   {
     "id": 197,
-    "question": "Question 127",
+    "question": "Bone appears on CT as:",
     "options": {
-      "C": "Option C",
-      "B": "Option B",
-      "A": "Option A",
-      "D": "Option D"
+      "A": "Hyperdense",
+      "B": "Hypodense",
+      "C": "Dark gray",
+      "D": "Isodense"
     },
-    "correct_answer": "D"
+    "correct_answer": "A"
   },
   {
     "id": 198,
-    "question": "Question 81",
+    "question": "Synaptic transmission occurs at:",
     "options": {
-      "B": "Option B",
-      "D": "Option D",
-      "C": "Option C",
-      "A": "Option A"
+      "A": "Node of Ranvier",
+      "B": "Axon hillock",
+      "C": "T-tubule",
+      "D": "Synapse"
     },
-    "correct_answer": "A"
+    "correct_answer": "D"
   },
   {
     "id": 199,
-    "question": "Question 262",
+    "question": "Spirometry measures:",
     "options": {
-      "B": "Option B",
-      "A": "Option A",
-      "D": "Option D",
-      "C": "Option C"
-    },
-    "correct_answer": "B"
-  },
-  {
-    "id": 200,
-    "question": "Question 82",
-    "options": {
-      "D": "Option D",
-      "A": "Option A",
-      "B": "Option B",
-      "C": "Option C"
-    },
-    "correct_answer": "A"
-  },
-  {
-    "id": 201,
-    "question": "Question 207",
-    "options": {
-      "D": "Option D",
-      "C": "Option C",
-      "A": "Option A",
-      "B": "Option B"
-    },
-    "correct_answer": "D"
-  },
-  {
-    "id": 202,
-    "question": "Question 90",
-    "options": {
-      "B": "Option B",
-      "C": "Option C",
-      "D": "Option D",
-      "A": "Option A"
-    },
-    "correct_answer": "B"
-  },
-  {
-    "id": 203,
-    "question": "Question 183",
-    "options": {
-      "B": "Option B",
-      "C": "Option C",
-      "A": "Option A",
-      "D": "Option D"
-    },
-    "correct_answer": "D"
-  },
-  {
-    "id": 204,
-    "question": "Question 169",
-    "options": {
-      "B": "Option B",
-      "A": "Option A",
-      "C": "Option C",
-      "D": "Option D"
-    },
-    "correct_answer": "B"
-  },
-  {
-    "id": 205,
-    "question": "Question 154",
-    "options": {
-      "D": "Option D",
-      "A": "Option A",
-      "B": "Option B",
-      "C": "Option C"
+      "A": "Blood pressure",
+      "B": "Heart rate",
+      "C": "Lung volumes and airflow",
+      "D": "Muscle activity"
     },
     "correct_answer": "C"
   },
   {
-    "id": 206,
-    "question": "Question 77",
+    "id": 200,
+    "question": "Echogenicity in ultrasound imaging represents:",
     "options": {
-      "B": "Option B",
-      "D": "Option D",
-      "A": "Option A",
-      "C": "Option C"
+      "A": "Blood flow",
+      "B": "Tissue temperature",
+      "C": "The ability of tissue to reflect ultrasound",
+      "D": "Tissue density"
+    },
+    "correct_answer": "C"
+  },
+  {
+    "id": 201,
+    "question": "Thermoluminescent dosimeter (TLD) works by:",
+    "options": {
+      "A": "Absorbing photons and releasing light when heated",
+      "B": "Ultrasound reflection",
+      "C": "Generating magnetic field",
+      "D": "Conducting electricity"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "id": 202,
+    "question": "Half-life of ^18F in PET is:",
+    "options": {
+      "A": "24 hours",
+      "B": "12 hours",
+      "C": "6 hours",
+      "D": "110 minutes"
+    },
+    "correct_answer": "D"
+  },
+  {
+    "id": 203,
+    "question": "Filtration in X-ray tubes is used to:",
+    "options": {
+      "A": "Increase scatter",
+      "B": "Increase patient dose",
+      "C": "Remove low-energy X-rays",
+      "D": "Decrease tube voltage"
+    },
+    "correct_answer": "C"
+  },
+  {
+    "id": 204,
+    "question": "What does ALARA principle stand for?",
+    "options": {
+      "A": "As Low As Reasonably Achievable",
+      "B": "As Low As Radiation Appears",
+      "C": "As Light As Radiant Area",
+      "D": "As Long As Radiation Accumulates"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "id": 205,
+    "question": "Beyond what dose does the cerebral system show signs of failure?",
+    "options": {
+      "A": "25 – 200 rad",
+      "B": "200 – 600 rad",
+      "C": "600 – 1000 rad",
+      "D": "> 1000 rad"
+    },
+    "correct_answer": "D"
+  },
+  {
+    "id": 206,
+    "question": "Conduction velocity is slowed in:",
+    "options": {
+      "A": "Healthy nerves",
+      "B": "Demyelinating neuropathy",
+      "C": "Pacemaker patients",
+      "D": "Myopathy"
     },
     "correct_answer": "B"
   },
   {
     "id": 207,
-    "question": "Question 232",
+    "question": "In the induction field diathermy, the heating effects are done by",
     "options": {
-      "C": "Option C",
-      "A": "Option A",
-      "D": "Option D",
-      "B": "Option B"
+      "A": "Using magnetic field",
+      "B": "Using an electric field",
+      "C": "Made of metal that is shaped into a coil",
+      "D": "Induce an electrical current within body parts"
     },
-    "correct_answer": "A"
+    "correct_answer": "D"
   },
   {
     "id": 208,
-    "question": "Question 170",
+    "question": "In CT, beam hardening artifacts result from:",
     "options": {
-      "A": "Option A",
-      "D": "Option D",
-      "C": "Option C",
-      "B": "Option B"
+      "A": "Polychromatic X-ray spectrum",
+      "B": "MRI interference",
+      "C": "Photon scatter",
+      "D": "Ultrasound reflection"
     },
     "correct_answer": "A"
   },
   {
     "id": 209,
-    "question": "Question 293",
+    "question": "Compton scattering dominates in:",
     "options": {
-      "A": "Option A",
-      "B": "Option B",
-      "D": "Option D",
-      "C": "Option C"
+      "A": "Ultrasound",
+      "B": "Low-energy X-rays",
+      "C": "MRI",
+      "D": "Diagnostic to high-energy X-rays"
     },
-    "correct_answer": "B"
+    "correct_answer": "D"
   },
   {
     "id": 210,
-    "question": "Question 272",
+    "question": "In gamma camera imaging, which isotope is commonly used?",
     "options": {
-      "B": "Option B",
-      "D": "Option D",
-      "A": "Option A",
-      "C": "Option C"
+      "A": "Iodine-131",
+      "B": "Technetium-99m",
+      "C": "Radon-222",
+      "D": "Carbon-14"
     },
     "correct_answer": "B"
   },
   {
     "id": 211,
-    "question": "Question 214",
+    "question": "The principle of nuclear medicine imaging is:",
     "options": {
-      "C": "Option C",
-      "D": "Option D",
-      "B": "Option B",
-      "A": "Option A"
+      "A": "Detection of gamma rays from radiotracers",
+      "B": "Ultrasound reflection",
+      "C": "External magnetic field",
+      "D": "X-ray attenuation"
     },
     "correct_answer": "A"
   },
   {
     "id": 212,
-    "question": "Question 197",
+    "question": "In Doppler ultrasound, red shift indicates:",
     "options": {
-      "C": "Option C",
-      "B": "Option B",
-      "A": "Option A",
-      "D": "Option D"
+      "A": "No flow",
+      "B": "Turbulent flow",
+      "C": "Flow away from the transducer",
+      "D": "Flow towards the transducer"
     },
-    "correct_answer": "C"
+    "correct_answer": "D"
   },
   {
     "id": 213,
-    "question": "Question 185",
+    "question": "Signal-to-noise ratio (SNR) in MRI improves with:",
     "options": {
-      "D": "Option D",
-      "C": "Option C",
-      "B": "Option B",
-      "A": "Option A"
+      "A": "Lower field strength",
+      "B": "Lower voxel size",
+      "C": "Faster scan",
+      "D": "Higher field strength"
     },
-    "correct_answer": "B"
+    "correct_answer": "D"
   },
   {
     "id": 214,
-    "question": "Question 99",
+    "question": "Myelin increases:",
     "options": {
-      "D": "Option D",
-      "C": "Option C",
-      "A": "Option A",
-      "B": "Option B"
+      "A": "Conduction velocity",
+      "B": "CT contrast",
+      "C": "Muscle strength",
+      "D": "EEG amplitude"
     },
-    "correct_answer": "B"
+    "correct_answer": "A"
   },
   {
     "id": 215,
-    "question": "Question 87",
+    "question": "In radiation therapy, megavoltage photons penetrate:",
     "options": {
-      "A": "Option A",
-      "B": "Option B",
-      "C": "Option C",
-      "D": "Option D"
+      "A": "Only bone",
+      "B": "Deep tissue",
+      "C": "Superficial tissue",
+      "D": "Only air"
     },
     "correct_answer": "B"
   },
   {
     "id": 216,
-    "question": "Question 107",
+    "question": "Ionizing radiation can damage tissues primarily by:",
     "options": {
-      "C": "Option C",
-      "A": "Option A",
-      "B": "Option B",
-      "D": "Option D"
+      "A": "Pressure",
+      "B": "Heating",
+      "C": "Magnetism",
+      "D": "Ionization of molecules"
     },
-    "correct_answer": "C"
+    "correct_answer": "D"
   },
   {
     "id": 217,
-    "question": "Question 156",
+    "question": "MRI safety: quenching occurs when:",
     "options": {
-      "D": "Option D",
-      "A": "Option A",
-      "C": "Option C",
-      "B": "Option B"
+      "A": "Coil detunes",
+      "B": "RF fails",
+      "C": "Magnet warms rapidly",
+      "D": "Gradient fails"
     },
     "correct_answer": "C"
   },
   {
     "id": 218,
-    "question": "Question 134",
+    "question": "Radiographic magnification occurs when:",
     "options": {
-      "A": "Option A",
-      "D": "Option D",
-      "B": "Option B",
-      "C": "Option C"
+      "A": "Patient is closer to detector",
+      "B": "Tube voltage decreases",
+      "C": "Patient is farther from detector",
+      "D": "Tube current increases"
+    },
+    "correct_answer": "C"
+  },
+  {
+    "id": 219,
+    "question": "CT spatial resolution is limited by:",
+    "options": {
+      "A": "Patient age",
+      "B": "Gradient field",
+      "C": "RF coil",
+      "D": "Detector size and focal spot"
+    },
+    "correct_answer": "D"
+  },
+  {
+    "id": 220,
+    "question": "MRI images are formed based on:",
+    "options": {
+      "A": "Ultrasound reflection",
+      "B": "Nuclear magnetic resonance",
+      "C": "X-ray absorption",
+      "D": "Gamma emission"
     },
     "correct_answer": "B"
   },
   {
-    "id": 219,
-    "question": "Question 253",
-    "options": {
-      "B": "Option B",
-      "A": "Option A",
-      "C": "Option C",
-      "D": "Option D"
-    },
-    "correct_answer": "A"
-  },
-  {
-    "id": 220,
-    "question": "Question 260",
-    "options": {
-      "B": "Option B",
-      "D": "Option D",
-      "C": "Option C",
-      "A": "Option A"
-    },
-    "correct_answer": "A"
-  },
-  {
     "id": 221,
-    "question": "Question 292",
+    "question": "Beta waves in EEG indicate:",
     "options": {
-      "B": "Option B",
-      "A": "Option A",
-      "C": "Option C",
-      "D": "Option D"
+      "A": "Active thinking and attention",
+      "B": "Muscle artifact",
+      "C": "Sleep",
+      "D": "Resting state"
     },
     "correct_answer": "A"
   },
   {
     "id": 222,
-    "question": "Question 5",
+    "question": "Pacemaker spikes in ECG indicate:",
     "options": {
-      "A": "Option A",
-      "C": "Option C",
-      "B": "Option B",
-      "D": "Option D"
+      "A": "Atrial or ventricular stimulation",
+      "B": "Heart block",
+      "C": "Ventricular repolarization",
+      "D": "Artifact"
     },
-    "correct_answer": "B"
+    "correct_answer": "A"
   },
   {
     "id": 223,
-    "question": "Question 71",
+    "question": "Ultrasonic waves carry more",
     "options": {
-      "A": "Option A",
-      "C": "Option C",
-      "B": "Option B",
-      "D": "Option D"
-    },
-    "correct_answer": "C"
-  },
-  {
-    "id": 224,
-    "question": "Question 33",
-    "options": {
-      "C": "Option C",
-      "A": "Option A",
-      "D": "Option D",
-      "B": "Option B"
+      "A": "Both frequency and energy",
+      "B": "Energy",
+      "C": "Heat",
+      "D": "Frequency"
     },
     "correct_answer": "A"
   },
   {
-    "id": 225,
-    "question": "Question 118",
+    "id": 224,
+    "question": "Half-life of ^99mTc is:",
     "options": {
-      "D": "Option D",
-      "C": "Option C",
-      "A": "Option A",
-      "B": "Option B"
-    },
-    "correct_answer": "D"
-  },
-  {
-    "id": 226,
-    "question": "Question 28",
-    "options": {
-      "D": "Option D",
-      "B": "Option B",
-      "A": "Option A",
-      "C": "Option C"
-    },
-    "correct_answer": "D"
-  },
-  {
-    "id": 227,
-    "question": "Question 29",
-    "options": {
-      "A": "Option A",
-      "C": "Option C",
-      "D": "Option D",
-      "B": "Option B"
+      "A": "24 hours",
+      "B": "1 hour",
+      "C": "6 hours",
+      "D": "12 hours"
     },
     "correct_answer": "C"
   },
   {
-    "id": 228,
-    "question": "Question 65",
+    "id": 225,
+    "question": "Sievert (Sv) measures:",
     "options": {
-      "D": "Option D",
-      "A": "Option A",
-      "B": "Option B",
-      "C": "Option C"
+      "A": "Photon energy",
+      "B": "Radioactivity",
+      "C": "Equivalent/effective dose",
+      "D": "Absorbed dose"
+    },
+    "correct_answer": "C"
+  },
+  {
+    "id": 226,
+    "question": "The process of destroying cancer cells with the help of radiation is ________",
+    "options": {
+      "A": "Uroplasty",
+      "B": "Radiotherapy",
+      "C": "Physiotherapy",
+      "D": "Rehabilitation"
     },
     "correct_answer": "B"
   },
   {
-    "id": 229,
-    "question": "Question 104",
+    "id": 227,
+    "question": "Stochastic effects of radiation include:",
     "options": {
-      "C": "Option C",
-      "D": "Option D",
-      "A": "Option A",
-      "B": "Option B"
-    },
-    "correct_answer": "C"
-  },
-  {
-    "id": 230,
-    "question": "Question 125",
-    "options": {
-      "C": "Option C",
-      "A": "Option A",
-      "D": "Option D",
-      "B": "Option B"
+      "A": "Cancer risk",
+      "B": "Hair loss",
+      "C": "Deterministic injury",
+      "D": "Skin burn"
     },
     "correct_answer": "A"
   },
   {
-    "id": 231,
-    "question": "Question 177",
+    "id": 228,
+    "question": "In diffusion-weighted MRI, restricted diffusion indicates:",
     "options": {
-      "C": "Option C",
-      "A": "Option A",
-      "B": "Option B",
-      "D": "Option D"
+      "A": "Fatty liver",
+      "B": "Hemorrhage",
+      "C": "Ischemic stroke",
+      "D": "Tumor"
     },
-    "correct_answer": "D"
+    "correct_answer": "C"
+  },
+  {
+    "id": 229,
+    "question": "Myocardial perfusion imaging shows:",
+    "options": {
+      "A": "Muscle strength",
+      "B": "Blood flow distribution",
+      "C": "ECG intervals",
+      "D": "Heart anatomy"
+    },
+    "correct_answer": "B"
+  },
+  {
+    "id": 230,
+    "question": "Gamma camera in nuclear medicine detects:",
+    "options": {
+      "A": "Beta particles",
+      "B": "Neutrons",
+      "C": "Gamma rays",
+      "D": "Alpha particles"
+    },
+    "correct_answer": "C"
+  },
+  {
+    "id": 231,
+    "question": "Gradient coils in MRI are used for:",
+    "options": {
+      "A": "Spatial encoding of signal",
+      "B": "Producing main magnetic field",
+      "C": "Radiofrequency pulse",
+      "D": "Cooling"
+    },
+    "correct_answer": "A"
   },
   {
     "id": 232,
-    "question": "Question 284",
+    "question": "Which phenomenon helps ultrasound to image internal body structures?",
     "options": {
-      "D": "Option D",
-      "A": "Option A",
-      "C": "Option C",
-      "B": "Option B"
+      "A": "Dispersion",
+      "B": "Diffraction",
+      "C": "Reflection",
+      "D": "Refraction"
     },
     "correct_answer": "C"
   },
   {
     "id": 233,
-    "question": "Question 216",
+    "question": "In electrophysiology, ECG measures:",
     "options": {
-      "A": "Option A",
-      "B": "Option B",
-      "D": "Option D",
-      "C": "Option C"
+      "A": "Mechanical activity of the heart",
+      "B": "Electrical activity of the heart",
+      "C": "Blood pressure",
+      "D": "Blood flow"
     },
-    "correct_answer": "A"
+    "correct_answer": "B"
   },
   {
     "id": 234,
-    "question": "Question 238",
+    "question": "T wave in ECG represents:",
     "options": {
-      "C": "Option C",
-      "A": "Option A",
-      "B": "Option B",
-      "D": "Option D"
+      "A": "Atrial repolarization",
+      "B": "Ventricular repolarization",
+      "C": "Ventricular depolarization",
+      "D": "Atrial depolarization"
     },
     "correct_answer": "B"
   },
   {
     "id": 235,
-    "question": "Question 275",
+    "question": "SONAR is abbreviation of",
     "options": {
-      "A": "Option A",
-      "B": "Option B",
-      "D": "Option D",
-      "C": "Option C"
+      "A": "Small navigation and random",
+      "B": "Sky navigation and ranging",
+      "C": "Sound navigation and ranging",
+      "D": "Sun nuclear ranging"
     },
-    "correct_answer": "B"
+    "correct_answer": "C"
   },
   {
     "id": 236,
-    "question": "Question 22",
+    "question": "QRS complex in ECG represents:",
     "options": {
-      "C": "Option C",
-      "B": "Option B",
-      "A": "Option A",
-      "D": "Option D"
+      "A": "Ventricular depolarization",
+      "B": "Atrial repolarization",
+      "C": "Ventricular repolarization",
+      "D": "Atrial depolarization"
     },
-    "correct_answer": "C"
+    "correct_answer": "A"
   },
   {
     "id": 237,
-    "question": "Question 94",
+    "question": "MRI T2* images are sensitive to:",
     "options": {
-      "D": "Option D",
-      "C": "Option C",
-      "B": "Option B",
-      "A": "Option A"
-    },
-    "correct_answer": "B"
-  },
-  {
-    "id": 238,
-    "question": "Question 271",
-    "options": {
-      "D": "Option D",
-      "B": "Option B",
-      "A": "Option A",
-      "C": "Option C"
-    },
-    "correct_answer": "B"
-  },
-  {
-    "id": 239,
-    "question": "Question 264",
-    "options": {
-      "C": "Option C",
-      "B": "Option B",
-      "A": "Option A",
-      "D": "Option D"
-    },
-    "correct_answer": "A"
-  },
-  {
-    "id": 240,
-    "question": "Question 249",
-    "options": {
-      "B": "Option B",
-      "D": "Option D",
-      "C": "Option C",
-      "A": "Option A"
-    },
-    "correct_answer": "A"
-  },
-  {
-    "id": 241,
-    "question": "Question 298",
-    "options": {
-      "D": "Option D",
-      "C": "Option C",
-      "B": "Option B",
-      "A": "Option A"
+      "A": "Water content",
+      "B": "X-rays",
+      "C": "Fat only",
+      "D": "Magnetic susceptibility"
     },
     "correct_answer": "D"
   },
   {
-    "id": 242,
-    "question": "Question 41",
+    "id": 238,
+    "question": "Brachytherapy involves:",
     "options": {
-      "B": "Option B",
-      "A": "Option A",
-      "D": "Option D",
-      "C": "Option C"
+      "A": "MRI-guided surgery",
+      "B": "External radiation",
+      "C": "Ultrasound therapy",
+      "D": "Internal radiation"
+    },
+    "correct_answer": "D"
+  },
+  {
+    "id": 239,
+    "question": "The pitch in CT scanning defines:",
+    "options": {
+      "A": "X-ray wavelength",
+      "B": "MRI signal",
+      "C": "Table movement per rotation relative to slice thickness",
+      "D": "Ultrasound frequency"
     },
     "correct_answer": "C"
   },
   {
-    "id": 243,
-    "question": "Question 269",
+    "id": 240,
+    "question": "fMRI temporal resolution depends on:",
     "options": {
-      "C": "Option C",
-      "A": "Option A",
-      "B": "Option B",
-      "D": "Option D"
+      "A": "Field strength",
+      "B": "TE only",
+      "C": "TR (repetition time)",
+      "D": "Voxel size"
     },
-    "correct_answer": "D"
+    "correct_answer": "C"
+  },
+  {
+    "id": 241,
+    "question": "ECG electrodes should be placed on:",
+    "options": {
+      "A": "Only limbs",
+      "B": "Chest and limbs",
+      "C": "Forehead",
+      "D": "Only chest"
+    },
+    "correct_answer": "B"
+  },
+  {
+    "id": 242,
+    "question": "If proteins are separated according to their electrophoretic mobility then the type of electrophoresis is:",
+    "options": {
+      "A": "Free flow electrophoresis",
+      "B": "Electro focusing",
+      "C": "Affinity Electrophoresis",
+      "D": "SDS PAGE"
+    },
+    "correct_answer": "A"
+  },
+  {
+    "id": 243,
+    "question": "Thermoluminescent dosimeters (TLD) measure:",
+    "options": {
+      "A": "Ultrasound intensity",
+      "B": "Electrical signals",
+      "C": "Radiation dose",
+      "D": "Blood flow"
+    },
+    "correct_answer": "C"
   },
   {
     "id": 244,
-    "question": "Question 19",
+    "question": "In ultrasound imaging, B-mode represents:",
     "options": {
-      "B": "Option B",
-      "C": "Option C",
-      "A": "Option A",
-      "D": "Option D"
+      "A": "Brightness",
+      "B": "Bulk modulus",
+      "C": "Bone density",
+      "D": "Blood velocity"
     },
     "correct_answer": "A"
   },
   {
     "id": 245,
-    "question": "Question 110",
+    "question": "Linear energy transfer (LET) is:",
     "options": {
-      "B": "Option B",
-      "C": "Option C",
-      "D": "Option D",
-      "A": "Option A"
+      "A": "Doppler frequency",
+      "B": "X-ray tube voltage",
+      "C": "Energy deposited per unit distance",
+      "D": "Magnetic field gradient"
     },
-    "correct_answer": "D"
+    "correct_answer": "C"
   },
   {
     "id": 246,
-    "question": "Question 254",
+    "question": "Which technique separates charged particles using electric field?",
     "options": {
-      "B": "Option B",
-      "A": "Option A",
-      "D": "Option D",
-      "C": "Option C"
+      "A": "Protein denaturing",
+      "B": "Electrophoresis",
+      "C": "Protein synthesis",
+      "D": "Hydrolysis"
     },
-    "correct_answer": "A"
+    "correct_answer": "B"
   },
   {
     "id": 247,
-    "question": "Question 15",
+    "question": "Coherent scattering is also called:",
     "options": {
-      "D": "Option D",
-      "C": "Option C",
-      "A": "Option A",
-      "B": "Option B"
+      "A": "Photoelectric effect",
+      "B": "Rayleigh scattering",
+      "C": "Pair production",
+      "D": "Compton scattering"
     },
     "correct_answer": "B"
   },
   {
     "id": 248,
-    "question": "Question 224",
+    "question": "Photoelectric effect increases with:",
     "options": {
-      "D": "Option D",
-      "B": "Option B",
-      "A": "Option A",
-      "C": "Option C"
+      "A": "Low atomic number",
+      "B": "Low photon energy",
+      "C": "Both b and c",
+      "D": "High atomic number"
     },
     "correct_answer": "C"
   },
   {
     "id": 249,
-    "question": "Question 72",
+    "question": "In ultrasound imaging, A-mode represents:",
     "options": {
-      "D": "Option D",
-      "C": "Option C",
-      "B": "Option B",
-      "A": "Option A"
+      "A": "Area vs volume",
+      "B": "Amplitude vs time",
+      "C": "Angle vs distance",
+      "D": "Amplitude vs frequency"
     },
     "correct_answer": "B"
   },
   {
     "id": 250,
-    "question": "Question 92",
+    "question": "T1-weighted MRI images highlight:",
     "options": {
-      "B": "Option B",
-      "C": "Option C",
-      "D": "Option D",
-      "A": "Option A"
+      "A": "Air",
+      "B": "Water",
+      "C": "Fat",
+      "D": "Metal"
     },
-    "correct_answer": "B"
+    "correct_answer": "C"
   },
   {
     "id": 251,
-    "question": "Question 30",
+    "question": "In a hypothetical radioactive material, the total number of active photons are 20000 and the decay constant is found out to be 4.916 × 10⁻¹⁷ per second. How much of the material will be left in 100 years?",
     "options": {
-      "D": "Option D",
-      "C": "Option C",
-      "A": "Option A",
-      "B": "Option B"
+      "A": "123.99999",
+      "B": "19.999999",
+      "C": "19,999.9999",
+      "D": "1589.99999"
     },
-    "correct_answer": "B"
+    "correct_answer": "C"
   },
   {
     "id": 252,
-    "question": "Question 18",
+    "question": "The electric field will",
     "options": {
-      "D": "Option D",
-      "B": "Option B",
-      "C": "Option C",
-      "A": "Option A"
+      "A": "Converge onto substance with high dielectric constant",
+      "B": "Converge onto substance with low dielectric constant",
+      "C": "Diverge within substances with low dielectric constant",
+      "D": "Diverge within substances with high dielectric constant"
     },
     "correct_answer": "A"
   },
   {
     "id": 253,
-    "question": "Question 164",
+    "question": "Doppler echocardiography measures:",
     "options": {
-      "D": "Option D",
-      "B": "Option B",
-      "C": "Option C",
-      "A": "Option A"
+      "A": "Blood flow velocity",
+      "B": "Oxygen saturation",
+      "C": "Bone density",
+      "D": "Heart rhythm only"
     },
     "correct_answer": "A"
   },
   {
     "id": 254,
-    "question": "Question 213",
+    "question": "Resting membrane potential is typically:",
     "options": {
-      "D": "Option D",
-      "C": "Option C",
-      "A": "Option A",
-      "B": "Option B"
+      "A": "0 mV",
+      "B": "+70 mV",
+      "C": "-100 mV",
+      "D": "-70 mV"
     },
-    "correct_answer": "C"
+    "correct_answer": "D"
   },
   {
     "id": 255,
-    "question": "Question 266",
+    "question": "Pulse oximetry measures:",
     "options": {
-      "A": "Option A",
-      "C": "Option C",
-      "D": "Option D",
-      "B": "Option B"
+      "A": "Heart rate only",
+      "B": "Oxygen saturation",
+      "C": "Blood sugar",
+      "D": "Blood pressure"
     },
-    "correct_answer": "A"
+    "correct_answer": "B"
   },
   {
     "id": 256,
-    "question": "Question 215",
+    "question": "In EEG, alpha rhythm is predominant in:",
     "options": {
-      "A": "Option A",
-      "B": "Option B",
-      "D": "Option D",
-      "C": "Option C"
+      "A": "Deep sleep",
+      "B": "Relaxed wakefulness with eyes closed",
+      "C": "Drowsiness",
+      "D": "Alert mental activity"
     },
     "correct_answer": "B"
   },
   {
     "id": 257,
-    "question": "Question 111",
+    "question": "Ionizing radiation can cause:",
     "options": {
-      "B": "Option B",
-      "D": "Option D",
-      "A": "Option A",
-      "C": "Option C"
-    },
-    "correct_answer": "D"
-  },
-  {
-    "id": 258,
-    "question": "Question 285",
-    "options": {
-      "B": "Option B",
-      "A": "Option A",
-      "C": "Option C",
-      "D": "Option D"
+      "A": "Hair loss only",
+      "B": "Muscle fatigue",
+      "C": "DNA damage",
+      "D": "Bone fracture"
     },
     "correct_answer": "C"
   },
   {
-    "id": 259,
-    "question": "Question 12",
+    "id": 258,
+    "question": "Sounds of frequency higher than 20,000 Hz which are inaudible to normal human ear are called",
     "options": {
-      "D": "Option D",
-      "A": "Option A",
-      "C": "Option C",
-      "B": "Option B"
+      "A": "Frequency",
+      "B": "Amplitude",
+      "C": "Noise",
+      "D": "Ultrasonics"
     },
-    "correct_answer": "B"
+    "correct_answer": "D"
+  },
+  {
+    "id": 259,
+    "question": "Bioimpedance is used to estimate:",
+    "options": {
+      "A": "Heart rhythm",
+      "B": "Muscle activity",
+      "C": "Body composition, especially fat and water",
+      "D": "Blood pressure"
+    },
+    "correct_answer": "C"
   },
   {
     "id": 260,
-    "question": "Question 179",
+    "question": "The main contrast in MRI comes from:",
     "options": {
-      "B": "Option B",
-      "C": "Option C",
-      "A": "Option A",
-      "D": "Option D"
+      "A": "Electron density",
+      "B": "Electrical conductivity",
+      "C": "Proton density and relaxation times",
+      "D": "Gamma rays"
     },
     "correct_answer": "C"
   },
   {
     "id": 261,
-    "question": "Question 200",
+    "question": "Noise in CT can be reduced by:",
     "options": {
-      "A": "Option A",
-      "D": "Option D",
-      "C": "Option C",
-      "B": "Option B"
+      "A": "Decreasing kVp",
+      "B": "Increasing mA",
+      "C": "Using ultrasound",
+      "D": "Using MRI coils"
     },
     "correct_answer": "B"
   },
   {
     "id": 262,
-    "question": "Question 132",
+    "question": "The speed of migration of ions in electric field depends upon:",
     "options": {
-      "A": "Option A",
-      "D": "Option D",
-      "B": "Option B",
-      "C": "Option C"
+      "A": "Magnitude of charge, shape and mass of molecule",
+      "B": "Magnitude of charge and mass of molecule",
+      "C": "Magnitude of charge and shape of molecule",
+      "D": "Shape and size of molecule"
     },
-    "correct_answer": "B"
+    "correct_answer": "A"
   },
   {
     "id": 263,
-    "question": "Question 47",
+    "question": "Nerve conduction studies measure:",
     "options": {
-      "D": "Option D",
-      "A": "Option A",
-      "B": "Option B",
-      "C": "Option C"
+      "A": "EEG frequency",
+      "B": "Muscle contraction strength",
+      "C": "Conduction velocity of peripheral nerves",
+      "D": "Blood flow"
+    },
+    "correct_answer": "C"
+  },
+  {
+    "id": 264,
+    "question": "Gamma cameras use:",
+    "options": {
+      "A": "Electrodes",
+      "B": "Scintillation detectors",
+      "C": "Piezoelectric crystals",
+      "D": "RF coils"
     },
     "correct_answer": "B"
   },
   {
-    "id": 264,
-    "question": "Question 288",
+    "id": 265,
+    "question": "Pulse Doppler in ultrasound gives:",
     "options": {
-      "B": "Option B",
-      "A": "Option A",
-      "D": "Option D",
-      "C": "Option C"
+      "A": "X-ray intensity",
+      "B": "Image brightness",
+      "C": "Global average only",
+      "D": "Location-specific velocity"
     },
     "correct_answer": "D"
   },
   {
-    "id": 265,
-    "question": "Question 219",
+    "id": 266,
+    "question": "A piezoelectric crystal is used to produce the ultrasound waves. What kind of ultrasound is produced?",
     "options": {
-      "B": "Option B",
-      "D": "Option D",
-      "C": "Option C",
-      "A": "Option A"
+      "A": "Electrical wave ultrasound",
+      "B": "Sound wave ultrasound",
+      "C": "Pressure wave ultrasound",
+      "D": "Simple ultrasound"
     },
     "correct_answer": "C"
-  },
-  {
-    "id": 266,
-    "question": "Question 182",
-    "options": {
-      "B": "Option B",
-      "A": "Option A",
-      "D": "Option D",
-      "C": "Option C"
-    },
-    "correct_answer": "A"
   },
   {
     "id": 267,
-    "question": "Question 180",
+    "question": "Electrical impedance tomography (EIT) images:",
     "options": {
-      "C": "Option C",
-      "B": "Option B",
-      "D": "Option D",
-      "A": "Option A"
+      "A": "Brain activity",
+      "B": "Heart valves",
+      "C": "Bone density",
+      "D": "Lung ventilation"
     },
-    "correct_answer": "A"
+    "correct_answer": "D"
   },
   {
     "id": 268,
-    "question": "Question 255",
+    "question": "High LET radiation includes:",
     "options": {
-      "B": "Option B",
-      "D": "Option D",
-      "A": "Option A",
-      "C": "Option C"
+      "A": "Ultrasound",
+      "B": "Gamma rays",
+      "C": "X-rays",
+      "D": "Alpha particles"
     },
-    "correct_answer": "A"
+    "correct_answer": "D"
   },
   {
     "id": 269,
-    "question": "Question 251",
+    "question": "Cryogenic cooling in MRI is used for:",
     "options": {
-      "C": "Option C",
-      "D": "Option D",
-      "A": "Option A",
-      "B": "Option B"
-    },
-    "correct_answer": "A"
-  },
-  {
-    "id": 270,
-    "question": "Question 135",
-    "options": {
-      "C": "Option C",
-      "A": "Option A",
-      "D": "Option D",
-      "B": "Option B"
+      "A": "RF coils",
+      "B": "Gradient",
+      "C": "Superconducting magnet",
+      "D": "Patient cooling"
     },
     "correct_answer": "C"
   },
   {
-    "id": 271,
-    "question": "Question 44",
+    "id": 270,
+    "question": "RF coils in MRI:",
     "options": {
-      "A": "Option A",
-      "B": "Option B",
-      "D": "Option D",
-      "C": "Option C"
+      "A": "Provide magnetic shielding",
+      "B": "Measure X-rays",
+      "C": "Produce gradient",
+      "D": "Detect and transmit RF signal"
+    },
+    "correct_answer": "D"
+  },
+  {
+    "id": 271,
+    "question": "PET imaging requires:",
+    "options": {
+      "A": "High-frequency sound",
+      "B": "X-ray filtration",
+      "C": "Gamma rays only",
+      "D": "Positron-emitting radiotracers"
     },
     "correct_answer": "D"
   },
   {
     "id": 272,
-    "question": "Question 243",
+    "question": "Lead shielding in X-ray rooms is used to:",
     "options": {
-      "C": "Option C",
-      "D": "Option D",
-      "A": "Option A",
-      "B": "Option B"
+      "A": "Focus X-rays",
+      "B": "Protect patients and staff from radiation",
+      "C": "Enhance image quality",
+      "D": "Reduce noise"
     },
-    "correct_answer": "A"
+    "correct_answer": "B"
   },
   {
     "id": 273,
-    "question": "Question 222",
+    "question": "Radiopharmaceutical ^131I is used for:",
     "options": {
-      "B": "Option B",
-      "A": "Option A",
-      "C": "Option C",
-      "D": "Option D"
+      "A": "Cardiac perfusion",
+      "B": "PET oncology",
+      "C": "Thyroid imaging",
+      "D": "Bone scan"
     },
-    "correct_answer": "D"
+    "correct_answer": "C"
   },
   {
     "id": 274,
-    "question": "Question 228",
+    "question": "PET tracers commonly include:",
     "options": {
-      "A": "Option A",
-      "D": "Option D",
-      "B": "Option B",
-      "C": "Option C"
+      "A": "^18F-FDG",
+      "B": "Barium",
+      "C": "Iodine",
+      "D": "Gadolinium"
     },
     "correct_answer": "A"
   },
   {
     "id": 275,
-    "question": "Question 14",
+    "question": "Optically stimulated luminescent (OSL) dosimeters:",
     "options": {
-      "A": "Option A",
-      "D": "Option D",
-      "B": "Option B",
-      "C": "Option C"
+      "A": "Use heat",
+      "B": "Use light for readout",
+      "C": "Measure current",
+      "D": "Detect ultrasound"
     },
     "correct_answer": "B"
   },
   {
     "id": 276,
-    "question": "Question 287",
+    "question": "The energy required to remove an electron from an atom is called:",
     "options": {
-      "C": "Option C",
-      "A": "Option A",
-      "B": "Option B",
-      "D": "Option D"
-    },
-    "correct_answer": "A"
-  },
-  {
-    "id": 277,
-    "question": "Question 112",
-    "options": {
-      "D": "Option D",
-      "A": "Option A",
-      "B": "Option B",
-      "C": "Option C"
-    },
-    "correct_answer": "B"
-  },
-  {
-    "id": 278,
-    "question": "Question 106",
-    "options": {
-      "A": "Option A",
-      "D": "Option D",
-      "C": "Option C",
-      "B": "Option B"
+      "A": "Kinetic energy",
+      "B": "Thermal energy",
+      "C": "Potential energy",
+      "D": "Binding energy"
     },
     "correct_answer": "D"
   },
   {
-    "id": 279,
-    "question": "Question 38",
+    "id": 277,
+    "question": "Which of the diathermy machine is good for deep tissue healing?",
     "options": {
-      "D": "Option D",
-      "B": "Option B",
-      "A": "Option A",
-      "C": "Option C"
+      "A": "Cold compress",
+      "B": "Ultrasound",
+      "C": "Short wave",
+      "D": "Electrical impulse"
     },
     "correct_answer": "C"
   },
   {
-    "id": 280,
-    "question": "Question 230",
+    "id": 278,
+    "question": "Bundle branch block affects:",
     "options": {
-      "A": "Option A",
-      "B": "Option B",
-      "D": "Option D",
-      "C": "Option C"
+      "A": "Purkinje fibers only",
+      "B": "SA node",
+      "C": "Ventricular conduction pathways",
+      "D": "AV node"
+    },
+    "correct_answer": "C"
+  },
+  {
+    "id": 279,
+    "question": "Superconducting magnets in MRI require:",
+    "options": {
+      "A": "Room temperature",
+      "B": "Cryogenic cooling",
+      "C": "X-ray shielding",
+      "D": "Ultrasound gel"
     },
     "correct_answer": "B"
   },
   {
-    "id": 281,
-    "question": "Question 1",
+    "id": 280,
+    "question": "Functional MRI (fMRI) detects:",
     "options": {
-      "D": "Option D",
-      "A": "Option A",
-      "C": "Option C",
-      "B": "Option B"
+      "A": "Blood oxygen level-dependent (BOLD) signal",
+      "B": "X-ray attenuation",
+      "C": "Tissue density",
+      "D": "Ultrasound reflection"
     },
     "correct_answer": "A"
   },
   {
-    "id": 282,
-    "question": "Question 175",
+    "id": 281,
+    "question": "Functional MRI (fMRI) measures:",
     "options": {
-      "A": "Option A",
-      "D": "Option D",
-      "B": "Option B",
-      "C": "Option C"
+      "A": "Electrical activity directly",
+      "B": "Tissue density",
+      "C": "Radiation dose",
+      "D": "Blood oxygenation changes"
     },
-    "correct_answer": "B"
+    "correct_answer": "D"
+  },
+  {
+    "id": 282,
+    "question": "MRI gradient switching may cause:",
+    "options": {
+      "A": "Peripheral nerve stimulation",
+      "B": "Radiation",
+      "C": "Nausea",
+      "D": "Ultrasound reflection"
+    },
+    "correct_answer": "A"
   },
   {
     "id": 283,
-    "question": "Question 16",
+    "question": "The energy of diagnostic X-rays is typically measured in:",
     "options": {
-      "C": "Option C",
-      "B": "Option B",
-      "A": "Option A",
-      "D": "Option D"
+      "A": "Joules",
+      "B": "Electronvolts (eV)",
+      "C": "Megaelectronvolts (MeV)",
+      "D": "Kiloelectronvolts (keV)"
     },
-    "correct_answer": "B"
+    "correct_answer": "D"
   },
   {
     "id": 284,
-    "question": "Question 289",
+    "question": "With what energy must the radiation be given to image a bone of thickness 5 cm which has covering of skin of thickness of 2 cm on both sides and the emerging intensity of the X-ray is 200 MeV?",
     "options": {
-      "D": "Option D",
-      "A": "Option A",
-      "C": "Option C",
-      "B": "Option B"
+      "A": "2000e9",
+      "B": "20/e",
+      "C": "200e(4s + 5B)",
+      "D": "2e"
     },
-    "correct_answer": "B"
+    "correct_answer": "C"
   },
   {
     "id": 285,
-    "question": "Question 300",
+    "question": "Nerve conduction velocity (NCV) is measured in:",
     "options": {
-      "A": "Option A",
-      "D": "Option D",
-      "C": "Option C",
-      "B": "Option B"
-    },
-    "correct_answer": "C"
-  },
-  {
-    "id": 286,
-    "question": "Question 239",
-    "options": {
-      "D": "Option D",
-      "A": "Option A",
-      "C": "Option C",
-      "B": "Option B"
+      "A": "Hz",
+      "B": "m/s",
+      "C": "V",
+      "D": "Ohms"
     },
     "correct_answer": "B"
   },
   {
-    "id": 287,
-    "question": "Question 131",
+    "id": 286,
+    "question": "In ultrasound, attenuation increases with:",
     "options": {
-      "D": "Option D",
-      "A": "Option A",
-      "B": "Option B",
-      "C": "Option C"
+      "A": "Increasing frequency",
+      "B": "Decreasing frequency",
+      "C": "Increasing wavelength",
+      "D": "Decreasing intensity"
     },
-    "correct_answer": "C"
+    "correct_answer": "A"
+  },
+  {
+    "id": 287,
+    "question": "MRI relaxation times are:",
+    "options": {
+      "A": "T1 (spin-lattice) and T2 (spin-spin)",
+      "B": "Alpha and Beta",
+      "C": "Gamma and Delta",
+      "D": "Delta and Omega"
+    },
+    "correct_answer": "A"
   },
   {
     "id": 288,
-    "question": "Question 75",
+    "question": "Which of the following medical imaging modality other than ultrasound does not use any form of radiation?",
     "options": {
-      "A": "Option A",
-      "D": "Option D",
-      "B": "Option B",
-      "C": "Option C"
+      "A": "MRI",
+      "B": "SPECT Scan",
+      "C": "PET Scan",
+      "D": "CT Scan"
     },
     "correct_answer": "A"
   },
   {
     "id": 289,
-    "question": "Question 252",
+    "question": "A low dielectric constant & conductivity is to",
     "options": {
-      "A": "Option A",
-      "C": "Option C",
-      "D": "Option D",
-      "B": "Option B"
+      "A": "High water content, muscle, nerve, blood vessels, internal organs & moist skin",
+      "B": "All of the above",
+      "C": "None of the above",
+      "D": "Low water content, bone, capsule, ligaments, fat, dry skin"
     },
     "correct_answer": "D"
   },
   {
     "id": 290,
-    "question": "Question 126",
+    "question": "A high dielectric constant & conductivity is to",
     "options": {
-      "B": "Option B",
-      "A": "Option A",
-      "D": "Option D",
-      "C": "Option C"
+      "A": "All of the above",
+      "B": "High water content, muscle, nerve, blood vessels, internal organs & moist skin",
+      "C": "None of the above",
+      "D": "Low water content, bone, capsule, ligaments, fat, dry skin"
     },
-    "correct_answer": "A"
+    "correct_answer": "B"
   },
   {
     "id": 291,
-    "question": "Question 173",
+    "question": "SPECT uses:",
     "options": {
-      "B": "Option B",
-      "D": "Option D",
-      "C": "Option C",
-      "A": "Option A"
+      "A": "Coincidence detection",
+      "B": "Single gamma detection",
+      "C": "Ultrasound",
+      "D": "RF pulses"
     },
     "correct_answer": "B"
   },
   {
     "id": 292,
-    "question": "Question 58",
+    "question": "Wavelength of ultrasonic waves is",
     "options": {
-      "B": "Option B",
-      "A": "Option A",
-      "D": "Option D",
-      "C": "Option C"
+      "A": "Greater than light wave",
+      "B": "Equal to audible sound",
+      "C": "Less than audible sound",
+      "D": "More than audible sound"
     },
-    "correct_answer": "B"
+    "correct_answer": "C"
   },
   {
     "id": 293,
-    "question": "Question 51",
+    "question": "SPECT tracer Tc-99m decays by:",
     "options": {
-      "B": "Option B",
-      "A": "Option A",
-      "D": "Option D",
-      "C": "Option C"
+      "A": "Gamma emission",
+      "B": "Positron emission",
+      "C": "Alpha emission",
+      "D": "Beta emission"
     },
     "correct_answer": "A"
   },
   {
     "id": 294,
-    "question": "Question 257",
+    "question": "Which of the following ultrasound type is used for deep tissue imaging?",
     "options": {
-      "A": "Option A",
-      "B": "Option B",
-      "D": "Option D",
-      "C": "Option C"
+      "A": "High frequency ultrasound",
+      "B": "Very high frequency ultrasound",
+      "C": "Audible frequency ultrasound",
+      "D": "Low frequency ultrasound"
     },
-    "correct_answer": "A"
+    "correct_answer": "D"
   },
   {
     "id": 295,
-    "question": "Question 20",
+    "question": "The unit of equivalent dose in SI is:",
     "options": {
-      "B": "Option B",
-      "D": "Option D",
-      "C": "Option C",
-      "A": "Option A"
-    },
-    "correct_answer": "C"
-  },
-  {
-    "id": 296,
-    "question": "Question 172",
-    "options": {
-      "C": "Option C",
-      "A": "Option A",
-      "B": "Option B",
-      "D": "Option D"
+      "A": "Roentgen",
+      "B": "Sievert",
+      "C": "Curie",
+      "D": "Gray"
     },
     "correct_answer": "B"
   },
   {
-    "id": 297,
-    "question": "Question 89",
+    "id": 296,
+    "question": "CT contrast media are often based on:",
     "options": {
-      "C": "Option C",
-      "B": "Option B",
-      "A": "Option A",
-      "D": "Option D"
+      "A": "Silicon",
+      "B": "Gadolinium",
+      "C": "Iodine",
+      "D": "Barium"
+    },
+    "correct_answer": "C"
+  },
+  {
+    "id": 297,
+    "question": "Augmented limb leads are:",
+    "options": {
+      "A": "aVR, aVL, aVF",
+      "B": "None",
+      "C": "V1–V6",
+      "D": "I, II, III"
     },
     "correct_answer": "A"
   },
   {
     "id": 298,
-    "question": "Question 8",
+    "question": "T-wave inversion may indicate:",
     "options": {
-      "C": "Option C",
-      "D": "Option D",
-      "B": "Option B",
-      "A": "Option A"
-    },
-    "correct_answer": "B"
-  },
-  {
-    "id": 299,
-    "question": "Question 235",
-    "options": {
-      "D": "Option D",
-      "A": "Option A",
-      "B": "Option B",
-      "C": "Option C"
+      "A": "Muscle activity",
+      "B": "Artifact",
+      "C": "Normal ECG",
+      "D": "Ischemia"
     },
     "correct_answer": "D"
   },
   {
-    "id": 300,
-    "question": "Question 176",
+    "id": 299,
+    "question": "If the half-life is found to be 100 msec, what is the decay constant?",
     "options": {
-      "D": "Option D",
-      "A": "Option A",
-      "B": "Option B",
-      "C": "Option C"
+      "A": "59875.2 per day",
+      "B": "693 per second",
+      "C": "0.1155 per minute",
+      "D": "24948 per hour"
     },
     "correct_answer": "B"
+  },
+  {
+    "id": 300,
+    "question": "Piezoelectric materials in ultrasound transducers are often made of:",
+    "options": {
+      "A": "Quartz",
+      "B": "Copper",
+      "C": "Silicon",
+      "D": "Iron"
+    },
+    "correct_answer": "A"
   }
 ]
