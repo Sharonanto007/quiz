@@ -5,6 +5,16 @@ let userAnswers = [];
 let score = 0;
 let quizQuestions = [];
 
+// Utility function to shuffle array
+function shuffleArray(array) {
+    const shuffled = [...array];
+    for (let i = shuffled.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    }
+    return shuffled;
+}
+
 // DOM Elements
 const welcomeScreen = document.getElementById('welcomeScreen');
 const quizScreen = document.getElementById('quizScreen');
@@ -90,6 +100,33 @@ function startQuiz() {
         
         quizQuestions = quizData.slice(start, end);
     }
+
+    // Randomize questions
+    quizQuestions = shuffleArray(quizQuestions);
+    
+    // Randomize options for each question and store shuffled mapping
+    quizQuestions = quizQuestions.map(question => {
+        const optionsArray = Object.entries(question.options);
+        const shuffledOptions = shuffleArray(optionsArray);
+        
+        // Create new options object with A, B, C, D keys
+        const newOptions = {};
+        const letters = ['A', 'B', 'C', 'D'];
+        let newCorrectAnswer = '';
+        
+        shuffledOptions.forEach(([originalKey, value], index) => {
+            newOptions[letters[index]] = value;
+            if (originalKey === question.correct_answer) {
+                newCorrectAnswer = letters[index];
+            }
+        });
+        
+        return {
+            ...question,
+            options: newOptions,
+            correct_answer: newCorrectAnswer
+        };
+    });
 
     currentQuestionIndex = 0;
     userAnswers = new Array(quizQuestions.length).fill(null);
